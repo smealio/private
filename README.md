@@ -1,13 +1,22 @@
-# private
+# Private Repository
+### All repositories covered by NDA
+<br/>
+<br/>
 
-## Telehealth - Telehealth API
+## Telehealth
+Telehealth API
 <p/>
 
-## Spectera IO - Spectera API Template
+## Spectera IO
+Spectera API Template
 <p />
 
-##WaitLess Medical - WaitLess Medical API / WaitLess Medical UI
+## WaitLess Medical
+WaitLess Medical API<br/>
+WaitLess Medical UI
 <p />
 
-##myCTCA Mobile - Android / iOS
+## myCTCA Mobile
+Android <br/>
+iOS
 <p />
