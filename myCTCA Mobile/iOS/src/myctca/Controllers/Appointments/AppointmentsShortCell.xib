@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppointmentsShortCell" customModule="myctca" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="Fcy-s8-AzQ" id="eWb-QS-3hu"/>
+                <outlet property="actionButtonHtConstraint" destination="pgS-7v-2IK" id="zsg-cu-cLb"/>
+                <outlet property="bottomBarView" destination="0U1-5m-iOD" id="zdE-oQ-Tqy"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="BPO-0E-nTA"/>
+                <outlet property="providersLabel" destination="9rr-nW-bVp" id="lZ9-WA-nbz"/>
+                <outlet property="timeAndLocLabel" destination="BQt-Lt-p1R" id="Y24-kX-N6p"/>
+                <outlet property="titleLabelCell" destination="8Wb-lh-iln" id="YLC-ap-cNf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rr-nW-bVp">
+                    <rect key="frame" x="20" y="43.5" width="356" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" name="ctca-gray130"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wb-lh-iln">
+                    <rect key="frame" x="20" y="16" width="374" height="19.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" name="ctca-dark-gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-Lt-p1R">
+                    <rect key="frame" x="20" y="65.5" width="374" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" name="ctca-gray130"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcy-s8-AzQ" customClass="CTCAGreenButton" customModule="myctca" customModuleProvider="target">
+                    <rect key="frame" x="20" y="92.5" width="100" height="36"/>
+                    <color key="backgroundColor" name="ctca-gray10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6aJ-Ij-Lj9"/>
+                        <constraint firstAttribute="height" constant="36" id="pgS-7v-2IK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="32" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Now">
+                        <color key="titleColor" name="ctca-theme-middle"/>
+                    </state>
+                    <connections>
+                        <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="tBC-u3-HnU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0U1-5m-iOD">
+                    <rect key="frame" x="0.0" y="143" width="414" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tXf-rS-BzN"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheveron_right_purple" translatesAutoresizingMaskIntoConstraints="NO" id="6yI-Ht-OeK">
+                    <rect key="frame" x="384" y="45" width="10" height="16"/>
+                    <color key="tintColor" name="ctca-selection-purple"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="2Jv-qj-MNW"/>
+                        <constraint firstAttribute="width" constant="10" id="mnB-Pw-2xh"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt7-uY-heu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" "/>
+                    <connections>
+                        <action selector="selectionBtnTapped:" destination="-1" eventType="touchUpInside" id="MPG-V1-utx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9rr-nW-bVp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4Fn-sn-psY"/>
+                <constraint firstItem="9rr-nW-bVp" firstAttribute="top" secondItem="8Wb-lh-iln" secondAttribute="bottom" constant="8" symbolic="YES" id="9u2-6K-bHd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0U1-5m-iOD" secondAttribute="trailing" id="9vF-tE-aBk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vt7-uY-heu" secondAttribute="trailing" id="AkR-qx-SSg"/>
+                <constraint firstItem="8Wb-lh-iln" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="DJ0-0b-l41"/>
+                <constraint firstAttribute="trailing" secondItem="8Wb-lh-iln" secondAttribute="trailing" constant="20" symbolic="YES" id="FJw-e6-EhX"/>
+                <constraint firstItem="Vt7-uY-heu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GQ9-CP-1QJ"/>
+                <constraint firstItem="Fcy-s8-AzQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="L17-Lh-gEW"/>
+                <constraint firstItem="6yI-Ht-OeK" firstAttribute="leading" secondItem="9rr-nW-bVp" secondAttribute="trailing" constant="8" symbolic="YES" id="La0-jV-wlu"/>
+                <constraint firstItem="0U1-5m-iOD" firstAttribute="top" secondItem="Fcy-s8-AzQ" secondAttribute="bottom" constant="14.5" id="NnV-gS-Wvz"/>
+                <constraint firstItem="Fcy-s8-AzQ" firstAttribute="top" secondItem="BQt-Lt-p1R" secondAttribute="bottom" constant="8" symbolic="YES" id="NwV-1a-Gjc"/>
+                <constraint firstItem="6yI-Ht-OeK" firstAttribute="centerY" secondItem="9rr-nW-bVp" secondAttribute="centerY" id="Qh7-OA-oUg"/>
+                <constraint firstItem="Vt7-uY-heu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Rtc-3V-JJp"/>
+                <constraint firstItem="8Wb-lh-iln" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="UYx-4b-4QE"/>
+                <constraint firstItem="0U1-5m-iOD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bTU-Pv-Juj"/>
+                <constraint firstItem="Fcy-s8-AzQ" firstAttribute="top" secondItem="Vt7-uY-heu" secondAttribute="bottom" constant="2.5" id="bZf-Tx-Wpw"/>
+                <constraint firstItem="BQt-Lt-p1R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ec0-bI-e7p"/>
+                <constraint firstItem="0U1-5m-iOD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ift-69-deu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6yI-Ht-OeK" secondAttribute="trailing" constant="20" id="jql-o8-5AA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BQt-Lt-p1R" secondAttribute="trailing" constant="20" id="qe7-Yq-yZq"/>
+                <constraint firstAttribute="trailing" secondItem="0U1-5m-iOD" secondAttribute="trailing" id="sye-Su-NSa"/>
+                <constraint firstItem="BQt-Lt-p1R" firstAttribute="top" secondItem="9rr-nW-bVp" secondAttribute="bottom" constant="3" id="unm-ml-N5f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="155.07246376811597" y="-79.017857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cheveron_right_purple" width="9" height="16"/>
+        <namedColor name="ctca-dark-gray">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-gray10">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-gray130">
+            <color red="0.36078431372549019" green="0.36078431372549019" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-selection-purple">
+            <color red="0.44313725490196076" green="0.090196078431372548" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-theme-middle">
+            <color red="0.011764705882352941" green="0.4823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,272 @@
+[
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Fatigue",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Nausea",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Disturbed Sleep",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Shortness of Breath",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Lack of Appetite",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Remember Things",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Distressed (upset)",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Drowsy (sleepy)",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Dry Mouth",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Sad",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Vomiting",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Numbness or Tingling",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "General Activity",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Relations",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Walking",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Enjoyment of Life",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Constipation/Diarrhea",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Swelling/Fluid Retention",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Mouth Soreness",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Bleeding",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Sexual Interest/Activity",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Family Response/Acceptance",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Sense of Hope",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Overall Quality of Life",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Mood",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Work",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Patient Additional Concerns",
+    "observationValue": null,
+    "rangeValue": null,
+    "abnormalityCode": "",
+    "formatedTextEncoded": "SURVEY ENTERED IN ERROR ON WRONG PATIENT",
+    "abnormalityCodeDescription": ""
+  }
+]

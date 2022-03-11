@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppTheme.PopupMenu">
+
+        <include
+            android:id="@+id/ll_no_internet_connection"
+            layout="@layout/offline_red_connectivity_banner"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/ll_internet_connected"
+            layout="@layout/online_green_connectivity_banner"
+            android:visibility="gone" />
+
+        <!--        </RelativeLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
+    <!-- main content view. -->
+    <FrameLayout
+        android:id="@+id/appt_request_calender_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

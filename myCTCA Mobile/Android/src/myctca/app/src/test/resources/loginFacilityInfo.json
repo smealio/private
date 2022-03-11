@@ -1,0 +1,46 @@
+[
+    {
+        "name": "ERMC",
+        "displayName": "Cancer Treatment Centers of America, Philadelphia",
+        "address": {
+            "systemId": null,
+            "name": "Cancer Treatment Centers of America, Philadelphia",
+            "line1": "1331 East Wyoming Avenue",
+            "line2": null,
+            "city": "Philadelphia",
+            "state": "PA",
+            "postalCode": "19124",
+            "country": null,
+            "primary": true,
+            "createdBy": null,
+            "changeType": null
+        },
+        "mainPhone": "(215) 537-7400",
+        "schedulingPhone": "(215) 537-7111",
+        "accommodationsPhone": "(215) 537-7400",
+        "transportationPhone": "(215) 537-7948",
+        "himroiPhone": "(215) 537-7999"
+    },
+    {
+        "name": "ERMC",
+        "displayName": "Cancer Treatment Centers of America, Philadelphia",
+        "address": {
+            "systemId": null,
+            "name": "Cancer Treatment Centers of America, Philadelphia",
+            "line1": "1331 East Wyoming Avenue",
+            "line2": null,
+            "city": "Philadelphia",
+            "state": "PA",
+            "postalCode": "19124",
+            "country": null,
+            "primary": true,
+            "createdBy": null,
+            "changeType": null
+        },
+        "mainPhone": "(215) 537-7400",
+        "schedulingPhone": "(215) 537-7111",
+        "accommodationsPhone": "(215) 537-7400",
+        "transportationPhone": "(215) 537-7948",
+        "himroiPhone": "(215) 537-7999"
+    }
+]

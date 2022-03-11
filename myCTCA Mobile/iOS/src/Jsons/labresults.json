@@ -1,0 +1,418 @@
+[
+  {
+    "performedDate": "2019-11-06",
+    "collectedBy": "CTCA",
+    "summary": [
+      {
+        "orderId": "PR19-1",
+        "name": "Slide Review",
+        "detail": [
+          {
+            "id": "154000070_0",
+            "performedDateTime": "2019-11-06T13:25:00",
+            "itemName": "Pathology Result Link",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": null,
+            "normalRange": null,
+            "notes": null,
+            "displaySequence": 6
+          },
+          {
+            "id": "150900070_1",
+            "performedDateTime": "2019-11-06T13:25:00",
+            "itemName": "Slide Review",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": null,
+            "normalRange": null,
+            "notes": "Accession #: PR19-1\r\nSlide Consult EMRC\r\n\r\nCancer Treatment Centers of America\r\nat Eastern Regional Medical Center\r\nDepartment of Pathology\r\n1331 E. Wyoming Avenue\r\nPhiladelphia, PA   19124\r\nTel: 215-537-7492   Fax: 215-537-5435\r\nMedical Director:  Fernando U. Garcia, M.D.\r\n\r\nREVIEW CASE REPORT\r\n \r\n\r\nPatient Name:  SCM, PHILLY Z\r\nMed. Rec. #:  58100148\r\nDOB:  2/14/1988 (Age: 31)\r\nGender:  F\r\nPhysician(s):  Fernando U. Garcia MD\r\nSHAYMA KAZMI, MD\r\n\r\nBilling #:  581001155\r\n\r\nTaken:  11/6/2019\r\nReceived:  11/6/2019\r\nReported:  11/6/2019\r\n\r\nSpecimen(s) Received:\r\nA: Slide Consult EMRC\r\n\r\n\r\n\r\n\r\njh/11/6/2019\r\n***Electronically Signed Out***\r\nJane Hamilton\r\n\r\n\r\n\r\nClinical History\r\n\r\nTesting\r\n\r\nSlide/Block Description\r\nTESTING\r\n\r\nMicroscopic Description\r\n\r\nTesting micro\r\n",
+            "displaySequence": 10000
+          }
+        ]
+      },
+      {
+        "orderId": "323L16",
+        "name": "Vitamin D 25-Hydroxy Level",
+        "detail": [
+          {
+            "id": "150600070_1",
+            "performedDateTime": "2019-11-06T13:00:00",
+            "itemName": "Vitamin D 25-OH Total",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "102",
+            "normalRange": "30 - 100  ng/mL",
+            "notes": "THIS TEST WAS PERFORMED USING THE\r\nORTHO VITROS IMMUNODIAGNOSTIC METHOD.\r\nNOTE THE CHANGE IN REFERENCE RANGE.",
+            "displaySequence": 5
+          }
+        ]
+      },
+      {
+        "orderId": "323L17",
+        "name": "CBC, Manual Diff if Indicated",
+        "detail": [
+          {
+            "id": "147500070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "WBC Count",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "4.2",
+            "normalRange": "4.0 - 10.5  K/UL",
+            "notes": null,
+            "displaySequence": 1
+          },
+          {
+            "id": "147600070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "RBC",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "2.33",
+            "normalRange": "4.20 - 5.40  M/UL",
+            "notes": null,
+            "displaySequence": 2
+          },
+          {
+            "id": "147700070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Hemoglobin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "12.8",
+            "normalRange": "12.5 - 16.0  G/DL",
+            "notes": null,
+            "displaySequence": 3
+          },
+          {
+            "id": "147800070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Hematocrit",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "23.2",
+            "normalRange": "37 - 47  %",
+            "notes": null,
+            "displaySequence": 4
+          },
+          {
+            "id": "147900070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "MCV",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "79",
+            "normalRange": "78 - 100  FL",
+            "notes": null,
+            "displaySequence": 5
+          },
+          {
+            "id": "148000070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "MCH",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "27.6",
+            "normalRange": "27 - 32  PG",
+            "notes": null,
+            "displaySequence": 6
+          },
+          {
+            "id": "148100070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "MCHC",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "32.2",
+            "normalRange": "32 - 36  G/DL",
+            "notes": null,
+            "displaySequence": 7
+          },
+          {
+            "id": "148200070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "RDW",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "15.6",
+            "normalRange": "11.5 - 14.0  %",
+            "notes": null,
+            "displaySequence": 8
+          },
+          {
+            "id": "148300070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Platelet Count",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "134",
+            "normalRange": "150 - 450  K/UL",
+            "notes": null,
+            "displaySequence": 9
+          },
+          {
+            "id": "148400070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "MPV",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "7.7",
+            "normalRange": "6 - 9.5  FL",
+            "notes": null,
+            "displaySequence": 10
+          }
+        ]
+      },
+      {
+        "orderId": "323L14",
+        "name": "Comprehensive Metabolic Panel",
+        "detail": [
+          {
+            "id": "148500070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Glucose",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "112",
+            "normalRange": "74 - 109  MG/DL",
+            "notes": null,
+            "displaySequence": 1
+          },
+          {
+            "id": "148600070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Blood Urea Nitrogen",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "34",
+            "normalRange": "6 - 20  MG/DL",
+            "notes": null,
+            "displaySequence": 2
+          },
+          {
+            "id": "148700070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Creatinine",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "1.22",
+            "normalRange": "0.51 - 0.95  MG/DL",
+            "notes": null,
+            "displaySequence": 3
+          },
+          {
+            "id": "149900070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Estimated GFR, non-African American",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": "51",
+            "normalRange": "mL/min/1.73 m2",
+            "notes": null,
+            "displaySequence": 4
+          },
+          {
+            "id": "150000070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Estimated GFR, African American",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": ">60",
+            "normalRange": "mL/min/1.73 m2",
+            "notes": null,
+            "displaySequence": 5
+          },
+          {
+            "id": "149500070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Sodium",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "134",
+            "normalRange": "136 - 145  MMOL/L",
+            "notes": null,
+            "displaySequence": 6
+          },
+          {
+            "id": "149600070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Potassium",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "3.2",
+            "normalRange": "3.6 - 5.0  MMOL/L",
+            "notes": null,
+            "displaySequence": 7
+          },
+          {
+            "id": "149700070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Chloride",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "99",
+            "normalRange": "98 - 107  MMOL/L",
+            "notes": null,
+            "displaySequence": 8
+          },
+          {
+            "id": "149800070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "CO2",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "21",
+            "normalRange": "22 - 30  MMOL/L",
+            "notes": null,
+            "displaySequence": 9
+          },
+          {
+            "id": "148800070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Calcium",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "8.8",
+            "normalRange": "8.7 - 10.2  MG/DL",
+            "notes": null,
+            "displaySequence": 12
+          },
+          {
+            "id": "149000070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Protein, Total",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "6.4",
+            "normalRange": "6.3 - 8.2  G/DL",
+            "notes": null,
+            "displaySequence": 14
+          },
+          {
+            "id": "149100070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Albumin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "3.8",
+            "normalRange": "3.5 - 5.0  G/DL",
+            "notes": null,
+            "displaySequence": 16
+          },
+          {
+            "id": "148900070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Bilirubin, Total",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "0.2",
+            "normalRange": "0.2 - 1.3  MG/DL",
+            "notes": null,
+            "displaySequence": 18
+          },
+          {
+            "id": "149400070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Alkaline Phosphatase",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "39",
+            "normalRange": "38 - 126  U/L",
+            "notes": null,
+            "displaySequence": 20
+          },
+          {
+            "id": "149200070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "AST (SGOT)",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "18",
+            "normalRange": "15 - 46  U/L",
+            "notes": null,
+            "displaySequence": 22
+          },
+          {
+            "id": "149300070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "ALT (SGPT)",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "11",
+            "normalRange": "11 - 66  U/L",
+            "notes": null,
+            "displaySequence": 24
+          }
+        ]
+      },
+      {
+        "orderId": "323L18",
+        "name": "Creatinine Clearance, Urine",
+        "detail": [
+          {
+            "id": "150100070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Creatinine Clearance",
+            "abnormalityCodeCalculated": "LL",
+            "abnormalityCodeDescription": "Critical Low",
+            "result": "1.4",
+            "normalRange": "80 - 125  ML/MIN",
+            "notes": null,
+            "displaySequence": 1
+          }
+        ]
+      },
+      {
+        "orderId": "323L15",
+        "name": "Nutritional Screen",
+        "detail": [
+          {
+            "id": "150300070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Prealbumin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "18.5",
+            "normalRange": "18.0 - 35.7  mg/dL",
+            "notes": null,
+            "displaySequence": 1
+          },
+          {
+            "id": "150400070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Iron Level",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "48",
+            "normalRange": "30 - 160  ug/dL",
+            "notes": null,
+            "displaySequence": 2
+          },
+          {
+            "id": "150200070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Transferrin",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "201",
+            "normalRange": "202 - 364  mg/dL",
+            "notes": null,
+            "displaySequence": 5
+          },
+          {
+            "id": "150500070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Ferritin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "8",
+            "normalRange": "6.24 - 137.0  ng/mL",
+            "notes": null,
+            "displaySequence": 6
+          }
+        ]
+      }
+    ]
+  }
+]	

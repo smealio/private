@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context=".fragment.MoreAnncFormFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <include android:id="@+id/annc_patient_info_title" layout="@layout/roi_top_banner"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/medical_center_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_med_center_label"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+                <Spinner
+                    android:id="@+id/medical_center_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/medical_center_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/insurance_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_annc_insurance_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/insurance_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/editTextInput"
+                    android:textSize="18sp"
+                    android:hint="@string/input_text_placeholder"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/insurance_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/patient_firstname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_firstname"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/patient_firstname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:layout_weight="1"
+                    android:hint="@string/input_text_placeholder"
+                    android:textColor="@color/editTextInput"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_firstname_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/patient_lastname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_lastname"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/patient_lastname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:layout_weight="1"
+                    android:textColor="@color/editTextInput"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_lastname_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/dob_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/annc_mrn_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_annc_mrn_title"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/mrn_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:imeOptions="flagNoExtractUi"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/mrn_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/date_of_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/annc_date_of_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_annc_date_service_title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_date_of_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dos_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"
+                        android:textSize="18sp" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="6dp"
+                        android:src="@drawable/ic_keyboard_arrow_right"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dos_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@color/listSeparator"/>
+
+            <include android:id="@+id/annc_title" layout="@layout/roi_top_banner"/>
+
+            <TextView
+                android:id="@+id/annc_form_body_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/colorAccent"
+                android:text="@string/more_annc_form_body"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/table_cell">
+                <TableRow
+                    android:layout_marginTop="0.5dp"
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="@string/annc_table_procedure_title"
+                        android:padding="@dimen/dp_8"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/table_cell"/>
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/annc_reason_insurance_title"
+                        android:padding="@dimen/dp_8"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/table_cell"/>
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="@string/annc_estimated_cost_title"
+                        android:padding="@dimen/dp_8"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/table_cell"/>
+                </TableRow>
+                <TableRow
+                    android:layout_marginLeft="0.5dp"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="@string/annc_table_procedure_text"
+                        android:padding="@dimen/dp_8"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/table_cell"/>
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/annc_reason_insurance_text"
+                        android:padding="@dimen/dp_8"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/table_cell"/>
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="@string/annc_estimated_cost_text"
+                        android:padding="@dimen/dp_8"
+                        android:textColor="@color/colorAccent"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_cell"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_user_need_to_know_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginRight="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/annc_user_need_to_know_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_form_note_title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_form_note_text"/>
+
+            <include android:id="@+id/annc_options_title" layout="@layout/roi_top_banner"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textColor="@color/colorAccent"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_form_choose_options_text"/>
+
+            <CheckBox
+                android:id="@+id/cb_need_telehealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:theme="@style/CTCACheckBox"
+                android:text="@string/annc_form_choose_options_1"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_14" />
+
+            <CheckBox
+                android:id="@+id/cb_dont_need_telehealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:theme="@style/CTCACheckBox"
+                android:text="@string/annc_form_choose_options_2"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_form_additiona_info_title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginRight="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/annc_form_additiona_info_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/annc_form_signing_below_info"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/patient_responsible_party_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/more_annc_patient_party_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_party"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+
+                <EditText
+                    android:id="@+id/patient_responsible_party_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:layout_weight="1"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textSize="18sp"
+                    android:hint="@string/input_text_placeholder"
+                    android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_responsible_partyseparator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/patient_relation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/more_annc_patient_relation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_relation"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+
+                <EditText
+                    android:id="@+id/patient_relation_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_relation_partyseparator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+
+            <LinearLayout
+                android:id="@+id/annc_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_date_signed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/annc_date_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/change_appt_date"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/annc_date_signed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dob_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

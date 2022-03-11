@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@drawable/prescription_bottle_filled"
+        android:tint="@color/editTextHint"/>

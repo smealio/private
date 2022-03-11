@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_telehealh_call_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".fragment.TeleHealthCommunicationFragment">
+
+    <LinearLayout
+        android:id="@+id/teams_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/telehealth_meeting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telehealth_meeting_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/telehealth_meeting_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/telehealth_call_status"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/telehealth_user_speaks_transition_bg">
+
+            <RelativeLayout
+                android:id="@+id/rl_host_video_off_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/telehealth_meeting_time_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/rl_user_name_circle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/telehealth_meeting_time_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/telehealth_meeting_timer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_39" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_name_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:id="@+id/telehealth_user_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/telehealth_user_speaks_transition"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/call_user_round_bg" />
+
+                    <TextView
+                        android:id="@+id/telehealth_user_initials"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_40"
+                        android:text="AA"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/telehealth_wait_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/telehealth_wait_message"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/dp_10"
+                    android:textSize="@dimen/sp_18"
+                    android:layout_below="@id/rl_user_name_circle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/host_video_on_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/my_video_off_layout"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_150"
+                            android:background="@color/colorAccent"
+                            android:orientation="vertical"
+                            android:layout_alignParentEnd="true"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_user_2_name_circle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/call_user_round_2_bg" />
+
+                                <TextView
+                                    android:id="@+id/telehealth_my_initials"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/sp_20"
+                                    android:text="AA"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/black" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="@dimen/dp_150"
+                            android:layout_alignParentEnd="true">
+
+                            <LinearLayout
+                                android:id="@+id/my_video_on_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@+id/ib_telehealth_switch_camera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/camera_switch_icon"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="@dimen/dp_8"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_call_buttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp_50"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_20">
+
+                        <ImageButton
+                            android:id="@+id/telehealth_video_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/dp_10"
+                            android:src="@drawable/video_on_icon" />
+
+                        <ImageButton
+                            android:id="@+id/telehealth_mute_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/dp_10"
+                            android:src="@drawable/mic_on_icon" />
+
+                        <ImageButton
+                            android:id="@+id/telehealth_speaker_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:padding="@dimen/dp_10"
+                            android:src="@drawable/device_audio_on" />
+
+                        <ImageButton
+                            android:id="@+id/telehealth_end_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/holo_red_dark"
+                            android:padding="@dimen/dp_10"
+                            android:src="@drawable/call_end_icon" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/host_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/sp_16"
+                android:layout_margin="@dimen/dp_10" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

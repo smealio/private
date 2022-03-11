@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prescription_refill_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/prescription_refill_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/viewLightGrey">
+
+
+            <ImageView
+                android:id="@+id/prescription_refill_image_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:alpha="1"
+                android:contentDescription="@string/prescription_refill_disclaimer_icon_desc"
+                app:tint="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/info_circle"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/prescription_refill_info"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/prescription_refill_image_view"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prescription_refill_from_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/prescription_refill_from"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/prescription_refill_from_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_from_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_care_teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prescription_refill_to_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/prescription_refill_to"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/prescription_refill_to_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:hint="@string/select_care_teams_hint"
+                    android:textSize="18sp"
+                    android:textColor="@color/editTextInput"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="6dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_keyboard_arrow_right"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_to_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prescription_refill_subject_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/prescription_refill_subject"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/prescription_refill_subject_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"
+                android:text="Prescription Renewal Request"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_subject_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prescription_refill_prescriptions_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/prescription_refill_prescription"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/prescription_refill_prescriptions_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"
+                android:text="Prescriptions"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_prescriptions_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prescription_refill_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prescription_refill_phone"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="6dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <EditText
+                    android:id="@+id/prescription_refill_phone_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:digits="0123456789 -()+"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLength="@integer/edit_max_length"
+                    android:layout_weight="1"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_phone_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/prescription_refill_phone_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prescription_refill_pharmacy_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prescription_refill_pharmacy"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/prescription_refill_pharmacy_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="text|textCapWords"
+                android:layout_weight="1"
+                android:hint="@string/input_text_placeholder"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_pharmacy_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/prescription_refill_pharmacy_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prescription_refill_pharmacy_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prescription_refill_pharmacy_phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/prescription_refill_pharmacy_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="phone"
+                android:digits="0123456789 -()+"
+                android:layout_weight="1"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="@string/input_text_placeholder"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/prescription_refill_pharmacy_phone_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/prescription_refill_pharmacy_phone_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/prescription_refill_comments_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/prescription_refill_comments"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/prescription_refill_comments_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:imeOptions="flagNoExtractUi"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:minHeight="100dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

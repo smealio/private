@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalenderDateTableViewCell" rowHeight="128" id="KGk-i7-Jjw" customClass="CalenderDateTableViewCell" customModule="myctca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8t-iw-bhh">
+                        <rect key="frame" x="49" y="49" width="30" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-Xv-UjZ">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="ctca-dark-gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bwf-Xv-UjZ" firstAttribute="top" secondItem="x8t-iw-bhh" secondAttribute="top" id="7fU-7g-siw"/>
+                            <constraint firstAttribute="width" constant="30" id="FkR-g2-0sh"/>
+                            <constraint firstItem="bwf-Xv-UjZ" firstAttribute="leading" secondItem="x8t-iw-bhh" secondAttribute="leading" id="Su8-dd-tW7"/>
+                            <constraint firstAttribute="bottom" secondItem="bwf-Xv-UjZ" secondAttribute="bottom" id="XvD-9b-uYw"/>
+                            <constraint firstAttribute="height" constant="30" id="fjC-Gf-QGc"/>
+                            <constraint firstAttribute="trailing" secondItem="bwf-Xv-UjZ" secondAttribute="trailing" id="u7b-Y3-fFB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x8t-iw-bhh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rg0-y7-Fvj"/>
+                    <constraint firstItem="x8t-iw-bhh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pZT-Kt-jRp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="bwf-Xv-UjZ" id="wJD-8Z-3E5"/>
+                <outlet property="noBGView" destination="x8t-iw-bhh" id="4ab-3f-7PG"/>
+            </connections>
+            <point key="canvasLocation" x="-1.4492753623188408" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ctca-dark-gray">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

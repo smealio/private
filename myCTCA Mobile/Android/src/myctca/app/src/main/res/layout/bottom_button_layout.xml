@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_39"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:layout_marginBottom="@dimen/dp_16">
+
+    <Button
+        android:id="@+id/btn_close_clinical_summary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/green_border"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="@string/cancel_clinical_summary_btn_text"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:paddingLeft="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_2"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_download_clinical_summary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/download_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingLeft="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_2"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_transmit_clinical_summary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/transmit_clinical_summary_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingLeft="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_2"
+        android:visibility="gone" />
+</LinearLayout>

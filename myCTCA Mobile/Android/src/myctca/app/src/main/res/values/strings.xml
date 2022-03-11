@@ -1,0 +1,1175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- App Session Parameters -->
+    <string name="server_push_notifications">https://alphapushnotification.myctca.com/api/v1</string>
+    <string name="server_bill_pay">https://www.patientportal.me/CTCA/Patient/login.html</string>
+    <string name="endpoint_reset_password">/user/passwordReset?isNative=true</string>
+    <string name="change_ctca_id">/user/detail</string>
+    <string name="endpoint_registration">/user/registration?isNative=true</string>
+    <string name="endpoint_authorize">/connect/token</string>
+    <string name="endpoint_user_info">/connect/userinfo</string>
+    <string name="endpoint_token_revocation">/connect/revocation</string>
+    <string name="endpoint_notification_device_reg">/deviceregistration</string>
+    <string name="endpoint_user_profile">/userprofile/getuserprofile</string>
+    <string name="endpoint_impersonated_token">/userprofile/impersonatemobileuser</string>
+    <string name="myctca_send_feedback">/support/sendfeedback</string>
+    <string name="myctca_get_appointments">/appointments/getappointments</string>
+    <string name="myctca_get_appointments_report">/appointments/getappointmentsreport</string>
+    <string name="myctca_new_appointments">/appointments/requestnewappointment</string>
+    <string name="myctca_new_appointmentsv2">/appointments/requestnewappointmentv2</string>
+    <string name="myctca_cancel_appointments">/appointments/cancelappointment</string>
+    <string name="myctca_cancel_appointmentsv2">/appointments/cancelappointmentv2</string>
+    <string name="myctca_reschedule_appointments">/appointments/rescheduleappointment</string>
+    <string name="myctca_reschedule_appointmentsv2">/appointments/rescheduleappointmentv2</string>
+    <string name="myctca_get_lab_results">/labresults/getlabresultsgrouped</string>
+    <string name="myctca_get_care_team">/securemessages/getcareteams</string>
+    <string name="myctca_get_mail">/securemessages/getsecuremessages</string>
+    <string name="myctca_new_mail">/securemessages/sendsecuremessage</string>
+    <string name="myctca_archive_mail">/securemessages/archivesecuremessage</string>
+    <string name="myctca_read_mail">/securemessages/setsecuremessageread</string>
+    <string name="myctca_get_care_plan">/medicaldocuments/getcareplan</string>
+    <string name="myctca_download_care_plan_report">/medicaldocuments/getcareplanreport</string>
+    <string name="myctca_download_med_doc_report">/medicaldocuments/getmedicaldocumentreport</string>
+    <string name="myctca_download_imaging_report">/medicaldocuments/getimagingdocumentreport</string>
+    <string name="myctca_download_vitals_report">/healthhistory/getvitalsreport</string>
+    <string name="myctca_download_allergies_report">/healthhistory/getallergiesreport</string>
+    <string name="myctca_download_immunizations_report">/healthhistory/getimmunizationsreport</string>
+    <string name="myctca_download_health_issues_report">/healthhistory/gethealthissuesreport</string>
+    <string name="myctca_download_prescriptions_report">/healthhistory/getprescriptionsreport</string>
+    <string name="myctca_post_roi">/downloads/submitroiform</string>
+    <string name="myctca_get_clinical_summary">/documentexchange/getccdadocumentlist</string>
+    <string name="myctca_get_clinical_summary_detail">/documentexchange/getccdadocumentdetail</string>
+    <string name="myctca_get_clinical_summary_download">/documentexchange/downloadccdadocument</string>
+    <string name="myctca_get_clinical_summary_transmit">/documentexchange/transmitccdadocumentregularemail</string>
+    <string name="myctca_get_med_docs">/medicaldocuments/getmedicaldocuments?doctype=%1$s</string>
+    <string name="myctca_get_med_doc">/medicaldocuments/getmedicaldocument?doctype=%1$s&amp;documentid=%2$s</string>
+    <string name="myctca_get_imaging_docs">/medicaldocuments/getimagingdocuments</string>
+    <string name="myctca_get_vitals">/healthhistory/getvitals</string>
+    <string name="myctca_get_prescriptions">/healthhistory/getprescriptions</string>
+    <string name="myctca_get_allergies">/healthhistory/getallergies</string>
+    <string name="myctca_get_immunizations">/healthhistory/getimmunizations</string>
+    <string name="myctca_get_health_issues">/healthhistory/gethealthissues</string>
+    <string name="myctca_get_facility">/support/getfacilityinfo</string>
+    <string name="myctca_get_facility_all">/support/getfacilityinfoall</string>
+    <string name="myctca_alert_messages">/support/getactivesystemalertmessages</string>
+    <string name="myctca_get_activity_logs">/userprofile/getuseractivitylogs</string>
+    <string name="myctca_prescription_refill_request">/securemessages/sendprescriptionrenewalrequest</string>
+    <string name="myctca_get_roi_form_info">/downloads/getroiform</string>
+    <string name="myctca_get_roi_contact_info">/contactinfo/getcontactinfo</string>
+    <string name="myctca_getroi_pdf">/downloads/getroipdf</string>
+    <string name="myctca_get_annc_pdf">/downloads/downloadanncform</string>
+    <string name="myctca_download_lab_results">/labresults/getlabresultsreport</string>
+    <string name="myctca_get_clinical_summary_zip">/documentexchange/downloadccdadocument</string>
+    <string name="myctca_get_mrn">/downloads/getmrn</string>
+    <string name="myctca_annc_form_exists">/downloads/anncformexists</string>
+    <string name="myctca_annc_form_submission">/downloads/submitanncform</string>
+    <string name="myctca_get_user_preferences">/userprofile/getuserpreferences</string>
+    <string name="myctca_set_user_preferences">/userprofile/saveuserpreferences</string>
+    <string name="myctca_get_sit_survey">/userprofile/getsitsurveyurlasync</string>
+    <string name="myctca_get_site_certification">/support/getsitecertificationasync</string>
+    <string name="myctca_get_site_certification_image">/support/getsitecertificationimageasync</string>
+    <string name="myctca_get_sit_document">/medicaldocuments/getsitpdf</string>
+    <string name="myctca_get_application_info">/support/getapplicationinfo</string>
+    <string name="myctca_download_resources_user_guide">/support/getandroiduserguideasync</string>
+    <string name="myctca_download_resources_faqs">/support/getportalfaqsasync</string>
+    <string name="myctca_download_resources_menu_enhancement">/nutrition/getenhanceyourmenuasync</string>
+    <string name="myctca_download_resources_nutrition_basics">/nutrition/getnutritionbasicsasync</string>
+    <string name="myctca_download_resources_symptom_management">/nutrition/getsymptomcontrolasync</string>
+    <string name="myctca_download_resources_eating_challenge">/nutrition/geteatingischallengeasync</string>
+    <string name="myctca_download_resources_health_future">/nutrition/getyourhealthyourfutureasync</string>
+    <string name="myctca_home_caregiver_convert_account">/user/registration/mobilepatientverification?Ctcauniqueid=%1$s</string>
+    <string name="myctca_patient_symptom_inventory">/medicaldocuments/getpatientreporteddocuments</string>
+    <string name="myctca_external_links">/support/GetExternalLinkUrls</string>
+    <string name="myctca_get_teams_access_token">https://apim.ctca-hope.com/test/telehealth/api/accesstoken</string>
+    <string name="myctca_download_appt_detail">/appointments/getappointmentdetailsbyidreport</string>
+
+    <!--    activity indicators-->
+    <string name="get_appointments_indicator">Retrieving Appointment Data…</string>
+    <string name="send_appt_form_request_indicator">Sending Request…</string>
+    <string name="refresh_appointments_indicator">Refreshing Appointment Data…</string>
+    <string name="get_lab_results_indicator">Retrieving Lab Result Data…</string>
+    <string name="refresh_lab_results_indicator">Refreshing Lab Result Data…</string>
+    <string name="get_inbox_mail_indicator">Retrieving Inbox Secure Mail…</string>
+    <string name="refresh_inbox_secure_mail_indicator">Refreshing Inbox Secure Mail…</string>
+    <string name="refresh_sent_secure_mail_indicator">Refreshing Sent Secure Mail…</string>
+    <string name="refresh_archive_secure_mail_indicator">Refreshing Archive Secure Mail…</string>
+    <string name="send_new_mail_indicator">Sending Secure Mail…</string>
+    <string name="get_sent_mail_indicator">Retrieving Sent Secure Mail…</string>
+    <string name="get_archived_mail_indicator">Retrieving Archived Secure Mail…</string>
+    <string name="download_appointments_indicator">Downloading Appointments…</string>
+    <string name="download_appointment_indicator">Downloading Appointment…</string>
+    <string name="download_lab_results_indicator">Downloading Lab Results…</string>
+    <string name="get_external_links_indicator">Retrieving External Links…</string>
+    <string name="refresh_external_links_indicator">Refreshing External Links…</string>
+
+    <string name="get_vitals_indicator">Retrieving Vitals…</string>
+    <string name="get_prescriptions_indicator">Retrieving Prescriptions…</string>
+    <string name="submit_request_renewal_indicator">Submitting Request Renewal…</string>
+    <string name="get_allergies_indicator">Retrieving Allergies…</string>
+    <string name="get_immunizations_indicator">Retrieving Immunizations…</string>
+    <string name="get_health_issues_indicator">Retrieving Health Issues…</string>
+    <string name="download_vitals_indicator">Downloading Vitals…</string>
+    <string name="download_prescriptions_indicator">Downloading Prescriptions…</string>
+    <string name="download_allergies_indicator">Downloading Allergies…</string>
+    <string name="download_immunizations_indicator">Downloading Immunizations…</string>
+    <string name="download_health_issues_indicator">Downloading Health Issues…</string>
+    <string name="refresh_vitals_indicator">Refreshing Vitals…</string>
+    <string name="refresh_prescriptions_indicator">Refreshing Prescriptions…</string>
+    <string name="refresh_allergies_indicator">Refreshing Allergies…</string>
+    <string name="refresh_immunizations_indicator">Refreshing Immunizations…</string>
+    <string name="refresh_health_issues_indicator">Refreshing Health Issues…</string>
+
+
+    <string name="get_care_plan_indicator">Retrieving Care Plan…</string>
+    <string name="get_clinical_summary_indicator">Retrieving Clinical Summaries…</string>
+    <string name="get_clinical_indicator">Retrieving Clinical Documents…</string>
+    <string name="get_radiation_indicator">Retrieving Radiation Documents…</string>
+    <string name="get_imaging_indicator">Retrieving Imaging Documents…</string>
+    <string name="get_integrative_indicator">Retrieving Integrative Documents…</string>
+
+    <string name="download_care_plan_indicator">Downloading Care Plan Document…</string>
+    <string name="download_clinical_summary_indicator">Downloading Clinical Summaries Document…</string>
+    <string name="transmit_clinical_summary_indicator">Transmitting Clinical Summaries Document…</string>
+    <string name="download_clinical_indicator">Downloading Clinical Document…</string>
+    <string name="download_radiation_indicator">Downloading Radiation Document…</string>
+    <string name="download_imaging_indicator">Downloading Imaging Document…</string>
+    <string name="download_integrative_indicator">Downloading Integrative Document…</string>
+
+    <string name="refresh_clinical_summary_indicator">Refreshing Clinical Summaries…</string>
+    <string name="refresh_clinical_indicator">Refreshing Clinical Documents…</string>
+    <string name="refresh_radiation_indicator">Refreshing Radiation Documents…</string>
+    <string name="refresh_imaging_indicator">Refreshing Imaging Documents…</string>
+    <string name="refresh_integrative_indicator">Refreshing Integrative Documents…</string>
+
+    <string name="retrieve_activity_logs">Retrieving Activity Log…</string>
+    <string name="refresh_activity_logs">Refreshing Activity Log…</string>
+    <string name="retrieve_home_alert_messages">Retrieving Alert Messages…</string>
+    <string name="refresh_home_alert_messages">Refreshing Alert Messages…</string>
+
+    <string name="download_resources_user_guide">Downloading User Guide…</string>
+    <string name="download_resources_faqs">Downloading FAQs…</string>
+    <string name="download_resources_your_health_future">Downloading Your Health, Your Future…</string>
+    <string name="download_resources_nutrition_basics">Downloading Nutrition Basics…</string>
+    <string name="download_resources_enhance_menu">Downloading Enhancing your Menu…</string>
+    <string name="download_resources_symptom_manage">Downloading Symptom Management…</string>
+    <string name="download_resources_eating_challenge">Downloading When Eating is a Challenge…</string>
+
+    <string name="retrieving_patient_symptom_inventory">Retrieving Symptom Inventory…</string>
+    <string name="refreshing_patient_symptom_inventory">Refreshing Symptom Inventory…</string>
+
+    <!--    boolean-->
+    <string name="val_true">True</string>
+    <string name="val_false">False</string>
+
+    <!-- Links -->
+    <string name="link_terms_conditions">/support/gettermsofuseasync</string>
+    <string name="link_privacy_policy">/support/getprivacypolicyasync</string>
+    <string name="link_share_my_records">/user/detail?active=userdetails-securityprivacy</string>
+
+    <!--    my resources external links-->
+    <string name="link_corona_info_covid19">https://www.cancercenter.com/covid19</string>
+    <string name="link_corona_info_patient_info">https://www.cancercenter.com/covid19/patient-information</string>
+    <string name="link_corona_info_faqs">https://www.cancercenter.com/covid19/frequently-asked-questions</string>
+    <string name="link_corona_info_contacts">https://www.cancercenter.com/covid19/contacts</string>
+    <string name="link_corona_info_together">https://www.cancercenter.com/together</string>
+
+    <string name="link_cancer_center_clinician_bios">https://www.cancercenter.com/physician-directory</string>
+    <string name="link_cancer_center_sign_up_newsletter">https://www.cancercenter.com/</string>
+    <string name="link_cancer_about_my_cancer">https://www.cancercenter.com/cancer-types</string>
+    <string name="link_cancer_about_clinical_trials">https://www.cancercenter.com/clinical-trials</string>
+    <string name="link_cancer_about_blogs">https://www.cancercenter.com/community/blog</string>
+
+    <string name="link_resource_for_care_your_hospital">https://www.cancercenter.com/locations/phoenix</string>
+    <string name="link_resource_for_care_your_hospital_activity">https://www.cancercenter.com/become-a-patient/patient-experience/amenities</string>
+    <string name="link_resource_for_care_manage_side_effect">https://www.cancercenter.com/integrative-care</string>
+    <string name="link_resource_for_care_recipes">https://www.cancercenter.com/community/recipes</string>
+
+    <string name="link_cancer_fighters_how_we_help">https://www.cancerfighter.com/how-we-help-you/</string>
+    <string name="link_cancer_fighters_become_member">https://www.cancerfighter.com/get-support/why-become-a-member/</string>
+    <string name="link_cancer_fighters_join_now">https://ctca.force.com/cancerfighters/s/self-registration</string>
+
+    <string name="link_cancer_resources_cancer_society">https://www.cancer.org/</string>
+    <string name="link_cancer_resources_lung_association">https://www.lung.org/</string>
+    <string name="link_cancer_resources_support_community">https://www.cancersupportcommunity.org/</string>
+
+    <string name="link_ctca_news">https://www.cancercenter.com/community/</string>
+    <string name="link_refer_friend">https://www.cancerfighter.com/give-support/refer-a-friend/</string>
+
+    <string name="external_links_empty_no_permissions">You do not have sufficient permissions to view external links for this patient. If this is incorrect, please call the care team directly.</string>
+
+    <!--    Internet connection -->
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="internet_connected">Internet connection detected</string>
+    <string name="no_internet_connection_body">You cannot continue without connecting to internet.</string>
+    <string name="internet_connection_body">Resuming..</string>
+
+    <!-- User Preferences -->
+    <string name="pref_file_key">"com.myctca.myctca.PREFERENCES_FILE"</string>
+    <string name="pref_successfully_logged_in">com.myctca.myctca.SUCCESSFULLY_LOGGED_IN</string>
+    <string name="pref_last_ctca_id">com.myctca.myctca.LAST_CTCA_ID</string>
+    <string name="pref_finger_auth_enabled">com.myctca.myctca.FINGER_AUTH_ENABLED</string>
+    <string name="pref_finger_auth_pref_set">com.myctca.myctca.FINGER_AUTH_PREFERENCE_SET</string>
+    <string name="pref_last_connection">com.myctca.myctca.LAST_CONNECTION_ID"</string>
+    <string name="pref_latest_sign_in">com.myctca.myctca.LATEST_SIGN_IN</string>
+    <string name="pref_previous_sign_in">com.myctca.myctca.PREVIOUS_SIGN_IN</string>
+    <string name="pref_incorrect_login_attempts">com.myctca.myctca.INCORRECT_LOGIN_ATTEMPTS</string>
+    <string name="pref_message_update_not_now">com.myctca.myctca.MESSAGE_UPDATE_NOT_NOW</string>
+    <string name="pref_message_update_time">com.myctca.myctca.MESSAGE_UPDATE_TIME</string>
+    <string name="pref_sit_survey_not_now">com.myctca.myctca.SIT_SURVEY_NOT_NOW</string>
+    <string name="pref_sit_survey_time">com.myctca.myctca.SIT_SURVEY_TIME</string>
+
+    <!-- Common Image Descriptions -->
+    <string name="ctca_logo_description">Cancer Treatment Centers of America logo depicting a boy and his dog playing with a toy airplane under a large tree.</string>
+    <string name="disclosure_arrow_description">A simple image of an arrow indicating that when you tap on this field, a new view will appear.</string>
+
+    <!-- Login Content -->
+    <string name="login_signin_button">Sign In</string>
+    <string name="login_username_hint">CTCA ID</string>
+    <string name="login_username_label">Email Address</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_forgot_password_button_text">Forgot your password?</string>
+    <string name="login_forgot_password_title_text">Forgot Password</string>
+    <string name="login_share_records_text">Share My Records</string>
+    <string name="login_user_profile_title_text">User Profile</string>
+    <string name="login_create_account_button">Create Account</string>
+    <string name="login_contact_support_button">Contact Support</string>
+    <string name="login_activity_indicator">Authenticating…</string>
+    <string name="login_activity_logo_description">Cancer Treatment Centers of America logo depicting a boy and his dog playing with a toy airplane under a large tree.</string>
+    <string name="login_password_toggle_description">Image shows an eye. Toggles the visibility of the characters in the user passsword.</string>
+    <string name="login_fingerprint_button_description">Image of a fingerprint indicates the button to launch fingerprint authorization.</string>
+    <string name="login_options_loading">Please wait…</string>
+    <string name="login_terms_of_use_accept">I accept the Terms of Use</string>
+    <string name="login_terms_of_use_decline">I decline the Terms of Use</string>
+    <string name="login_terms_of_use_submit">Submit</string>
+    <string name="login_submit_indicator">Submitting…</string>
+    <string name="session_timeout_dialog_title">Session Renewal</string>
+    <string name="session_timeout_dialog_message">Your session is about to expire.\nDo you want to renew it?</string>
+    <string name="invalid_grant">invalid_grant</string>
+    <string name="login_lock_account_title">Login Warning</string>
+    <string name="login_lock_account_message">Username and/or Password Incorrect. Repeated Invalid login attempts to have been made
+    and could eventually lock the account. Please reset password to avoid account locked.</string>
+    <string name="login_app_maintenance_warning_message">The myCTCA app will be undergoing planned maintenance Saturday morning, April 10th and will not be available for up to 8 hours. We apologize for the inconvenience.</string>
+    <string name="login_app_maintenance_warning_title">Planned Maintenance</string>
+    <string name="login_app_maintenance_down_title">Down for Maintenance</string>
+    <string name="login_app_maintenance_down_message">The myCTCA app is currently undergoing planned maintenance. Please try again later. We apologize for the inconvenience.</string>
+    <string name="login_incorrect_creds_message">Username and/or Password incorrect.</string>
+    <string name="login_locked_account_message">This user account has been locked out due to repeated invalid login attempts. Please contact Technical Support for assistance to unlock account.</string>
+
+    <!-- Create Account -->
+    <string name="create_account_title">Continue registration?</string>
+    <string name="create_account_disclaimer_text">By creating a CTCA ID, you agree to the Terms and Conditions and to the CTCA Privacy Policy.</string>
+    <string name="create_account_terms">Terms and Conditions</string>
+    <string name="create_account_privacy">Privacy Policy</string>
+    <string name="create_account_cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="create_account_continue">CONTINUE</string>
+
+    <!-- Contact Support -->
+    <string name="contact_support_title">Contact Technical Support</string>
+    <string name="contact_support_call">Call</string>
+    <string name="contact_support_send_message">Send Message</string>
+    <string name="contact_support_cancel" tools:ignore="ButtonCase">CANCEL</string>
+
+    <!-- Call Tech Support -->
+    <string name="call_tech_title">Technical Support</string>
+    <string name="call_tech_text">If you need technical support with any aspect of myCTCA, please call <b>%1$s</b></string>
+    <string name="call_tech_cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="call_tech_call">CALL</string>
+    <string name="call_tech_ok">OK</string>
+
+    <!-- Send Message -->
+    <string name="send_message_title">Send Message</string>
+    <string name="send_message_icon_title">Send</string>
+    <string name="send_message_from_name">From Name:</string>
+    <string name="send_message_from_email">From Email:</string>
+    <string name="send_message_to">To:</string>
+    <string name="send_message_to_value">Technical Support</string>
+    <string name="send_message_subject">Subject:</string>
+    <string name="send_message_phone">My Phone #:</string>
+    <string name="send_message_area_of_concern">Area of Concern:</string>
+    <string name="send_message_concern_prompt">Please select…</string>
+    <string name="send_message_treatment_facility">Treatment Facility:</string>
+    <string name="send_message_facility_prompt">Please select…</string>
+    <string name="send_message_message">Message</string>
+    <string name="send_message_invalid_form_title">Form Incomplete</string>
+    <string name="send_message_invalid_form_message">Please make sure that all of the required fields are completed to submit this message.</string>
+    <string name="send_message_success_title">Message sent</string>
+    <string name="send_message_success_message">Thank you for submitting this message. A member of the Technical Support staff will contact you within 1 business day to confirm the status of your message.</string>
+    <string name="send_message_failure_title">Message Error</string>
+    <string name="send_message_failure_message">A problem occurred while sending your message. You can try again later or call the Technical Support team directly.</string>
+
+    <!-- Bottom Nav -->
+    <string name="bottom_nav_item_0">Home</string>
+    <string name="bottom_nav_item_1">Appointments</string>
+    <string name="bottom_nav_item_2">Lab Results</string>
+    <string name="bottom_nav_item_3">Secure Mail</string>
+    <string name="bottom_nav_item_4">More</string>
+    <string name="nav_back_tapped_title">Leaving?</string>
+    <string name="nav_back_tapped_text">Do you wish to sign out from myCTCA?</string>
+
+    <!-- Nav Activity -->
+    <string name="nav_alert_ok">OK</string>
+    <string name="nav_alert_cancel">Cancel</string>
+    <string name="fingerprint_auth_alert_title">Fingerprint Authorization</string>
+    <string name="fingerprint_auth_alert_message">Would you like to enable Fingerprint Authentication for your myCTCA account</string>
+    <string name="fingerprint_auth_alert_enabled_title">FingerprintAuthorization Enabled!</string>
+    <string name="fingerprint_auth_alert_enabled_message">You should be able to use Fingerprint Authorization the next time that you log in.</string>
+    <string name="fingerprint_auth_alert_disabled_title">FingerprintAuthorization Disabled!</string>
+    <string name="fingerprint_auth_alert_disabled_message">You can enable Fingerprint Authorization at anytime by visiting the Security settings under MyCTCA ID in the More section.</string>
+    <string name="appts_title">Appointments</string>
+    <string name="appts_menu_past">Past Appointments</string>
+    <string name="empty_list_message">myCTCA %1$s%2$s\n\nNo Records Found.</string>
+    <string name="mail_empty_list_message">You have not sent any messages.</string>
+    <string name="appointment_empty_list_title">No appointments</string>
+    <string name="appointment_empty_list_message">You don\'t have upcoming appointments but you can request a new one.</string>
+    <string name="mail_archive_empty_list_message">You have no archived messages.</string>
+    <string name="appointment_request_appt">Request an Appointment</string>
+    <string name="new_message_request">Write first message</string>
+    <string name="no_records_found_message">No Records Found.</string>
+    <string name="diagnostic_reporting_title">Diagnostic Reporting</string>
+    <string name="diagnostic_reporting_message">Do you want to allow diagnostic reporting to improve app functionality?</string>
+
+    <!--    home screen -->
+    <string name="home_alert_messages_header">ALERT MESSAGES</string>
+    <string name="home_quick_links_header">QUICK LINKS</string>
+    <string name="home_caregiver_access_header">CAREGIVER ACCESS</string>
+    <string name="home_quick_link_request_appt">REQUEST\nAPPOINTMENT</string>
+    <string name="home_quick_link_share_records">SHARE\n MY RECORDS</string>
+    <string name="home_quick_link_message_careteam">MESSAGE\n MY CARE TEAM</string>
+    <string name="home_quick_link_call_support">IMPORTANT\nPHONE NUMBERS</string>
+    <string name="home_title">HOME</string>
+    <string name="convert_account_title">Convert Account</string>
+    <string name="convert_account_logout_alert_title">Warning</string>
+    <string name="convert_account_logout_alert_message">You are leaving myCTCA and you will be logged out. Do you want to continue?</string>
+    <string name="caregiver_access_patients_label">Select Patient</string>
+    <string name="alert_message_see_more">See more…</string>
+    <string name="alert_message_see_less">See less…</string>
+    <string name="access_patients_empty_view">No Patients have shared their information with you. Please contact the patient directly.</string>
+    <string name="access_patient_dialog_title">Please select the account you want to view</string>
+    <string name="new_update_available_title">Update Available</string>
+    <string name="new_update_available_message">A new version of myCTCA is available. Please update to the latest version.</string>
+    <string name="new_update_available_positive_btn_text">Update</string>
+    <string name="new_update_available_negative_btn_text">Not Now</string>
+    <string name="new_update_playstore_url">market://details?id=com.myctca</string>
+    <string name="home_screen_user_name">%1$s (viewing %2$s)</string>
+    <string name="inventory_survey_title">Symptom Inventory Survey</string>
+    <string name="yes_btn">Yes</string>
+    <string name="inventory_survey_message">You have a Symptom Inventory Survey available. If you would like to take the survey, select Yes. You will need to login again on the browser to complete the survey.</string>
+
+    <!--    caregiver home screen-->
+    <string name="caregive_home_header_title">WELCOME</string>
+    <string name="caregive_home_title">Caregiver access coming soon!</string>
+    <string name="caregive_home_message">In the meantime, please visit the myCTCA Portal via your web browser at\nhttps://www.myctca.com\n or by selecting the button below.</string>
+    <string name="caregiver_logout_button">Sign out</string>
+    <string name="caregiver_goto_portal_button">Go to myCTCA Portal</string>
+    <string name="caregiver_goto_portal_link">https://www.myctca.com</string>
+    <string name="permisson_not_granted_title">Unable to Access</string>
+    <string name="permisson_not_granted_message_proxy">Unable to display information - you may not have been provided the necessary permissions to view it, or there may be no information to display.</string>
+    <string name="permisson_not_granted_message_patient_mail">The send secure messages functionality has been disabled.</string>
+    <string name="permisson_not_granted_message_patient_prescription">The send prescription renewal functionality has been disabled.</string>
+
+    <!-- Appointments -->
+    <string name="appts_next_appt_text">NEXT APPOINTMENT</string>
+    <string name="appt_empty_no_permissions">You do not have permissions to view appointments for this patient. </string>
+    <string name="appt_empty_symbol_descriptor">Cancer Treatment Centers of America symbol of a boy playing with a dog under a large tree.</string>
+    <string name="telehealth_appt_info">Telehealth Appointment Information</string>
+    <string name="telehealth_appt_occurring_soon">You have a Telehealth Appointment occurring soon.</string>
+    <string name="telehealth_join_now">Join Now</string>
+    <string name="telehealth_join_telehealth_meeting">Join Telehealth Meeting</string>
+    <string name="telehealth_setup_guide">View Set Up Guide</string>
+    <string name="telehealth_loading_indicator">Retrieving Telehealth Information…</string>
+    <string name="appt_detail_patient_instr">Patient Instructions</string>
+    <string name="appt_detail_patient_instr_null_text">No specific instructions.</string>
+    <string name="appt_download_schedule_title">Appointments Download</string>
+    <string name="appt_download_pdf_dialog_button">Download PDF</string>
+    <string name="appt_upcoming_appt_text">Upcoming Appointments</string>
+    <string name="appt_pdf">Appointment Schedule</string>
+    <string name="start_end_date_error_title">Select Date Range</string>
+    <string name="start_end_date_error_message">Please enter a valid start and end date.</string>
+    <string name="appointment_reason_title"><![CDATA[<b>What is the reason for your appointment ?</b> <i>(required)</i>]]></string>
+    <string name="appointment_reason_value">(e.g Nutrition, Lab Follow-Up, Infusion etc.)</string>
+    <string name="appointment_contact_preference_title"><b>How would you like us to contact you to confirm your appointment?</b> <i>(required)</i></string>
+    <string name="appointment_preferred_datetime_title"><b>What is your preferred date and time? </b> <i>(required)</i></string>
+    <string name="appointment_request_title">Request Appointment</string>
+    <string name="close_text">Close</string>
+    <string name="appt_request_summary_title">Please review your appointment request details.</string>
+    <string name="appt_request_summary_preferred_date_title">Preferred Dates and Times</string>
+    <string name="appt_request_summary_additional_comments_title">Additional Comments</string>
+    <string name="appt_request_summary_contact_pref_title">Contact Preference</string>
+    <string name="appt_request_leave_message">Your request will not be submitted. Are you sure you wish
+to leave the page?</string>
+    <string name="appt_stay_on_page">Stay on Page</string>
+    <string name="appt_leave_page">Leave Page</string>
+    <string name="appointment_additional_comments_title"><![CDATA[<b>Do you have any additional comments?</b> <i>(optional)</i>]]></string>
+    <string name="appt_reason">APPOINTMENT REQUEST REASON</string>
+    <string name="appt_additional_comments">APPOINTMENT ADDITIONAL COMMENTS</string>
+    <string name="appt_additional_comments_hint">Preferred provider, etc.</string>
+    <string name="appt_contact_pref_empty_phone">Please enter a phone number</string>
+    <string name="appt_contact_pref_incorrect_phone">Invalid Phone</string>
+    <string name="appt_contact_pref_empty_email">Please enter an email address</string>
+    <string name="appt_contact_pref_incorrect_email">Invalid Email</string>
+    <string name="appt_preferred_date_time_delete_message">Do you want to delete this option?</string>
+    <string name="delete_text">Delete</string>
+    <string name="appt_details_title"><b>Your Appointment Details</b></string>
+    <string name="appointment_cancel_title"><![CDATA[<b>Why are you cancelling your appointments?</b> <i>(required)</i>]]></string>
+    <string name="appt_download_schedule_message">“Schedule.pdf” will be downloaded to your device.</string>
+    <string name="appt_download_schedule_calendar_invalid_title">Invalid Date Range</string>
+    <string name="appt_download_schedule_calendar_invalid_message">End Date cannot be earlier than the Start Date</string>
+
+    <!-- Appointment Detail -->
+    <string name="appt_detail_sched_notes">Scheduler Notes</string>
+    <string name="appt_additional_info_title">Additional Info</string>
+    <string name="appt_provider_title">Provider</string>
+    <string name="appt_provider_null_title">Not Specified</string>
+    <string name="appt_detail_null_text">None</string>
+    <string name="appt_detail_treatment_facility_title">Treatment Facility</string>
+    <string name="appt_detail_call_main">General Inquiries</string>
+    <string name="appt_detail_call_sched">Scheduling</string>
+    <string name="appt_detail_call_accom">Accommodations</string>
+    <string name="appt_detail_call_trans">Transportation</string>
+    <string name="appt_detail_map_address">Map address</string>
+    <string name="appt_detail_incapable_of_calling_title">Phone Error</string>
+    <string name="appt_detail_incapable_of_calling_message">The device doesn\'t appear capable of making phone calls.</string>
+    <string name="appt_detail_reschedule_icon_title">Reschedule</string>
+    <string name="appt_detail_cancel_icon_title">Cancel</string>
+    <string name="appt_detail_phone_icon_description">An image of an old phone to indicate that tapping here will make a call.</string>
+    <string name="appt_detail_pin_icon_description">An image of an old push pin that indicates that tapping here will launch a mapping app.</string>
+    <string name="cancel_appt_title">Request Cancellation</string>
+    <string name="reschedule_appt_title">Request Reschedule</string>
+    <string name="download_schedule_title">Select the time period for your schedule</string>
+    <string name="download_schedule_preferred_period_title">Preferred Period</string>
+    <string name="reschedule_cancel_message"><![CDATA[<b>Need to Reschedule or Cancel this appointment?</b> Call Scheduling at <b>%1$s</b>]]></string>
+
+    <!-- Change Appointment -->
+    <string name="change_appt_icon_title">Send</string>
+    <string name="change_appt_from">From:</string>
+    <string name="change_appt_subject">Subject:</string>
+    <string name="change_appt_desc">Appointment:</string>
+    <string name="change_appt_new_date">New Date:</string>
+    <string name="change_appt_new_time">New Time:</string>
+    <string name="change_appt_date">Date:</string>
+    <string name="change_appt_time">Time:</string>
+    <string name="change_appt_phone">My Phone #:</string>
+    <string name="change_appt_hint">Comments</string>
+    <string name="change_appt_reschedule">reschedule</string>
+    <string name="change_appt_cancellation">cancellation</string>
+    <string name="past_appts_title">Past Appointments</string>
+    <string name="new_appt_title">Request an Appointment</string>
+
+    <!-- Past Appointments -->
+    <string name="new_appt_icon_title">Send</string>
+
+    <!-- New Appointment Request -->
+    <string name="new_appt_from">From:</string>
+    <string name="new_appt_subject">Subject:</string>
+    <string name="new_appt_date">Appt Date:</string>
+    <string name="new_appt_time">Appt Time:</string>
+    <string name="new_appt_phone">My Phone #:</string>
+    <string name="new_appt_reason">Reason for appointment</string>
+    <string name="cancel_appt_reason">Reason for cancellation</string>
+    <string name="new_appt_subject_input">New appointment request</string>
+    <string name="new_appt_bad_date_title">Incorrect Date/Time</string>
+    <string name="new_appt_bad_date_message">Date-time should be at least 24 hours ahead.</string>
+    <string name="new_appt_invalid_form_title">Form Incomplete</string>
+    <string name="new_appt_invalid_form_message">Please make sure that all of the fields in the form are complete to submit this request.</string>
+    <string name="new_appt_request_success_title">Request submitted</string>
+    <string name="new_appt_request_success_message">Thank you for submitting an appointment request. Your scheduling team will contact you within 1 business day to confirm the status of your request.</string>
+    <string name="new_appt_request_failure_title">Something went wrong</string>
+    <string name="new_appt_request_failure_message">A problem occurred while submitting your appointment request. Please contact your scheduling team directly.</string>
+    <string name="change_appt_subject_reschedule_input">Reschedule appointment</string>
+    <string name="change_appt_subject_cancel_input">Cancel appointment</string>
+    <string name="phone_no_invalid_error_message">The phone number entered is invalid. Please correct phone number to continue.</string>
+    <string name="phone_no_invalid_error_title">Phone Number Validation</string>
+    <string name="email_id_invalid_error_title">Email Address Validation</string>
+    <string name="email_id_invalid_error_message">You must provide a valid email to continue.</string>
+    <string name="appt_cancel_reason_hint">Reason for cancellation</string>
+
+
+    <!-- Change Appointment -->
+    <string name="change_appt_request_success_title">Request submitted</string>
+    <string name="change_appt_request_success_message">Thank you for submitting an appointment %1$s request. Your scheduling team will contact you within 1 business day to confirm the status of your request.</string>
+    <string name="change_appt_request_failure_title">Something went wrong</string>
+    <string name="change_appt_request_failure_message">A problem occurred while submitting your appointment %1$s request. Please contact your scheduling team directly.</string>
+    <string name="change_appt_request_disclosure_image_description">A simple image of an arrow indicating that when you tap on this field, a pop up will appear.</string>
+    <string name="labs_title">Lab Results</string>
+    <string name="labs_section_latest_results">LATEST RESULTS</string>
+
+    <!-- Labs -->
+    <string name="labs_section_header_text">Lab Results</string>
+    <string name="labs_section_collected_by">Collected by:</string>
+    <string name="labs_empty_no_permissions">You do not have sufficient permissions to view lab results for this patient. If this is incorrect, please call the care team directly.</string>
+    <string name="labs_detail_title">Lab Results - </string>
+    <string name="labs_detail_download_results">Download Lab Results</string>
+    <string name="labs_results_pdf">Lab Results</string>
+
+    <!-- Labs Detail -->
+    <string name="labs_detail_normal_range">Normal Range:</string>
+    <string name="labs_detail_disclaimer_info">Information icon</string>
+    <string name="labs_detail_disclaimer_unofficial">This is not an official lab report. Please contact your Care Management team if you have any questions.</string>
+    <string name="labs_detail_disclaimer_external">These lab results were collected by an external provider and reported to CTCA.</string>
+    <string name="labs_detail_disclaimer_24">You have selected documents which include results posted in the last 24 hours. These results may not have been reviewed by your care team yet, and may require further discussion between members of your care team for clarification before finalization. Those final results will be discussed with you by your care team during your upcoming scheduled appointment. If you do not have an appointment scheduled, or wish to discuss these results earlier, please contact your Care Manager for assistance.</string>
+    <string name="mail_title">Secure Mail Inbox</string>
+    <string name="mail_menu_sent">Sent Mail</string>
+
+    <!-- Mail -->
+    <string name="mail_menu_archived">Archived Mail</string>
+    <string name="mail_menu_archived_text">Secure Mail Archive</string>
+    <string name="mail_empty_image_content_desc">myCTCA logo tree, boy, and dog</string>
+    <string name="mail_empty_no_permissions">You do not have sufficient permissions to view secure mail for this patient. If this is incorrect, please call the care team directly.</string>
+    <string name="new_mail_title">Send New Mail</string>
+    <string name="new_mail_icon_title">Send Mail</string>
+
+    <!-- Send New Mail -->
+    <string name="new_mail_invalid_form_title">Form Incomplete</string>
+    <string name="new_mail_invalid_form_message">Please make sure that all of the fields in the form are complete to send this message.</string>
+    <string name="new_mail_sent_success_title">Message Sent</string>
+    <string name="new_mail_sent_success_message">Your message has been securely sent to your care team. Your care team will respond to you within 1 business day if necessary.</string>
+    <string name="failure_title">Error Occurred</string>
+    <string name="new_mail_sent_failure_message">A problem occurred while submitting your appointment request. Please contact your scheduling team directly.</string>
+    <string name="new_mail_from">From:</string>
+    <string name="new_mail_to">To:</string>
+    <string name="new_mail_subject">Subject:</string>
+    <string name="new_mail_message">Message</string>
+    <string name="new_mail_disclaimer_icon_desc">Warning icon</string>
+    <string name="new_mail_disclaimer">If this is a medical emergency call 911 or your local emergency number for assistance. If you need an immediate response please call your Care Manager. We will respond to your email message within one (1) business day.</string>
+    <string name="mail_archived_title">Archived Mail</string>
+    <string name="mail_care_teams_cancel">Cancel</string>
+    <string name="mail_care_teams_done">Done</string>
+    <string name="mail_care_teams_label">Choose a Recipient</string>
+    <string name="select_care_teams_hint">Select...</string>
+
+    <!-- Archived Mail -->
+    <string name="mail_archived_empty_no_permissions">You do not have sufficient permissions to view secure mail for this patient. If this is incorrect, please call the care team directly.</string>
+    <string name="mail_sent_title">Sent Mail</string>
+    <string name="mail_sent_text">Secure Mail Sent</string>
+
+    <!-- Sent Mail -->
+    <string name="mail_sent_empty_no_permissions">You do not have sufficient permissions to view secure mail for this patient. If this is incorrect, please call the care team directly.</string>
+    <string name="mail_detail_reply_icon_title">Reply to this item button</string>
+    <string name="mail_detail_archive_icon_title">Archive this item button</string>
+
+    <!-- Mail Detail -->
+    <string name="mail_detail_unarchive_icon_title">Unarchive this item button</string>
+    <string name="mail_detail_archive_success">Message archived</string>
+    <string name="connect_title">Connesorry ct</string>
+    <string name="more_title">More</string>
+
+    <!-- Connect -->
+    <string name="more_medical_docs">Medical Documents</string>
+
+    <!-- More -->
+    <string name="more_health_history">Health History</string>
+    <string name="more_roi">Release of Information</string>
+    <string name="more_patient_reported">Patient Reported</string>
+    <string name="more_my_resources">My Resources</string>
+    <string name="more_bill_pay">Bill Pay</string>
+    <string name="more_my_account">My Account</string>
+    <string name="more_change_ctca_id">User Profile</string>
+    <string name="more_change_password">Change Password</string>
+    <string name="more_change_patient">Change displayed patient</string>
+    <string name="more_manage_records">Manage shared records</string>
+    <string name="more_view_activity">View Activity Log</string>
+    <string name="more_sign_out">Sign out</string>
+    <string name="more_help_settings">Help and Settings</string>
+    <string name="more_contact_us">Contact Us</string>
+    <string name="more_notification_prefs">Notification Preferences</string>
+    <string name="more_finger_auth_prefs">Fingerprint Authorization</string>
+    <string name="more_about_myctca">About myCTCA Portal</string>
+
+
+    <!--    More filter dialog-->
+    <string name="filter_logs_cancel">Cancel</string>
+    <string name="filter_logs_apply">Apply</string>
+    <string name="more_med_doc_title">Medical Documents</string>
+    <string name="more_med_doc_care_plan">Care Plan</string>
+    <string name="filter_date_title">Date</string>
+    <string name="filter_username_title">Username</string>
+    <string name="filter_message_title">Message</string>
+    <string name="filter_dialog_title">Filter Activity Log by:</string>
+    <string name="more_no_activity_logs">No Activity Logs found</string>
+
+    <!-- More Medical Docs -->
+    <string name="more_med_doc_clinical_summary">Clinical Summaries</string>
+    <string name="more_med_doc_clinical">Clinical</string>
+    <string name="more_med_doc_radiation">Radiation</string>
+    <string name="more_med_doc_imaging">Imaging</string>
+    <string name="more_med_doc_integrative">Integrative</string>
+    <string name="more_med_doc_no_permissions">You do not have sufficient permissions to view any medical documents for this patient. If this is incorrect, please call the care team directly.</string>
+    <string name="more_med_doc_care_plan_title">Care Plan</string>
+    <string name="more_med_doc_care_plan_fetch_error_alert_title">Care Plan Error</string>
+
+    <!-- More Medical Docs CarePlan -->
+    <string name="more_med_doc_care_plan_fetch_error_alert_message">There was an error trying to retrieve the care plan for %1$s. Please try again another time or call the Care Team directly.</string>
+    <string name="more_med_doc_clinical_summary_title">Clinical Summaries</string>
+    <string name="more_med_doc_clinical_summary_download_title">Document Download</string>
+    <string name="care_plan_pdf">Care Plan</string>
+
+
+    <!-- More Medical Docs Clinical summary -->
+    <string name="more_med_doc_clinical_summary_detail_icon_title">transmit</string>
+    <string name="more_med_doc_clinical_summary_transmit_title">Transmit Document</string>
+    <string name="more_med_doc_clinical_summary_filter_title">Filter Clinical Summary by:</string>
+    <string name="filter_clinical_start_date_title">From</string>
+    <string name="filter_clinical_end_date_title">To</string>
+    <string name="download_btn_text">Download</string>
+    <string name="save_clinical_summary_btn_text">Save</string>
+    <string name="transmit_clinical_summary_btn_text">Transmit</string>
+    <string name="close_clinical_summary_btn_text">Close</string>
+    <string name="cancel_clinical_summary_btn_text">Cancel</string>
+    <string name="download_clinical_summary_optional_file_pass_text">Optional File Password:</string>
+    <string name="download_clinical_summary_body">
+        You can password protect the downloaded file by entering a password below. If you don\'t wish to password protect he file leave the password field blank.<![CDATA[<br><br>]]>Click the download button to begin downloading the file.<![CDATA[<b><font color=#FF0000><br><br>Warning:</font></b>]]> Do not download this file if you are using public device.<![CDATA[<br><br><br>]]>Your health data will download as a ZIP file containing a human readable HTML file, as will as a machine readable XML file or importing into other systems.<![CDATA[<br><br>]]>
+    </string>
+    <string name="clinical_summary_encryption_body">The encryption method used to password-protect the file(s) uses a more secure method that operating systems like Microsoft Windows may not support natively.
+        Many zip utility programs do support this method - an example of that one that is available to download and install for free is called 7-Zip. Your will need to have the more
+        advanced version of this technology to open your password-protected file(s).</string>
+    <string name="clinical_summary_download_title">Clinical Summaries Download</string>
+    <string name="clinical_summary_filter_title">Clinical Summaries Filter</string>
+    <string name="menu_filter_title">Filter</string>
+    <string name="menu_new_appt_request">New</string>
+
+
+    <!-- More Medical Docs Clinical Summary Detail -->
+    <string name="more_med_doc_clinical_summary_transmit_icon_title">transmit</string>
+
+    <!-- More Medical Docs Clinical Summary Transmit -->
+    <string name="more_med_doc_clinical_summary_transmit_info">Your health data will be securely sent to the entered provider for importing into their system.\n\nYou must use the email address supplied by your provider.</string>
+    <string name="more_med_doc_clinical_summary_transmit_email">Email</string>
+    <string name="clinical_summary_transmit_invalid_form_title">Error Transmitting</string>
+    <string name="clinical_summary_transmit_invalid_form_message">Please provide a valid email address for securely transmitting this clinical summary into your provider\'s system.</string>
+    <string name="clinical_summary_transmit_success_title">Completed</string>
+    <string name="clinical_summary_transmit_success_message">Your clinical summary has been securely transmitted to the email address you provided.</string>
+    <string name="transmit_clinical_summary_body">You may password protect the attachment file by entering a password below.<![CDATA[<b><font color=#FF0000><br><br><br>Warning:</font></b>]]> You will have to provide the password to your email recipient separately for it to be opened.<![CDATA[<br><br><br>]]>Your health data will be attached as a ZIP file containing a human readable HTML file, as well as a machine readable XML file for importing into other systems.</string>
+    <string name="transmit_clinical_summary_security_label">Security:</string>
+    <string name="transmit_clinical_summary_email_label">Email:</string>
+    <string name="transmit_clinical_summary_file_password_label">File Password:</string>
+    <string name="transmit_clinical_summary_add_password_protection">Add Password Protection</string>
+    <string name="transmit_clinical_summary_security_option_error">You must select a Security option.</string>
+    <string name="transmit_clinical_summary_send_secure">Send Secure</string>
+    <string name="transmit_clinical_summary_send_non_secure">Send Non-Secure (via normal email delivery)</string>
+    <string name="download_clinical_summary_error_title">Zip file Downloading Error</string>
+    <string name="download_clinical_summary_error_body">Error encountered downloading Zip file. If this problem persists, please contact Technical Support.</string>
+    <string name="download_clinical_summary_success_title">Download Status</string>
+    <string name="download_clinical_summary_success_body">"Downloaded successfully. Please save the file and you can use free zip utility programs like &lt;b>RAR&lt;/b>, &lt;b>WinZip&lt;/b> or any other app from Play Store to unzip the file.</string>
+    <string name="please_wait_indicator_text">Please wait…</string>
+    <string name="download_clinical_summary_loading">Downloading…</string>
+    <string name="transmit_clinical_summary_success">Your email has been sent to the requested recipient.</string>
+    <string name="transmit_clinical_summary_success_title">Transmission Status</string>
+    <string name="transmit_clinical_summary_error_title">Transmission Error</string>
+    <string name="download_clinical_summary_toolbar_title">DOCUMENT DOWNLOAD</string>
+    <string name="transmit_clinical_summary_toolbar_title">TRANSMIT DOCUMENT</string>
+
+    <!-- More Medical Docs List (Clinical, Radiation, Integrative)-->
+    <string name="more_health_history_title">Health History</string>
+
+    <!-- More Imaging Medical Docs List -->
+    <string name="more_health_history_vitals">Vitals</string>
+
+    <!-- More Health History -->
+    <string name="more_health_history_prescriptions">Prescriptions</string>
+    <string name="more_health_history_allergies">Allergies</string>
+    <string name="more_health_history_immunizations">Immunizations</string>
+    <string name="more_health_history_health_issues">Health Issues</string>
+    <string name="more_health_history_no_permissions">You do not have sufficient permissions to view any health history documents for this patient. If this is incorrect, please call the care team directly.</string>
+
+    <!-- More Health History Vitals List -->
+    <string name="more_health_history_vitals_list_no_permissions">You do not have sufficient permissions to view Vitals records for this patient CTCA ID. If this is incorrect, please call the regional medical center directly.</string>
+
+    <!-- More Health History Prescriptions List -->
+    <string name="more_health_history_prescriptions_list_no_permissions">You do not have sufficient permissions to view Prescription records for this patient CTCA ID. If this is incorrect, please call the regional medical center directly.</string>
+    <string name="more_health_history_prescriptions_status_prescribed">%1$s, %2$s</string>
+    <string name="more_health_history_prescriptions_include_text">Include in renewal request</string>
+    <string name="more_health_history_prescriptions_icon_title">Request Renewal</string>
+    <string name="more_health_history_prescription_detail_done">Done</string>
+    <string name="prescription_refill_icon_title">Send Renewal Request</string>
+    <string name="prescription_refill_title">Request Renewal</string>
+
+    <!-- More Health History Prescriptions Refill -->
+    <string name="prescription_refill_invalid_refill_request">Please include at least one prescription in your request renewal.</string>
+    <string name="prescription_refill_invalid_form_title">Request Renewal Error</string>
+    <string name="prescription_refill_no_prescriptions_selected">Please select one of the prescriptions listed to request a refill.</string>
+    <string name="prescription_refill_no_ctca_prescribed_title">Prescription Renewal</string>
+    <string name="prescription_refill_no_ctca_prescribed_message">Only active CTCA-prescribed prescriptions can be renewed. Please contact your Care Team with prescription questions.</string>
+    <string name="prescription_refill_invalid_form_message">Please make sure that all of the required fields are completed to submit this request renewal.</string>
+    <string name="prescription_refill_info">If this is an existing prescription, please contact your pharmacy directly. Please use this prescription request form for new prescriptions, changes in prescriptions, and/or change in pharmacy. Please allow 1 business day for your care team to contact you upon prescription request. </string>
+    <string name="prescription_refill_disclaimer_icon_desc">Information icon consisting of a lowercase letter i in a circle.</string>
+    <string name="prescription_refill_from">From</string>
+    <string name="prescription_refill_to">To</string>
+    <string name="prescription_refill_subject">Subject</string>
+    <string name="prescription_refill_subject_input">Prescription Request Renewal</string>
+    <string name="prescription_refill_prescription">Prescriptions</string>
+    <string name="prescription_refill_phone">My Phone Number</string>
+    <string name="prescription_refill_pharmacy">Pharmacy</string>
+    <string name="prescription_refill_pharmacy_phone">Pharmacy Phone</string>
+    <string name="prescription_refill_comments">Comments</string>
+    <string name="prescription_refill_sent_success_title">Request Renewal Success</string>
+    <string name="prescription_refill_sent_success_message">Your request renewal has been submitted. Your Care Team will process this request as soon as possible.</string>
+    <string name="prescription_refill_sent_failure_title">Request Renewal Error</string>
+    <string name="prescription_refill_sent_failure_message">There was a problem submitting your Prescription renewal request. Please try again later or call your Care Team directly.</string>
+
+    <!-- More Health History Allergies List -->
+    <string name="more_health_history_allergies_reaction">Reaction:</string>
+    <string name="more_health_history_immunizations_list_no_permissions">You do not have sufficient permissions to view Immunization records for this patient CTCA ID. If this is incorrect, please call the regional medical center directly.</string>
+    <string name="more_health_history_allergies_list_no_permissions">You do not have sufficient permissions to view Allergy records for this patient CTCA ID. If this is incorrect, please call the regional medical center directly.</string>
+
+    <!-- More Health History Immunizations List -->
+    <string name="more_health_history_immunizations_performed_by">Performed %1$s by</string>
+    <string name="more_health_history_health_issues_list_no_permissions">You do not have sufficient permissions to view Health Issue records for this patient CTCA ID. If this is incorrect, please call the regional medical center directly.</string>
+
+    <!-- More Health History Health Issues List -->
+    <string name="more_health_history_health_issues_status_entered">, entered %1$s</string>
+    <string name="more_roi_title">Release of Information</string>
+    <string name="forms_library">Forms Library</string>
+    <string name="more_roi_med_center_label">Treatment Facility:</string>
+
+    <!-- More Release of Information -->
+    <string name="release_of_information">Release of Information (ROI)</string>
+    <string name="adv_notice">Advanced Notice of Non-Coverage (ANNC)</string>
+    <string name="adv_notice_title">Advanced Notice of Non-Coverage</string>
+    <string name="roi_patient_info_title">PATIENT INFORMATION</string>
+    <string name="roi_date_of_service_title">DATE OF SERVICE</string>
+    <string name="roi_info_disclosed_title">INFORMATION TO BE DISCLOSED</string>
+    <string name="roi_auth_title">AUTHORIZATION</string>
+    <string name="more_roi_med_center_heading">Please select one of the items below:</string>
+    <string name="more_roi_delivery_info_heading">Please select all the items below that apply:</string>
+    <string name="more_roi_check_category_heading">Please select all the items below that apply:</string>
+    <string name="more_roi_general_info_heading">General Information</string>
+    <string name="more_roi_patient_firstname">Patient First Name:</string>
+    <string name="more_roi_patient_lastname">Patient Last Name:</string>
+    <string name="more_roi_dob">Date of Birth:</string>
+    <string name="more_roi_delivery_method">Delivery Method:</string>
+    <string name="more_roi_pickup_date">Pickup Date:</string>
+    <string name="more_roi_delivery_method_prompt">Please select…</string>
+    <string name="more_roi_request_title">RELEASE INFORMATION</string>
+    <string name="more_roi_auth_release_obtain">1. I authorize Cancer Treatment Centers of America® (CTCA) facilities to:</string>
+    <string name="more_roi_auth_release">Release information to the following individual or facility</string>
+    <string name="more_roi_auth_obtain">Obtain information from the following individual or facility</string>
+    <string name="more_roi_date_of_service_label">2. I request and authorize Provider to release the health information specified below,
+        from the following treatment dates to Recipients.</string>
+    <string name="more_roi_info_disclose_section_label">3. I understand that my health information may
+        include sensitive categories of information listed below. I request and authorize Provider to release all of the information described below if such
+        information exists unless I specify otherwise.</string>
+    <string name="more_roi_confidential_label">Uncheck selections below or enter your restrictions</string>
+    <string name="more_roi_disclosed_info_footer">I request that Provider withhold the following categories
+        of information from the Recipients named in Section 1.</string>
+    <string name="more_roi_auth_facility">Facility/Individual:</string>
+    <string name="more_roi_retrive_roi_form">Retrieving ROI PDF...</string>
+    <string name="more_roi_retrive_roi_records">Retrieving ROI records...</string>
+    <string name="more_roi_pdf_file_name">Release of Information Form</string>
+    <string name="more_roi_form_invalid">Please make sure that all of the fields in this form marked in red are complete and valid to submit this request.</string>
+    <string name="more_roi_pdf_download_error">Error encountered downloading form. If this problem persists, please contact Technical Support.</string>
+    <string name="more_roi_pdf_download_error_title">Pdf Downloading Error</string>
+    <string name="more_roi_auth_address">Address:</string>
+    <string name="more_roi_auth_city">City:</string>
+    <string name="more_roi_auth_state">State:</string>
+    <string name="more_roi_auth_zip">Zip:</string>
+    <string name="more_roi_auth_phone">Phone</string>
+    <string name="more_roi_auth_fax">Fax:</string>
+    <string name="more_roi_auth_email">Email:</string>
+    <string name="more_roi_auth_purpose">Purpose:</string>
+    <string name="more_roi_auth_purpose_prompt">Please select…</string>
+    <string name="more_roi_dates_of_service">DATES OF SERVICE</string>
+    <string name="more_roi_dates_of_service_from">From:</string>
+    <string name="more_roi_dates_of_service_beginning">Beginning of Treatment</string>
+    <string name="more_roi_dates_of_service_specific">Specific Date:</string>
+    <string name="more_roi_dates_of_service_to">To:</string>
+    <string name="more_roi_dates_of_service_end">End of Treatment</string>
+    <string name="more_roi_dates_of_service_indicate_restrictions">Please indicate any restrictions:</string>
+    <string name="more_roi_info_to_disclose">INFORMATION TO BE DISCLOSED</string>
+    <string name="more_roi_info_to_disclose_general">General Information</string>
+    <string name="more_roi_info_to_disclose_confidential">Highly Confidential Information</string>
+    <string name="more_roi_info_to_disclose_select_all">Select All</string>
+    <string name="more_roi_valid_auth">This authorization is valid for release of information for the dates listed on the request.</string>
+    <string name="more_roi_valid_auth_bullet">•</string>
+    <string name="more_roi_valid_auth_bullet_0">I understand the above medical center may not condition treatment, payment, enrollment or eligibility for benefits on whether I sign this authorization.</string>
+    <string name="more_roi_valid_auth_bullet_1">I understand that the use or disclosure of my health information is voluntary except in accordance with federal or state law and any mandatory reporting requirements.</string>
+    <string name="more_roi_valid_auth_bullet_2">I understand that once my health information is disclosed it may be re-disclosed by the recipient and the information may not be protected by federal or state privacy laws or regulations.</string>
+    <string name="more_roi_valid_auth_bullet_3">A photocopy or facsimile of this authorization will be treated in the same manner as the original</string>
+    <string name="more_roi_valid_auth_bullet_4">I understand the information in my health record may contain information concerning Human Immunodeficiency Virus (HIV) testing and disease, psychiatric or behavioral health information or information concerning history of substance abuse and treatment.</string>
+    <string name="more_roi_valid_auth_bullet_5">I understand that this authorization will expire one year from the date signed on this form. Authorization may be revoked at any time by submitting a request in writing to the HIM department; the revocation will not apply to any information already released.</string>
+    <string name="more_roi_valid_auth_bullet_6">I understand that I may request a copy of this authorization.</string>
+    <string name="more_roi_patient_party">Patient/Legal Responsible Party</string>
+    <string name="more_roi_patient_relation">Relation to Patient, if signed by anyone other than the patient</string>
+    <string name="more_roi_enter_name">Enter name</string>
+    <string name="more_roi_enter_relationship">Enter relationship</string>
+    <string name="roi_request_sent_success_title">ROI Authorization</string>
+    <string name="roi_request_sent_error_title">ROI Request Error</string>
+    <string name="roi_request_sent_success_message">The Release of Information (ROI) Authorization Form has been sent to the Health Information Management (HIM) Team at the selected location for review.\n\nA notification email with this request has also been sent to the email address associated with this Patient account. The email has been encrypted for security purposes and will require authentication to view it.</string>
+    <string name="roi_request_sent_failure_message">There was an error while transmitting this Release of Information (ROI) authorization. Please contact your Health Information Management (HIM) Team directly.</string>
+    <string name="roi_dates_of_service_to_less_than_from"> </string>
+    <string name="general_info_disclose_cancel">Cancel</string>
+    <string name="general_info_disclose_done">Done</string>
+    <string name="roi_auth_cancel">Cancel</string>
+    <string name="roi_auth_done">Done</string>
+    <string name="more_roi_info_to_disclose_chemo">Chemotherapy</string>
+    <string name="more_roi_info_to_disclose_lab_result">Lab Result(s)</string>
+    <string name="more_roi_info_to_disclose_rad_treatment">Radiation Treatment(s)</string>
+    <string name="more_roi_share_pdf">Share PDF</string>
+    <string name="more_roi_pdf_print_pdf">Print PDF</string>
+    <string name="forms_library_roi_heading">
+        If you require a Release of your Medical Information, there are now two ways to speed up the process:
+    </string>
+    <string name="download_roi_way_one">
+        You can download and complete the following document prior to your upcoming visit and deliver it to the ROI office at your treatment facility.
+    </string>
+    <string name="download_roi_way_two">
+        You can also complete the following form online and submit it directly.
+    </string>
+    <string name="forms_library_roi_footer">
+        For further questions regarding the document or form, please contact the Health Information Management (ROI) team at your treatment facility.
+    </string>
+    <string name="download_roi_button_text">Download ROI Authorization Form</string>
+    <string name="submit_roi_auth_online">Submit ROI Authorization Online</string>
+    <string name="roi_pdf">ROI</string>
+    <string name="fax_no_invalid_error_title">Fax Number Validation</string>
+    <string name="fax_no_invalid_error_message">The fax number entered is invalid. Please correct fax number to continue.</string>
+
+    <!--    Forms library -> annc-->
+    <string name="forms_library_annc_static_text">
+        During the Public Health Emergency (PHE), many insurance payers were providing coverage for telemedicine visits. However, this was only a temporary arrangement. It is possible that if your medical insurance doesn’t pay, you may be financially liable for the non-covered service. If you have received a request from our insurance verification team, please complete the following Advanced Notice of Non-Coverage form at least 48 hours BEFORE your scheduled telehealth visit,
+        otherwise this telehealth visit will have to be canceled.\n\nYou can complete the following form online and submit it directly.
+    </string>
+    <string name="forms_library_annc_download_title">You can download your most recently submitted ANNC form here.</string>
+    <string name="forms_library_annc_download_btn_text">Download ANNC Form</string>
+    <string name="forms_library_annc_submit_btn_text">Submit ANNC Form Online</string>
+
+    <!--Annc Form -->
+    <string name="more_annc_insurance_title">Insurance Name</string>
+    <string name="more_annc_mrn_title">MRN</string>
+    <string name="more_annc_date_service_title">Date Of Service</string>
+    <string name="more_annc_records_retrieving">Retrieving ANNC Records…</string>
+    <string name="please_wait_loading">Please wait…</string>
+    <string name="more_annc_form_body"><b>In some cases, your insurance benefits for telehealth services may be changing. Please check with your
+        insurance to determine if you have telehealth benefits for CTCA telehealth services prior to booking your telehealth appointment.</b>
+        \n\nMedical insurance plans do not pay for everything, even some care that you or your health care provider have good reason to think you need.
+        We expect your medical insurance may not pay for the Telehealth below.
+        If your medical insurance doesn\'t pay, you may be financially liable for the one-covered service.
+    </string>
+    <string name="annc_table_procedure_title"><b>Procedure</b></string>
+    <string name="annc_table_procedure_text">Telehealth\nappointment</string>
+    <string name="annc_reason_insurance_title"><b>Reason Insurance May Not Pay</b></string>
+    <string name="annc_reason_insurance_text">Does not have telehealth benefits for services provided by CTCA</string>
+    <string name="annc_estimated_cost_title"><b>Estimated Cost</b></string>
+    <string name="annc_estimated_cost_text">Estimate price range:\nNew patient: $79.75-$495.55\nReturn patient: $26.95-$325.05</string>
+    <string name="annc_user_need_to_know_title"><b>WHAT YOU NEED TO KNOW:</b></string>
+    <string name="annc_user_need_to_know_text">
+        - Read this notice, so you can make an informed decision about your care.
+        \n- Ask us any questions that you may have after you finish reading.
+        \n- Choose an option below about whether to receive the Telehealth listed above.
+    </string>
+    <string name="annc_form_note_title"><b>Note:</b></string>
+    <string name="annc_form_note_text">
+        If you choose Option 1 or 2, we may help you to use any other insurance that you might have, but your medical insurance plan cannot require us to do this.
+    </string>
+    <string name="annc_form_choose_options_text"><b>Choose an option. We cannot choose one for you.</b></string>
+    <string name="annc_form_choose_options_1"><b>Option 1.</b> I want the Telehealth services listed above. You may ask to be paid now,
+        but I also want my medical insurance billed for an official decision on payment, which is sent to me on an Explanation of Benefits (EOB).
+        I understand that if my medical insurance doesn’t pay, I am responsible for payment, but <b>I can appeal</b> to my medical insurance by contacting my plan to inquire how.
+        If my medical insurance does pay, you will refund any payments I made to you, less co-pays or deductibles.</string>
+    <string name="annc_form_choose_options_2"><b>Option 2. I don’t want</b> the Telehealth services listed above. I understand with this choice I am <b>not</b> responsible for payment,
+        and <b>I cannot appeal to see if my medical insurance would pay</b>.
+    </string>
+    <string name="annc_form_additiona_info_title"><b>Additional Information:</b></string>
+    <string name="annc_form_additiona_info_text">Based on the information we currently have, we are providing this notice.
+        It is not an official decision until the claim is submitted to your medical insurance plan.</string>
+    <string name="annc_form_signing_below_info">Signing below means that you have received and understand this notice.
+        A copy of this notice can be made available at any time.</string>
+    <string name="annc_options_title">OPTIONS</string>
+    <string name="input_text_placeholder">Required</string>
+    <string name="annc_request_sent_success_title">Information</string>
+    <string name="annc_request_sent_success_body">Your Advanced Notification of Non-Coverage form was submitted.</string>
+    <string name="annc_request_sent_error_title">ANNC Request Error</string>
+    <string name="annc_pdf">ANNC</string>
+
+
+    <!-- ROI General Info Disclosure Dialog -->
+    <string name="more_roi_info_to_disclose_consult">Consult(s)</string>
+    <string name="more_roi_info_to_disclose_op_report">Operative Report(s)</string>
+    <string name="more_roi_info_to_disclose_rad_report">Radiology Report(s)</string>
+    <string name="more_roi_info_to_disclose_discharge_summ">Discharge Summary</string>
+    <string name="more_roi_info_to_disclose_path_report">Pathology Report(s)</string>
+    <string name="more_roi_info_to_disclose_rad_img">Radiology Images (Disc)</string>
+    <string name="more_roi_info_to_disclose_hist_phys">History and Physical</string>
+    <string name="more_roi_info_to_disclose_prog_note">Progress Note(s)</string>
+    <string name="more_roi_info_to_disclose_rehab_note">Rehabilitation Note(s)</string>
+    <string name="more_roi_info_to_disclose_med_list">Medication List</string>
+    <string name="more_roi_info_to_disclose_nat_prog">Naturopathic Progress Note(s)</string>
+    <string name="more_roi_info_to_disclose_other">Other:</string>
+    <string name="more_roi_info_to_disclose_other_hint">Enter other general Information to\ndisclose.</string>
+    <string name="confidential_info_disclose_cancel">Cancel</string>
+    <string name="confidential_info_disclose_done">Done</string>
+    <string name="confidential_info_disclose_genetic">Genetic Testing</string>
+    <string name="confidential_info_disclose_psych">Psychiatric Note(s)</string>
+    <string name="confidential_info_disclose_hiv">HIV/AIDS Testing or treatment</string>
+
+    <!-- ROI Confidential Info Disclosure Dialog -->
+    <string name="confidential_info_disclose_abuse">Substance abuse or diagnosis (i.e., drug or alcohol)</string>
+    <string name="delivery_method_disclose_title">Delivery Method</string>
+    <string name="delivery_method_disclose_cancel">Cancel</string>
+    <string name="delivery_method_disclose_done">Done</string>
+    <string name="delivery_method_disclose_instruct">Please select all items below that apply:</string>
+    <string name="delivery_method_disclose_mail">Mail</string>
+
+    <!-- ROI Delivery Method Disclosure Dialog -->
+    <string name="delivery_method_disclose_fax">Fax</string>
+    <string name="delivery_method_disclose_email">Email</string>
+    <string name="delivery_method_disclose_pickup">Pick-up</string>
+    <string name="purpose_disclose_title">Purpose</string>
+    <string name="purpose_disclose_cancel">Cancel</string>
+    <string name="purpose_disclose_done">Done</string>
+    <string name="purpose_disclose_instruct">Please select all items below that apply:</string>
+    <string name="purpose_disclose_care">Continuity of Care</string>
+
+    <!-- ROI Purpose Disclosure Dialog -->
+    <string name="purpose_disclose_insurance">Insurance</string>
+    <string name="purpose_disclose_legal">Legal</string>
+    <string name="purpose_disclose_personal">Personal</string>
+    <string name="purpose_disclose_disability">Disability</string>
+    <string name="purpose_disclose_employer">Employer</string>
+    <string name="more_change_patient_title">Change Displayed Patient</string>
+    <string name="more_change_patient_instruct_image_description">Symbol containing the letter i in a circle denoting information</string>
+
+    <!--    more patient reported-->
+    <string name="patient_reported_sit_document_title">SIT Document</string>
+    <string name="patient_reported_symptom_inventory_title">Symptom Inventory</string>
+
+    <!--    More my resources-->
+    <string name="my_resources_user_guide_title">User Guide</string>
+    <string name="my_resources_faqs_title">Frequently Asked Questions (FAQs)</string>
+    <string name="my_resources_faqs_short_title">FAQs</string>
+    <string name="my_resources_nutrition_education_title">Nutrition Education</string>
+    <string name="my_resources_nutri_edu_health_future">Your Health, Your Future</string>
+    <string name="my_resources_nutri_edu_nutrition_basics">Nutrition Basics</string>
+    <string name="my_resources_nutri_edu_menu_enhancement">Enhancing your Menu</string>
+    <string name="my_resources_nutri_edu_symptom_manage">Symptom Management</string>
+    <string name="my_resources_nutri_edu_eating_challenge">When Eating is a Challenge</string>
+    <string name="my_resources_external_links_title">External Links</string>
+    <string name="cancer_center_clinical_bios">Clinician Bios</string>
+    <string name="cancer_center_newsletter">Sign Up for Newsletter</string>
+    <string name="cancer_center_find_info_cancer">Find Info About My Cancer</string>
+    <string name="cancer_center_clinical_trials">Clinical Trials</string>
+    <string name="cancer_center_blogs">Blogs</string>
+    <string name="resource_for_your_care_hospital">Your Hospital</string>
+    <string name="resource_for_your_care_hospital_activity">Your Hospital Activities</string>
+    <string name="resource_for_your_care_side_effect">Managing Side Effects</string>
+    <string name="resource_for_your_care_recipes">Recipes</string>
+    <string name="corona_virus_info">Coronavirus Information</string>
+    <string name="cancer_center_com">CancerCenter.com</string>
+    <string name="ctca_news">CTCA News</string>
+    <string name="resource_for_your_care">Resource For Your Care</string>
+    <string name="refer_friend">Refer a Friend</string>
+    <string name="cancer_fighters">Cancer Fighters</string>
+    <string name="cancer_resources">Cancer Resources</string>
+    <string name="covid_19">COVID-19</string>
+    <string name="corona_patient_info">Patient Information</string>
+    <string name="corona_faqs">FAQ (Frequently Asked Questions)</string>
+    <string name="corona_contacts">Contacts</string>
+    <string name="corona_together">Together</string>
+    <string name="cancer_fighters_how_we_help">How We Help You</string>
+    <string name="cancer_fighters_why_become_member">Why Become A Member</string>
+    <string name="cancer_fighters_join_now">Join Now</string>
+    <string name="cancer_resources_amerian_cancer_society">American Cancer Society</string>
+    <string name="cancer_resources_lung_association">American Lung Association</string>
+    <string name="cancer_resources_cancer_support_community">Cancer Support Communities</string>
+
+
+    <!-- More Bill Pay -->
+    <string name="more_change_patient_instruct_text">You are currently viewing data loaded for <b>%1$s</b>. Tap on any active name below to switch to a <b>different</b> patient profile</string>
+    <string name="more_activity_logs_title">Activity Log</string>
+    <string name="more_bill_pay_title">Bill Pay</string>
+    <string name="more_bill_pay_provider_text">• Make a secure online payment\n• View your balance\n• View past invoices\n• Get help with billing </string>
+    <string name="more_bill_pay_launch_button">Pay Your Bill Online</string>
+
+    <!-- More Change Patient -->
+    <string name="more_contact_us_title">Contact Us</string>
+    <string name="more_contact_us_disclaimer_icon_desc">Small Warning Icon</string>
+    <string name="more_contact_us_disclaimer">If this is a medical emergency, call 911 or your local emergency number for assistance. We will respond to your email message within one (1) business day.</string>
+
+    <!-- More Activity Logs -->
+    <string name="more_contact_us_treatment_facility">Contact Your Treatment Facility</string>
+    <string name="more_contact_us_call_main">Call main phone number:</string>
+
+    <!-- More Contact Us -->
+    <string name="more_contact_us_call_scheduling">Call Scheduling:</string>
+    <string name="more_contact_us_call_accommodations">Call Accommodations:</string>
+    <string name="more_contact_us_call_transportation">Call Transportation:</string>
+    <string name="more_contact_us_call_roihelp">Call for Release of Information assistance:</string>
+    <string name="more_contact_us_map_address">Map Address:</string>
+    <string name="more_contact_us_tech_support_header_text">Contact Technical Support:</string>
+    <string name="more_contact_us_tech_support_call">Call</string>
+    <string name="more_contact_us_send_message_title">Send Messages</string>
+    <string name="send_message_facility_records">Please wait…</string>
+
+    <!-- More About myCTCA -->
+    <string name="more_about_myctca_privacy">Privacy Practices</string>
+    <string name="more_about_myctca_certifications">Certifications</string>
+    <string name="more_certifications_title">Certifications</string>
+    <string name="more_certifications_text">This EHR Module is 2014 Edition compliant and has been certified by an ONC-ACB in accordance with the applicable certification criteria adopted by the Secretary of the U.S. Department of Health and Human Services. This certification does not represent an endorsement by the U.S. Department of Health and Human Services or guarantee the receipt of incentive payments.\n\nCompliance Details — Vendor: Cancer Treatment Centers of America, Date Certified: 09/30/2014, Product Version: myCTCA.com (SM) 2.0, Criteria Certified: Modular EHR (Inpatient), Certification ID Number: 09302014‐2723‐8, Clinical Quality Measures Certified: None, Additional Software Used: None, Certification Criteria: 170.314 (e)(1); (g)(1,4).</string>
+    <string name="error_sign_in_incomplete_title">Problem Signing In</string>
+    <string name="error_sign_in_incomplete_msg">Please enter both your CTCA ID and password.</string>
+    <string name="my_ctca_portal_version">VERSION</string>
+    <string name="more_about_myctca_title">myCTCA Portal</string>
+    <string name="more_about_myctca_copyright">Copyright © %1$s IPB</string>
+    <string name="more_about_myctca_version">Version %1$s</string>
+    <string name="more_about_myctca_legal">LEGAL</string>
+    <string name="more_about_myctca_terms">Terms and Conditions</string>
+
+    <!-- More Certifications -->
+    <string name="error_volley_timeout">myCTCA is not responding. Please try again later.</string>
+    <string name="error_volley_no_internet">You must have an internet connection to use myCTCA. If this problem persists, please contact technical support.</string>
+
+    <!-- Errors -->
+    <string name="error_sign_in">Username and/or password incorrect.</string>
+    <string name="error_append">If problem persists, please call CTCA Technical Support at <b>%1$s</b> for assistance.</string>
+    <string name="about_finger_auth_title">Fingerprint Authorization</string>
+    <string name="about_finger_auth_text">You can choose to sign in to myCTCA™ simply by using your fingerprint. Be sure that only your fingerprint is stored on this device. Once fingerprint authentication is enabled, anyone with a stored fingerprint on this device could have access to your data.\n\nYou can enable or disable this feature at anytime here in the myCTCA™ Settings in the More section.\n\nTo learn more about fingerprint authentication and security, please visit Google\'s web site.\n\n<a href="https://support.google.com/nexus/answer/6300638?hl=en">Understand fingerprint security</a></string>
+    <string name="about_finger_auth_link_text">Understand fingerprint security</string>
+    <string name="about_finger_auth_more_info">https://support.google.com/nexus/answer/6300638?hl=en</string>
+    <string name="about_finger_auth_enable_text">Fingerprint Authorization Enabled:</string>
+    <string name="error_400">An unexpected error has occurred. If this problem persists, please contact technical support.</string>
+
+    <!--telehealth meeting-->
+    <string name="telehealth_wait_message">When the meeting starts, we\'ll let people know you\'re waiting in the lobby</string>
+    <string name="telehealth_meeting_title">Meeting</string>
+    <string name="telehealth_error_title">Error</string>
+    <string name="telehealth_internet_error_title">Internet Connection Lost</string>
+    <string name="telehealth_error_message">Failed to connect. Select Continue to join this meeting on Browser.</string>
+    <string name="telehealth_internet_error_message">You can rejoin your meeting once you have reconnected to internet.</string>
+    <string name="leaving_message">Leaving…</string>
+    <string name="on_hold_message">On Hold…</string>
+    <string name="waiting_for_others_message">Waiting for others to join…</string>
+    <string name="camera_error_message">"Sorry! Cannot open camera"</string>
+    <string name="leaving_telehealth"><u>Leave Telehealth</u></string>
+    <string name="resume_telehealth">Resume Telehealth</string>
+    <string name="leaving_telehealth_dialog_message"><b>Your Telehealth meeting is in progress. Are you sure you want to leave?</b></string>
+
+    <string name="not_now_telehealth"><u>Not now</u></string>
+    <string name="reschedule_telehealth">Call to reschedule</string>
+    <string name="timeout_telehealth_dialog_message"><b>We apologize your Physician is not able to join today.</b></string>
+    <string name="meeting_start_timer_title">Your telehealth appointment starts in</string>
+    <string name="telehealth_permission_bt_title"><![CDATA[<b>\"myCTCA\" would like access to your Microphone, Camera, and Bluetooth</b>]]></string>
+    <string name="telehealth_permission_title"><![CDATA[<b>\"myCTCA\" would like access to your Microphone and Camera</b>]]></string>
+    <string name="telehealth_permission_bt_message"><![CDATA[In order to participate in your telehealth appointment, please go to Settings and enable the <b>Microphone, Camera, and Nearby Devices permissions</b> for <b>\"myCTCA\"</b>. Meeting data will not be stored after the telehealth appointment has ended.]]></string>
+    <string name="telehealth_permission_message"><![CDATA[In order to participate in your telehealth appointment, please go to Settings and enable the <b>Microphone and Camera permissions</b> for <b>\"myCTCA\"</b>. Meeting data will not be stored after the telehealth appointment has ended.]]></string>
+    <string name="telehealth_permission_initial_message"><![CDATA[In order to participate in your telehealth appointment. Meeting data will not be stored after the telehealth appointment has ended.]]></string>
+    <string name="telehealth_permission_positive">Settings</string>
+    <string name="telehealth_permission_initial_positive">Allow</string>
+    <string name="telehealth_permission_negative">Deny</string>
+    <string name="telehealth_permission_initial_negative">Deny</string>
+    <string name="phone_permission_initial_title"><![CDATA[<b>\"myCTCA\" would like access to your Phone</b>]]></string>
+    <string name="phone_permission_initial_message"><![CDATA[In order to make a phone call to a CTCA facility. Call data will not be stored after the call has ended.]]></string>
+    <string name="phone_permission_title"><![CDATA[<b>\"myCTCA\" would like access to your Phone</b>]]></string>
+    <string name="phone_permission_message"><![CDATA[In order to make a phone call to contact CTCA, please go to Settings and enable the <b>Phone permission</b> for <b>\"myCTCA\"</b>. Call data will not be stored after the call has ended.]]></string>
+
+    <string name="download_pdf_permission_title"><![CDATA[<b>\"myCTCA\" Would like to access your Photos and Media</b>]]></string>
+    <string name="download_pdf_permission_message"><![CDATA[In order to save a document on your device, please go to Settings and enable the <b>Storage permission for \"myCTCA\"</b>.]]></string>
+    <string name="download_pdf_permission_initial_title"><![CDATA[<b>\"myCTCA\" Would like to access your Photos and Media</b>]]></string>
+    <string name="download_pdf_permission_initial_message">to save a document on your device.</string>
+    <string name="download_pdf_permission_positive">Settings</string>
+    <string name="download_pdf_permission_negative">Not Now</string>
+    <string name="download_pdf_permission_initial_positive">Allow</string>
+    <string name="download_pdf_permission_initial_negative">Deny</string>
+
+
+    <!--    Frequently Called numbers-->
+    <string name="general_enquiries_title">General Inquiries</string>
+    <string name="general_enquiries_content">For concerns regarding your care, access to medical records and any general questions you might have.</string>
+    <string name="technical_support_title">Technical Support</string>
+    <string name="technical_support_content">For questions related to creating a portal account, accessing the portal, and password resets.</string>
+    <string name="care_management_title">Care Management</string>
+    <string name="care_managerment_content">Connect with a care manager (RN) for questions about your treatment, symptoms or other related concerns you may have.</string>
+    <string name="scheduling_title">Scheduling</string>
+    <string name="scheduling_content">For changes in your appointments, request for new appointments.</string>
+    <string name="travel_and_accomodations_title">Travel &amp; Accommodations</string>
+    <string name="travel_and_accomodations_content">For help with booking flights, car service, hotel stays, rates.</string>
+    <string name="medical_records_title">Medical Records</string>
+    <string name="medical_records_content">To access patient medical records and help with forms.</string>
+    <string name="financial_counseling_title">Financial Counseling</string>
+    <string name="financial_counseling_content"> For assistance with insurance concerns and financial barriers.</string>
+    <string name="billing_title">Billing</string>
+    <string name="billing_content">For questions and concerns about services rendered, insurance and billing statements.</string>
+    <string name="pharmacy_title">Pharmacy</string>
+    <string name="pharmacy_content">Connect with a pharmacist for prescription refills, requesting supplements or other related questions.</string>
+    <string name="important_numbers">IMPORTANT NUMBERS</string>
+    <string name="important_phone_numbers">Important Phone Numbers</string>
+
+    <!--    hardcoded values-->
+    <string name="atlanta_hospital_title">Atlanta Hospital</string>
+    <string name="atlanta_hospital_location">600 Celebrate Life Pkwy.</string>
+    <string name="atlanta_hospital_zip">Newnan, GA 30265</string>
+    <string name="atlanta_hospital_contact">(770)–400–6000</string>
+
+    <string name="chicago_hospital_title">Chicago Hospital</string>
+    <string name="chicago_hospital_location">2520 Elisha Ave.</string>
+    <string name="chicago_hospital_zip">Zion, IL 60099</string>
+    <string name="chicago_hospital_contact">(847)–872–4561</string>
+
+    <string name="phoenix_hospital_title">Phoenix Hospital</string>
+    <string name="phoenix_hospital_location">14200 W. Celebrate Life Way</string>
+    <string name="phoenix_hospital_zip">Goodyear, AZ 85338</string>
+    <string name="phoenix_hospital_contact">(847)–872–4561</string>
+
+    <string name="chicago_outpatient_care_center_title">CHICAGO Outpatient Care Centers</string>
+    <string name="downtown_chicago_hospital_title">Downtown Chicago</string>
+    <string name="downtown_chicago_hospital_contact">(312)–535–7863</string>
+    <string name="downtown_gurnee_hospital_title">Gurnee</string>
+    <string name="downtown_gurnee_hospital_contact">(847)–665–0936</string>
+
+
+    <string name="phoenix_outpatient_care_center_title">PHOENIX Outpatient Care Centers</string>
+    <string name="north_phoenix_hospital_title">North Phoenix</string>
+    <string name="north_phoenix_hospital_contact">(847)–872–4561</string>
+    <string name="scottdale_hospital_title">Scottsdale</string>
+    <string name="scottdale_hospital_contact">(928)–482–4670</string>
+
+    <!-- Fingerprint Authorization -->
+    <string name="about_finger_auth_disable_text">Fingerprint Authorization Disabled:</string>
+    <string name="about_finger_auth_symbol_description">Fingerprint Authorization symbol</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fingerprint_auth_error">There was an error while performing fingerprint authorization. Please try logging in by entering your username and password.</string>
+    <string name="fingerprint_auth_error_title">Fingerprint Authentication Error</string>
+    <string-array name="send_message_concern_array">
+        <item> </item>
+        <item>Billing</item>
+        <item>Care Management</item>
+        <item>Medical Records</item>
+        <item>Registration</item>
+        <item>Scheduling</item>
+        <item>Technical Issue</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="send_message_facility_array">
+        <item> </item>
+        <item>Midwestern Regional MC, Zion, IL</item>
+        <item>Southwestern Regional MC, Tulsa, OK</item>
+        <item>Eastern Regional MC, Philadelphia, PA</item>
+        <item>Western Regional MC, Goodyear, AZ</item>
+        <item>Southeastern Regional MC, Newman, GA</item>
+    </string-array>
+    <string-array name="more_roi_med_center_array">
+        <item> </item>
+        <item>Midwestern Regional MC, Zion, IL</item>
+        <item>Southwestern Regional MC, Tulsa, OK</item>
+        <item>Eastern Regional MC, Philadelphia, PA</item>
+        <item>Western Regional MC, Goodyear, AZ</item>
+        <item>Southeastern Regional MC, Newman, GA</item>
+    </string-array>
+    <string-array name="more_roi_delivery_method_array">
+        <item> </item>
+        <item>Mail</item>
+        <item>Fax</item>
+        <item>Email</item>
+        <item>Pick-up</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="more_roi_auth_purpose_array">
+        <item> </item>
+        <item>Continuity of Care</item>
+        <item>Insurance</item>
+        <item>Legal</item>
+        <item>Personal</item>
+        <item>Disability</item>
+        <item>Employer</item>
+    </string-array>
+
+</resources>

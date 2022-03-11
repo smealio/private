@@ -1,0 +1,82 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTCA.Telehealth.API", "CTCA.Telehealth.API\CTCA.Telehealth.API.csproj", "{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCA.Telehealth.Application", "CTCA.Telehealth.Application\CTCA.Telehealth.Application.csproj", "{280BD3B3-CE06-4440-BDF2-F3871170D5E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCA.Telehealth.Microsoft", "CTCA.Telehealth.Microsoft\CTCA.Telehealth.Microsoft.csproj", "{C4EC044D-7BBA-4F02-9C5A-183F73337EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCA.Telehealth.Shared", "CTCA.Telehealth.Shared\CTCA.Telehealth.Shared.csproj", "{B4A3AD30-2291-4B9B-8787-CF12ABF3EDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCA.Telehealth.Cosmos", "CTCA.Telehealth.Repository\CTCA.Telehealth.Cosmos.csproj", "{5798600A-FB6D-4D3D-9CA8-36207AC69FC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E03459DE-A3F1-4D6E-A006-C6AC56056687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{599ED55C-AA57-40D4-BDDA-0BECE37BBD8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7DF3A5D4-D05C-401A-8CD6-8B9F322CD392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTCA.Telehealth.Domain", "CTCA.Telehealth.Domain\CTCA.Telehealth.Domain.csproj", "{79467BDA-7427-4FEF-AA54-B772B8E37527}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9DD95037-A624-4A85-9B8C-121BB73D3B46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTCA.Telehealth.UnitTest", "CTCA.Telehealth.UnitTest\CTCA.Telehealth.UnitTest.csproj", "{03E877DF-009E-4099-BCAF-C88D9DC98F9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTCA.Telehealth.Twilio", "CTCA.Telehealth.Twilio\CTCA.Telehealth.Twilio.csproj", "{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280BD3B3-CE06-4440-BDF2-F3871170D5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280BD3B3-CE06-4440-BDF2-F3871170D5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280BD3B3-CE06-4440-BDF2-F3871170D5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280BD3B3-CE06-4440-BDF2-F3871170D5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4EC044D-7BBA-4F02-9C5A-183F73337EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EC044D-7BBA-4F02-9C5A-183F73337EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EC044D-7BBA-4F02-9C5A-183F73337EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EC044D-7BBA-4F02-9C5A-183F73337EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A3AD30-2291-4B9B-8787-CF12ABF3EDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A3AD30-2291-4B9B-8787-CF12ABF3EDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A3AD30-2291-4B9B-8787-CF12ABF3EDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A3AD30-2291-4B9B-8787-CF12ABF3EDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5798600A-FB6D-4D3D-9CA8-36207AC69FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5798600A-FB6D-4D3D-9CA8-36207AC69FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5798600A-FB6D-4D3D-9CA8-36207AC69FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5798600A-FB6D-4D3D-9CA8-36207AC69FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79467BDA-7427-4FEF-AA54-B772B8E37527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79467BDA-7427-4FEF-AA54-B772B8E37527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79467BDA-7427-4FEF-AA54-B772B8E37527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79467BDA-7427-4FEF-AA54-B772B8E37527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E877DF-009E-4099-BCAF-C88D9DC98F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E877DF-009E-4099-BCAF-C88D9DC98F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E877DF-009E-4099-BCAF-C88D9DC98F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40B2F56E-3DB1-48E5-9E23-B1BCAD4BB3B3} = {599ED55C-AA57-40D4-BDDA-0BECE37BBD8E}
+		{280BD3B3-CE06-4440-BDF2-F3871170D5E0} = {599ED55C-AA57-40D4-BDDA-0BECE37BBD8E}
+		{C4EC044D-7BBA-4F02-9C5A-183F73337EB2} = {E03459DE-A3F1-4D6E-A006-C6AC56056687}
+		{5798600A-FB6D-4D3D-9CA8-36207AC69FC3} = {E03459DE-A3F1-4D6E-A006-C6AC56056687}
+		{79467BDA-7427-4FEF-AA54-B772B8E37527} = {7DF3A5D4-D05C-401A-8CD6-8B9F322CD392}
+		{03E877DF-009E-4099-BCAF-C88D9DC98F9B} = {9DD95037-A624-4A85-9B8C-121BB73D3B46}
+		{5C975EE5-74C9-4E56-8450-CFFA8E43D1FD} = {E03459DE-A3F1-4D6E-A006-C6AC56056687}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5371D600-0496-471F-A1B0-79DD0FB5D6D7}
+	EndGlobalSection
+EndGlobal

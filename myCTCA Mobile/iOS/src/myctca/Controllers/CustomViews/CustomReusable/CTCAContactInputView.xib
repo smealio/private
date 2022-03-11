@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CTCAContactInputView" customModule="myctca" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="EIo-bk-w4h"/>
+                <outlet property="errorLabel" destination="bOY-fD-Nmb" id="Lfd-zN-kKf"/>
+                <outlet property="textField" destination="Tfp-Tu-754" id="XHW-q2-yA3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOY-fD-Nmb">
+                    <rect key="frame" x="9" y="52" width="34.5" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" name="ctca-alert-red-middle-shadow"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-Tu-754" customClass="PhoneNumberTextField" customModule="myctca" customModuleProvider="target">
+                    <rect key="frame" x="1" y="1" width="413" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="eEJ-2P-N7u"/>
+                    </constraints>
+                    <color key="textColor" name="ctca-gray130"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1r0-Aq-LXh"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bOY-fD-Nmb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="9" id="2QA-Aa-pGb"/>
+                <constraint firstItem="Tfp-Tu-754" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="5GJ-5F-09j"/>
+                <constraint firstItem="Tfp-Tu-754" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="1" id="C34-16-nh9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bOY-fD-Nmb" secondAttribute="bottom" constant="4" id="C5L-DR-2c7"/>
+                <constraint firstItem="bOY-fD-Nmb" firstAttribute="top" secondItem="Tfp-Tu-754" secondAttribute="bottom" constant="3" id="zEs-xA-tCx"/>
+                <constraint firstItem="Tfp-Tu-754" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="zdQ-HS-zyW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-187.83482142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ctca-alert-red-middle-shadow">
+            <color red="0.94099998474121094" green="0.32899999618530273" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-gray130">
+            <color red="0.36078431372549019" green="0.36078431372549019" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

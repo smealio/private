@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/transmit_send"
+        android:icon="@drawable/ic_action_send"
+        android:title="@string/more_med_doc_clinical_summary_transmit_icon_title"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

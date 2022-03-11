@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CTCANoDataView" customModule="myctca" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="OC5-Fp-DlJ" id="kU0-bj-d0p"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="BYN-8J-Uaf"/>
+                <outlet property="imageView" destination="wb7-4O-3Pk" id="NQX-QA-OdQ"/>
+                <outlet property="subTitleLabel" destination="oit-Mg-nXf" id="wyc-va-U6l"/>
+                <outlet property="titleLabel" destination="9wz-2e-eLR" id="56n-Ew-Hqg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No appointments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-2e-eLR">
+                    <rect key="frame" x="30" y="437.5" width="354" height="21.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" name="ctca-dark-gray"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oit-Mg-nXf">
+                    <rect key="frame" x="30" y="475" width="354" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" name="ctca-gray130"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC5-Fp-DlJ" customClass="CTCAGreenButton" customModule="myctca" customModuleProvider="target">
+                    <rect key="frame" x="30" y="542" width="354" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="kUT-1P-Eam"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Request an Appointment"/>
+                    <connections>
+                        <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="VBu-9L-cLD"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_calender" translatesAutoresizingMaskIntoConstraints="NO" id="wb7-4O-3Pk">
+                    <rect key="frame" x="155" y="293.5" width="104" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="104" id="gwD-sO-bIg"/>
+                        <constraint firstAttribute="width" constant="104" id="nGo-bq-pHy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wb7-4O-3Pk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Je-Sx-rpV"/>
+                <constraint firstItem="OC5-Fp-DlJ" firstAttribute="top" secondItem="oit-Mg-nXf" secondAttribute="bottom" constant="48" id="98z-VV-izJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OC5-Fp-DlJ" secondAttribute="trailing" constant="30" id="DwG-gJ-A4r"/>
+                <constraint firstItem="9wz-2e-eLR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FtJ-PH-ciA"/>
+                <constraint firstItem="OC5-Fp-DlJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="Jur-2L-YfZ"/>
+                <constraint firstItem="OC5-Fp-DlJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RDw-U8-aDO"/>
+                <constraint firstItem="9wz-2e-eLR" firstAttribute="top" secondItem="wb7-4O-3Pk" secondAttribute="bottom" constant="40" id="gT0-sd-Cnj"/>
+                <constraint firstItem="oit-Mg-nXf" firstAttribute="top" secondItem="9wz-2e-eLR" secondAttribute="bottom" constant="16" id="hHs-sN-0kq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oit-Mg-nXf" secondAttribute="trailing" constant="30" id="jJR-aP-bNC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9wz-2e-eLR" secondAttribute="trailing" constant="30" id="jWM-2r-I6t"/>
+                <constraint firstItem="oit-Mg-nXf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="k8k-dh-hXk"/>
+                <constraint firstItem="9wz-2e-eLR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="rIp-9j-eob"/>
+                <constraint firstItem="9wz-2e-eLR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rMP-hj-bRc"/>
+                <constraint firstItem="oit-Mg-nXf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tv0-Ou-rcx"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_calender" width="104" height="104"/>
+        <namedColor name="ctca-dark-gray">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-gray130">
+            <color red="0.36078431372549019" green="0.36078431372549019" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,382 @@
+package com.myctca.model;
+
+public class CTCAAnalyticsConstants {
+    public static final String LOGIN_TIMEOUT_ERROR = "LOGIN_TIMEOUT_ERROR";
+    public static final String LOGIN_SUCCESSFUL = "LOGIN_SUCCESSFUL";
+    public static final String LOGIN_INCORRECT_CREDENTIALS = "LOGIN_INCORRECT_CREDENTIALS";
+    public static final String LOGIN_LOCKED_ACCOUNT = "LOGIN_LOCKED_ACCOUNT";
+    public static final String LOGIN_REST_API_FAILURE = "LOGIN_REST_API_FAILURE";
+
+    //Exceptions
+    public static final String EXCEPTION_REST_API = "EXCEPTION_REST_API";
+    public static final String EXCEPTION_SYSTEM_THROWN = "EXCEPTION_SYSTEM_THROWN";
+
+
+    //login
+    public static final String PAGE_SIGNIN_VIEW = "PAGE_SIGNIN_VIEW";
+    public static final String PAGE_FORGOT_PASSWORD_VIEW = "PAGE_FORGOT_PASSWORD_VIEW";
+    public static final String PAGE_CHANGE_PATIENT_VIEW = "PAGE_CHANGE_PATIENT_VIEW";
+    public static final String PAGE_CREATE_ACCOUNT_VIEW = "PAGE_CREATE_ACCOUNT_VIEW";
+
+    public static final String ACTION_SIGNIN_TAP = "ACTION_SIGNIN_TAP";
+    public static final String ACTION_SHOW_PASSWORD_TAP = "ACTION_SHOW_PASSWORD_TAP";
+    public static final String ACTION_FORGOT_PASSWORD_TAP = "ACTION_FORGOT_PASSWORD_TAP";
+    public static final String ACTION_TOUCHID_TAP = "ACTION_TOUCHID_TAP";
+    public static final String ACTION_TERMS_CONDITIONS_TAP = "ACTION_TERMS_CONDITIONS_TAP";
+    public static final String ACTION_PRIVACY_POLICY_TAP = "ACTION_PRIVACY_POLICY_TAP";
+    public static final String ACTION_CREATE_ACCOUNT_TAP = "ACTION_CREATE_ACCOUNT_TAP";
+    public static final String ACTION_LOGIN_CALL_TAP = "ACTION_LOGIN_CALL_TAP";
+    public static final String ACTION_LOGIN_CALL_GOTO_TAP = "ACTION_LOGIN_CALL_GOTO_TAP";
+    public static final String ACTION_CONTACT_SUPPORT_TAP = "ACTION_CONTACT_SUPPORT_TAP";
+    public static final String ACTION_CREATE_ACCOUNT_GOTO_TAP = "ACTION_CREATE_ACCOUNT_GOTO_TAP";
+    public static final String ACTION_LOGIN_SEND_MESSAGE_GOTO_TAP = "ACTION_LOGIN_SEND_MESSAGE_GOTO_TAP";
+
+    //SEND MESSAGE
+    public static final String PAGE_SEND_MESSAGE_VIEW = "PAGE_SEND_MESSAGE_VIEW";
+    public static final String ACTION_SEND_MESSAGE_TAP = "ACTION_SEND_MESSAGE_TAP";
+
+    public static final String ALERT_SEND_MESSAGE_FAIL = "ALERT_SEND_MESSAGE_FAIL";
+    public static final String ALERT_SEND_MESSAGE_SUCCESS = "ALERT_SEND_MESSAGE_SUCCESS";
+
+
+    public static final String ALERT_SIGNIN_FAIL = "ALERT_SIGNIN_FAIL";
+
+    //Terms of Use
+    public static final String PAGE_TERMS_OF_USE_VIEW = "PAGE_TERMS_OF_USE_VIEW";
+
+    public static final String ACTION_ACCEPT_TERMS_OF_USE_TAP = "ACTION_ACCEPT_TERMS_OF_USE_TAP";
+    public static final String ACTION_DECLINE_TERMS_OF_USE_TAP = "ACTION_DECLINE_TERMS_OF_USE_TAP";
+
+    //Home
+    public static final String PAGE_HOME_PATIENT_VIEW = "PAGE_HOME_PATIENT_VIEW";
+    public static final String PAGE_HOME_CAREGIVER_VIEW = "PAGE_HOME_CAREGIVER_VIEW";
+
+    public static final String ACTION_GOTO_PORTAL_TAP = "ACTION_GOTO_PORTAL_TAP";
+    public static final String ACTION_SIGNOUT_CAREGIVER_TAP = "ACTION_SIGNOUT_CAREGIVER_TAP";
+    public static final String ACTION_HOME_TAP = "ACTION_HOME_TAP";
+
+    public static final String ALERT_HOME_ALERT_REQUEST_FAIL = "ALERT_HOME_ALERT_REQUEST_FAIL";
+
+    //appointments
+    public static final String PAGE_PAST_APPOINTMENTS_VIEW = "PAGE_PAST_APPOINTMENTS_VIEW";
+    public static final String PAGE_FUTURE_APPOINTMENTS_VIEW = "PAGE_FUTURE_APPOINTMENTS_VIEW";
+    public static final String PAGE_APPOINTMENTS_DETAILS_VIEW = "PAGE_APPOINTMENTS_DETAILS_VIEW";
+    public static final String PAGE_APPOINTMENTS_CANCEL_VIEW = "PAGE_APPOINTMENTS_CANCEL_VIEW";
+    public static final String PAGE_APPOINTMENTS_RESCHEDULE_VIEW = "PAGE_APPOINTMENTS_RESCHEDULE_VIEW";
+    public static final String PAGE_APPOINTMENTS_REQUEST_VIEW = "PAGE_APPOINTMENTS_REQUEST_VIEW";
+    public static final String PAGE_APPOINTMENTS_FILTER_VIEW = "PAGE_APPOINTMENTS_FILTER_VIEW";
+    public static final String PAGE_APPT_DATE_PICKER_VIEW = "PAGE_APPT_DATE_PICKER_VIEW";
+    public static final String PAGE_TIME_PICKER_VIEW = "PAGE_TIME_PICKER_VIEW";
+    public static final String PAGE_APPOINTMENTS_PDF_VIEW = "PAGE_APPOINTMENTS_PDF_VIEW";
+
+    public static final String ACTION_APPOINTMENTS_REQUEST_TAP = "ACTION_APPOINTMENTS_REQUEST_TAP";
+    public static final String ACTION_APPOINTMENTS_DETAIL_TAP = "ACTION_APPOINTMENTS_DETAIL_TAP";
+    public static final String ACTION_APPOINTMENTS_CANCEL_TAP = "ACTION_APPOINTMENTS_CANCEL_TAP";
+    public static final String ACTION_APPOINTMENTS_RESCHEDULE_TAP = "ACTION_APPOINTMENTS_RESCHEDULE_TAP";
+    public static final String ACTION_APPOINTMENTS_REQUEST_SEND_TAP = "ACTION_APPOINTMENTS_REQUEST_SEND_TAP";
+    public static final String ACTION_APPOINTMENTS_CANCEL_SEND_TAP = "ACTION_APPOINTMENTS_CANCEL_SEND_TAP";
+    public static final String ACTION_APPOINTMENTS_RESCHEDULE_SEND_TAP = "ACTION_APPOINTMENTS_RESCHEDULE_SEND_TAP";
+    public static final String ACTION_APPOINTMENTS_DOWNLOAD_TAP = "ACTION_APPOINTMENTS_DOWNLOAD_TAP";
+    public static final String ACTION_APPOINTMENTS_TELEHEALTH_JOINNOW_TAP = "ACTION_APPOINTMENTS_TELEHEALTH_JOINNOW_TAP";
+    public static final String ACTION_APPOINTMENTS_TELEHEALTH_SETUP_TAP = "ACTION_APPOINTMENTS_TELEHEALTH_SETUP_TAP";
+    public static final String ACTION_APPOINTMENTS_TAP = "ACTION_APPOINTMENTS_TAP";
+    public static final String ACTION_DOWNLOAD_APPOINTMENTS_FILTER_APPLY_TAP = "ACTION_DOWNLOAD_APPOINTMENTS_FILTER_APPLY_TAP";
+
+    public static final String ACTION_APPOINTMENTS_PDF_SHARE_TAP = "ACTION_APPOINTMENTS_PDF_SHARE_TAP";
+    public static final String ACTION_APPOINTMENTS_PDF_CLOSE_SHARE_TAP = "ACTION_APPOINTMENTS_PDF_CLOSE_SHARE_TAP";
+    public static final String ACTION_APPTS_PDF_SHARE_SELECTED_APP_TAP = "ACTION_APPTS_PDF_SHARE_SELECTED_APP_TAP";
+    public static final String ACTION_APPOINTMENTS_PDF_PRINT_TAP = "ACTION_APPOINTMENTS_PDF_PRINT_TAP";
+    public static final String ACTION_PAST_APPOINTMENTS_TAP = "ACTION_PAST_APPOINTMENTS_TAP";
+
+    public static final String ALERT_APPOINTMENTS_RESCHEDULE_SUCCESS = "ALERT_APPOINTMENTS_RESCHEDULE_SUCCESS";
+    public static final String ALERT_APPOINTMENTS_RESCHEDULE_FAIL = "ALERT_APPOINTMENTS_RESCHEDULE_FAIL";
+    public static final String ALERT_APPOINTMENTS_CANCEL_SUCCESS = "ALERT_APPOINTMENTS_CANCEL_SUCCESS";
+    public static final String ALERT_APPOINTMENTS_CANCEL_FAIL = "ALERT_APPOINTMENTS_CANCEL_FAIL";
+    public static final String ALERT_APPOINTMENTS_REQUEST_SUCCESS = "ALERT_APPOINTMENTS_REQUEST_SUCCESS";
+    public static final String ALERT_APPOINTMENTS_REQUEST_FAIL = "ALERT_APPOINTMENTS_REQUEST_FAIL";
+    public static final String ALERT_APPOINTMENTS_DOWNLOAD_FAIL = "ALERT_APPOINTMENTS_DOWNLOAD_FAIL";
+
+    public static final String ACTION_TELEHEALTH_JON_NOW_TAP = "ACTION_TELEHEALTH_JON_NOW_TAP";
+    public static final String PAGE_TELEHEALTH_MEETING = "PAGE_TELEHEALTH_MEETING";
+    public static final String DURATION_TELEHEALTH_JOIN_MEETING = "DURATION_TELEHEALTH_JOIN_MEETING";
+    public static final String DURATION_TELEHEALTH_PATIENT_IN_LOBBY = "DURATION_TELEHEALTH_PATIENT_IN_LOBBY";
+    public static final String DURATION_TELEHEALTH_TOTAL_MEETING = "DURATION_TELEHEALTH_TOTAL_MEETING";
+    public static final String EXCEPTION_TELEHEALTH_MEETING_INTERRUPTED = "EXCEPTION_TELEHEALTH_MEETING_INTERRUPTED";
+    public static final String ACTION_TELEHEALTH_VIDEO_ON = "ACTION_TELEHEALTH_VIDEO_ON";
+    public static final String ACTION_TELEHEALTH_JOIN_ON_WEB = "ACTION_TELEHEALTH_JOIN_ON_WEB";
+
+    //Appointment Request
+    public static final String PAGE_APPT_NEW_REQ = "PAGE_APPT_NEW_REQ_";
+    public static final String PAGE_APPT_RESCHED_REQ = "PAGE_APPT_RESCHED_REQ_";
+    public static final String PAGE_APPT_CANCEL_REQ = "PAGE_APPT_CANCEL_REQ_";
+
+    public static final String PAGE_APPT_REASON_VIEW = "REASON_VIEW";
+    public static final String PAGE_APPT_ADDI_COMMENTS_VIEW = "ADDI_COMMENTS_VIEW";
+    public static final String PAGE_APPT_COMM_PREF_VIEW = "COMM_PREF_VIEW";
+    public static final String PAGE_APPT_PREF_DATETIME_VIEW = "PREF_DATETIME_VIEW";
+    public static final String PAGE_APPT_SUMMARY_VIEW = "SUMMARY_VIEW";
+
+    public static final String ACTION_APPT_NEW_REQ = "ACTION_APPT_NEW_REQ_";
+    public static final String ACTION_APPT_RESCHED_REQ = "ACTION_APPT_RESCHED_REQ_";
+    public static final String ACTION_APPT_CANCEL_REQ = "ACTION_APPT_CANCEL_REQ_";
+
+    public static final String ACTION_APPT_REQ_SUBMIT_TAP = "SUBMIT_TAP";
+    public static final String ACTION_APPT_REQ_LEAVE_TAP = "LEAVE_TAP";
+
+    public static final String APPT_NEW_REQ = "APPT_NEW_REQ_";
+    public static final String APPT_RESCHED_REQ = "APPT_RESCHED_REQ_";
+    public static final String APPT_CANCEL_REQ = "APPT_CANCEL_REQ_";
+
+    public static final String CALL_ME_SELECTION = "CALL_ME_SELECTION";
+    public static final String EMAIL_ME_SELECTION = "EMAIL_ME_SELECTION";
+    public static final String MORNING_SLOT_SELECTION = "MORNING_SLOT_SELECTION";
+    public static final String NOON_SLOT_SELECTION = "NOON_SLOT_SELECTION";
+    public static final String ALL_DAY_SLOT_SELECTION = "ALL_DAY_SLOT_SELECTION";
+
+    //important phone numbers
+    public static final String ACTION_IMP_NUM_CALL_GENERAL_ENQ_TAP = "ACTION_IMP_NUM_CALL_GENERAL_ENQ_TAP";
+    public static final String ACTION_IMP_NUM_CALL_TECH_SUP_TAP = "ACTION_IMP_NUM_CALL_TECH_SUP_TAP";
+    public static final String ACTION_IMP_NUM_CALL_CARE_MNG_TAP = "ACTION_IMP_NUM_CALL_CARE_MNG_TAP";
+    public static final String ACTION_IMP_NUM_CALL_SCHEDULING_TAP = "ACTION_IMP_NUM_CALL_SCHEDULING_TAP";
+    public static final String ACTION_IMP_NUM_CALL_TRAVEL_TAP = "ACTION_IMP_NUM_CALL_TRAVEL_TAP";
+    public static final String ACTION_IMP_NUM_CALL_MEDICAL_REC_TAP = "ACTION_IMP_NUM_CALL_MEDICAL_REC_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FINANCIAL_TAP = "ACTION_IMP_NUM_CALL_FINANCIAL_TAP";
+    public static final String ACTION_IMP_NUM_CALL_BILLING_TAP = "ACTION_IMP_NUM_CALL_BILLING_TAP";
+    public static final String ACTION_IMP_NUM_CALL_PHARMACY_TAP = "ACTION_IMP_NUM_CALL_PHARMACY_TAP";
+
+
+    public static final String ACTION_IMP_NUM_CALL_FAC_ATLANTA_TAP = "ACTION_IMP_NUM_CALL_FAC_ATLANTA_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_CHICAGO_TAP = "ACTION_IMP_NUM_CALL_FAC_CHICAGO_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_PHOENIX_TAP = "ACTION_IMP_NUM_CALL_FAC_PHOENIX_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_CHI_DOT_TAP = "ACTION_IMP_NUM_CALL_FAC_CHI_DOT_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_PH_NRTH_TAP = "ACTION_IMP_NUM_CALL_FAC_PH_NRTH_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_SCOTTSD_TAP = "ACTION_IMP_NUM_CALL_FAC_SCOTTSD_TAP";
+    public static final String ACTION_IMP_NUM_CALL_FAC_GURNEE_TAP = "ACTION_IMP_NUM_CALL_FAC_GURNEE_TAP";
+
+
+
+    //lab results
+    public static final String PAGE_LAB_RESULTS_VIEW = "PAGE_LAB_RESULTS_VIEW";
+    public static final String PAGE_LAB_RESULT_DETAIL_VIEW = "PAGE_LAB_RESULT_DETAIL_VIEW";
+    public static final String PAGE_LAB_RESULT_PDF_VIEW = "PAGE_LAB_RESULT_PDF_VIEW";
+
+    public static final String ACTION_LAB_RESULTS_PDF_SHARE_TAP = "ACTION_LAB_RESULTS_PDF_SHARE_TAP";
+    public static final String ACTION_LAB_RESULTS_PDF_PRINT_TAP = "ACTION_LAB_RESULTS_PDF_PRINT_TAP";
+    public static final String ACTION_LAB_RESULTS_PDF_DOWNLOAD_TAP = "ACTION_LAB_RESULTS_PDF_DOWNLOAD_TAP";
+    public static final String ACTION_LAB_RESULTS_TAP = "ACTION_LAB_RESULTS_TAP";
+
+    public static final String ALERT_LABS_REQUEST_FAIL = "ALERT_LABS_REQUEST_FAIL";
+    public static final String ALERT_LAB_DOWNLOAD_FAIL = "ALERT_LAB_DOWNLOAD_FAIL";
+
+
+    //Mail
+    public static final String ACTION_MAIL_TAP = "ACTION_MAIL_TAP";
+    public static final String PAGE_MAIL_INBOX_VIEW = "PAGE_MAIL_INBOX_VIEW";
+    public static final String PAGE_MAIL_SENT_VIEW = "PAGE_MAIL_SENT_VIEW";
+    public static final String PAGE_MAIL_ARCHIVED_VIEW = "PAGE_MAIL_ARCHIVED_VIEW";
+    public static final String PAGE_MAIL_DETAIL_VIEW = "PAGE_MAIL_DETAIL_VIEW";
+    public static final String PAGE_MAIL_NEW_VIEW = "PAGE_MAIL_NEW_VIEW";
+
+    public static final String ACTION_NEW_MAIL_TAP = "ACTION_NEW_MAIL_TAP";
+    public static final String ACTION_NEW_MAIL_SEND_TAP = "ACTION_NEW_MAIL_SEND_TAP";
+    public static final String ACTION_MAIL_DETAIL_TAP = "ACTION_MAIL_DETAIL_TAP";
+    public static final String ACTION_MAIL_REPLY_TAP = "ACTION_MAIL_REPLY_TAP";
+    public static final String ACTION_MAIL_ARCHIVE_TAP = "ACTION_MAIL_ARCHIVE_TAP";
+    public static final String ACTION_SENT_MAIL_TAP = "ACTION_SENT_MAIL_TAP";
+    public static final String ACTION_MAIL_MARKREAD_TAP = "ACTION_MAIL_MARKREAD_TAP";
+
+    public static final String ALERT_NEW_MAIL_SUCCESS = "ALERT_NEW_MAIL_SUCCESS";
+    public static final String ALERT_NEW_MAIL_FAIL = "ALERT_NEW_MAIL_FAIL";
+    public static final String ALERT_MAIL_REQUEST_FAIL = "ALERT_MAIL_REQUEST_FAILURE";
+    public static final String ALERT_MAIL_ARCHIVE_FAIL = "ALERT_MAIL_ARCHIVE_FAIL";
+
+    //More
+    //Main menu
+    public static final String ACTION_MORE_TAP = "ACTION_MORE_TAP";
+    public static final String ACTION_MORE_MED_DOCS_TAP = "ACTION_MORE_MED_DOCS_TAP";
+    public static final String ACTION_MORE_HEALTH_HISTORY_TAP = "ACTION_MORE_HEALTH_HISTORY_TAP";
+    public static final String ACTION_MORE_FORMS_LIBRARY_TAP = "ACTION_MORE_FORMS_LIBRARY_TAP";
+    public static final String ACTION_MORE_BILL_PAY_TAP = "ACTION_MORE_BILL_PAY_TAP";
+    public static final String ACTION_MORE_USER_PROFILE_TAP = "ACTION_MORE_USER_PROFILE_TAP";
+    public static final String ACTION_MORE_ACTIVITY_LOGS_TAP = "ACTION_MORE_ACTIVITY_LOGS_TAP";
+    public static final String ACTION_MORE_CONTACT_US_TAP = "ACTION_MORE_CONTACT_US_TAP";
+    public static final String ACTION_MORE_ABOUT_MY_CTCA_TAP = "ACTION_MORE_ABOUT_MY_CTCA_TAP";
+    public static final String ACTION_MORE_FINGERPRINT_GOTO_TAP = "ACTION_MORE_FINGERPRINT_GOTO_TAP";
+    public static final String ACTION_MORE_SIGNOUT_TAP = "ACTION_MORE_SIGNOUT_TAP";
+
+    //DATE PICKER
+    public static final String PAGE_MORE_DATE_PICKER_VIEW = "PAGE_APPT_DATE_PICKER_VIEW";
+
+
+    //Med Docs
+    public static final String PAGE_CARE_PLAN_VIEW = "PAGE_CARE_PLAN_VIEW";
+
+    public static final String ALERT_CARE_PLAN_DOWNLOAD_FAIL = "ALERT_CARE_PLAN_DOWNLOAD_FAIL";
+
+    public static final String PAGE_CLINICAL_SUMMARIES_VIEW = "PAGE_CS_VIEW";
+    public static final String PAGE_CLINICAL_SUMMARIES_DETAIL_VIEW = "PAGE_CS_VIEW";
+    public static final String PAGE_CLINICAL_SUMMARIES_DOWNLOAD_VIEW = "PAGE_CS_DOWNLOAD_VIEW";
+    public static final String PAGE_CLINICAL_SUMMARIES_TRANSMIT_VIEW = "PAGE_CS_TRANSMIT_VIEW";
+    public static final String PAGE_CLINICAL_SUMMARIES_FILTER_VIEW = "PAGE_CS_FILTER_VIEW";
+
+    public static final String ALERT_CLINICAL_DOWNLOAD_FAIL = "ALERT_CLINICAL_DOWNLOAD_FAIL";
+    public static final String ALERT_RADIATION_DOWNLOAD_FAIL = "ALERT_RADIATION_DOWNLOAD_FAIL";
+    public static final String ALERT_IMAGING_DOWNLOAD_FAIL = "ALERT_IMAGING_DOWNLOAD_FAIL";
+    public static final String ALERT_INTEGRATIVE_DOWNLOAD_FAIL = "ALERT_INTEGRATIVE_DOWNLOAD_FAIL";
+
+
+    //for buttons on list view and detail view
+    public static final String ACTION_CLINICAL_SUMMARIES_GOTO_TRANSMIT_TAP = "ACTION_CS_GOTO_TRANSMIT_TAP";
+    public static final String ACTION_CLINICAL_SUMMARIES_GOTO_DOWNLOAD_TAP = "ACTION_CS_GOTO_DOWNLOAD_TAP";
+    public static final String ACTION_CLINICAL_SUMMARIES_GOTO_CANCEL_TAP = "ACTION_CS_GOTO_CANCEL_TAP";
+    public static final String ACTION_CLINICAL_SUMMARIES_FILTER_APPLY_TAP = "ACTION_CS_FILTER_APPLY_TAP";
+
+    public static final String ACTION_SELECT_CLINICAL_SUMMARY_TAP = "ACTION_SELECT_CLINICAL_SUMMARY_TAP";
+    public static final String ALERT_CLINICAL_SUMMARY_REQUEST_FAILURE = "ALERT_CLINICAL_SUMMARY_REQUEST_FAILURE";
+
+
+    //for buttons on Transmit Page
+    public static final String ACTION_CLINICAL_SUMMARIES_TRANSMIT_TAP = "ACTION_CS_TRANSMIT_TAP";
+    public static final String ACTION_CLINICAL_SUMMARIES_TRANSMIT_CANCEL_TAP = "ACTION_CS_TRANSMIT_CANCEL_TAP";
+
+    //for buttons on Download Page
+    public static final String ACTION_CLINICAL_SUMMARIES_DOWNLOAD_CANCEL_TAP = "ACTION_CS_DOWNLOAD_CANCEL_TAP";
+    public static final String ACTION_CLINICAL_SUMMARIES_DOWNLOAD_TAP = "ACTION_CS_DOWNLOAD_TAP";
+
+
+    //Alert on after download
+    public static final String ALERT_CLINICAL_SUMMARIES_DOWNLOAD_SUCCESS = "ALERT_CS_DOWNLOAD_SUCCESS";
+    public static final String ALERT_CLINICAL_SUMMARIES_DOWNLOAD_FAIL = "ALERT_CS_DOWNLOAD_FAIL";
+    public static final String ACTION_CLINICAL_SUMMARIES_DOWNLOADED_ZIP_CANCEL = "ACTION_CS_DOWNLOADED_ZIP_CANCEL";
+    public static final String ACTION_CLINICAL_SUMMARIES_DOWNLOAD_ZIP_SAVE = "ACTION_CS_DOWNLOAD_ZIP_SAVE";
+
+    //Alert on after transmit
+    public static final String ALERT_CLINICAL_SUMMARIES_TRANSMIT_SUCCESS = "ALERT_CS_TRANSMIT_SUCCESS";
+    public static final String ALERT_CLINICAL_SUMMARIES_TRANSMIT_FAIL = "ALERT_CS_TRANSMIT_FAIL";
+
+    public static final String PAGE_CLINICAL_VIEW = "PAGE_CLINICAL_VIEW";
+    public static final String PAGE_CLINICAL_DETAIL_VIEW = "PAGE_CLINICAL_DETAIL_VIEW";
+
+    public static final String PAGE_RADIATION_VIEW = "PAGE_RADIATION_VIEW";
+    public static final String PAGE_RADIATION_DETAIL_VIEW = "PAGE_RADIATION_DETAIL_VIEW";
+
+    public static final String PAGE_IMAGING_VIEW = "PAGE_IMAGING_VIEW";
+    public static final String PAGE_IMAGING_DETAIL_VIEW = "PAGE_IMAGING_DETAIL_VIEW";
+
+    public static final String PAGE_INTEGRATIVE_VIEW = "PAGE_INTEGRATIVE_VIEW";
+    public static final String PAGE_INTEGRATIVE_DETAIL_VIEW = "PAGE_INTEGRATIVE_DETAIL_VIEW";
+
+    //vitals
+    public static final String PAGE_VITALS_VIEW = "PAGE_VITALS_VIEW";
+
+    public static final String PAGE_PRESCRIPTIONS_VIEW = "PAGE_PRESCRIPTIONS_VIEW";
+    public static final String PAGE_PRESCRIPTION_DETAILS_VIEW = "PAGE_PRESCRIPTION_DETAILS_VIEW";
+    public static final String PAGE_PRESCRIPTION_RENEWAL_VIEW = "PAGE_PRESCRIPTION_RENEWAL_VIEW";
+
+    public static final String ACTION_PRESCRIPTIONS_INCLUDE_TAP = "ACTION_PRESCRIPTIONS_INCLUDE_TAP";
+    public static final String ACTION_PRESCRIPTION_RENEWAL_GOTO_TAP = "ACTION_PRESCRIPTION_RENEWAL_GOTO_TAP";
+    public static final String ACTION_PRESCRIPTION_RENEWAL_SEND_TAP = "ACTION_PRESCRIPTION_RENEWAL_SEND_TAP";
+
+    public static final String ALERT_PRESCRIPTION_RENEWAL_SUCCESS = "ALERT_PRESCRIPTION_RENEWAL_SUCCESS";
+    public static final String ALERT_PRESCRIPTION_RENEWAL_FAIL = "ALERT_PRESCRIPTION_RENEWAL_FAIL";
+    public static final String ALERT_CLINICAL_SUMMARIES_DETAIL_FAIL = "ALERT_CS_DETAIL_FAIL";
+
+
+    public static final String PAGE_ALLERGIES_VIEW = "PAGE_ALLERGIES_VIEW";
+    public static final String PAGE_IMMUNIZATIONS_VIEW = "PAGE_IMMUNIZATIONS_VIEW";
+    public static final String PAGE_HEALTH_ISSUES_VIEW = "PAGE_HEALTH_ISSUES_VIEW";
+
+    public static final String ALERT_ALLERGIES_REQUEST_FAIL = "ALERT_ALLERGIES_REQUEST_FAIL";
+    public static final String ALERT_HEALTH_ISSUES_FAIL = "ALERT_HEALTH_ISSUES_FAIL";
+    public static final String ALERT_IMMUNIZATION_REQUEST_FAILURE = "ALERT_IMMUNIZATION_REQUEST_FAILURE";
+
+
+    public static final String ALERT_VITALS_DOWNLOAD_FAIL = "ALERT_VITALS_DOWNLOAD_FAIL";
+    public static final String ALERT_ALLERGIES_DOWNLOAD_FAIL = "ALERT_ALLERGIES_DOWNLOAD_FAIL";
+    public static final String ALERT_PRESCRIPTIONS_DOWNLOAD_FAIL = "ALERT_PRESCRIPTIONS_DOWNLOAD_FAIL";
+    public static final String ALERT_IMMUNIZATIONS_DOWNLOAD_FAIL = "ALERT_IMMUNIZATIONS_DOWNLOAD_FAIL";
+    public static final String ALERT_HEALTH_ISSUES_DOWNLOAD_FAIL = "ALERT_HEALTH_ISSUES_DOWNLOAD_FAIL";
+
+
+    //Forms
+    public static final String PAGE_ROI_BASE_VIEW = "PAGE_ROI_BASE_VIEW";
+    public static final String PAGE_ROI_FORM_VIEW = "PAGE_ROI_FORM_VIEW";
+    public static final String PAGE_ROI_FORM_PDF_VIEW = "PAGE_ROI_FORM_PDF_VIEW";
+
+
+    public static final String ACTION_ROI_DOWNLOAD_TAP = "ACTION_ROI_DOWNLOAD_TAP";
+    public static final String ACTION_ROI_SUBMIT_TAP = "ACTION_ROI_SUBMIT_TAP";
+    public static final String ACTION_ROI_SEND_TAP = "ACTION_ROI_SEND_TAP";
+
+    public static final String ALERT_ROI_SUBMIT_SUCCESS = "ALERT_ROI_SUBMIT_SUCCESS";
+    public static final String ALERT_ROI_SUBMIT_FAIL = "ALERT_ROI_SUBMIT_FAIL";
+    public static final String ALERT_ROI_DOWNLOAD_FAIL = "ALERT_ROI_DOWNLOAD_FAIL";
+
+    public static final String ACTION_ROI_PDF_PRINT_TAP = "ACTION_ROI_PDF_PRINT_TAP";
+    public static final String ACTION_ROI_PDF_SHARE_TAP = "ACTION_ROI_PDF_SHARE_TAP";
+
+
+    public static final String PAGE_ANNC_BASE_VIEW = "PAGE_ANNC_BASE_VIEW";
+    public static final String PAGE_ANNC_FORM_VIEW = "PAGE_ANNC_FORM_VIEW";
+    public static final String PAGE_ANNC_FORM_PDF_VIEW = "PAGE_ANNC_FORM_PDF_VIEW";
+
+    public static final String ACTION_ANNC_DOWNLOAD_TAP = "ACTION_ANNC_DOWNLOAD_TAP";
+    public static final String ACTION_ANNC_SUBMIT_TAP = "ACTION_ANNC_SUBMIT_TAP";
+    public static final String ACTION_ANNC_SEND_TAP = "ACTION_ANNC_SEND_TAP";
+
+    public static final String ALERT_ANNC_REQUEST_FAIL = "ALERT_ANNC_REQUEST_FAIL";
+    public static final String ALERT_ANNC_SUBMIT_SUCCESS = "ALERT_ANNC_SUBMIT_SUCCESS";
+    public static final String ALERT_ANNC_SUBMIT_FAIL = "ALERT_ANNC_SUBMIT_FAIL";
+    public static final String ALERT_ANNC_DOWNLOAD_FAIL = "ALERT_ANNC_DOWNLOAD_FAIL";
+
+    public static final String ACTION_ANNC_PDF_PRINT_TAP = "ACTION_ANNC_PDF_PRINT_TAP";
+    public static final String ACTION_ANNC_PDF_SHARE_TAP = "ACTION_ANNC_PDF_SHARE_TAP";
+
+
+    //Bill PAY
+    public static final String PAGE_BILL_PAY_VIEW = "PAGE_BILL_PAY_VIEW";
+
+    public static final String ACTION_BILL_PAY_TAP = "ACTION_BILL_PAY_TAP";
+
+    //activity logs
+    public static final String PAGE_ACTIVITY_LOG_VIEW = "PAGE_ACTIVITY_LOG_VIEW";
+    public static final String ACTION_ACTIVITY_LOGS_FILTER_TAP = "ACTION_ACTIVITY_LOGS_FILTER_TAP";
+    public static final String ACTION_ACTIVITY_LOG_APPLY_FILTER_TAP = "ACTION_ACTIVITY_LOG_APPLY_FILTER_TAP";
+
+    public static final String ALERT_ACTIVITY_LOGS_REQUEST_FAIL = "ALERT_ACTIVITY_LOGS_REQUEST_FAIL";
+
+    //contact us
+    public static final String PAGE_CONTACT_US_VIEW = "PAGE_CONTACT_US_VIEW";
+
+    public static final String ACTION_CALL_MAIN_PHONE_TAP = "ACTION_CALL_MAIN_PHONE_TAP";
+    public static final String ACTION_CALL_SCHEDULING_TAP = "ACTION_CALL_SCHEDULING_TAP";
+    public static final String ACTION_CALL_ACCOMODATIONS_TAP = "ACTION_CALL_ACCOMODATIONS_TAP";
+    public static final String ACTION_CALL_TRANSPORTATIONS_TAP = "ACTION_CALL_TRANSPORTATIONS_TAP";
+    public static final String ACTION_CALL_ROI_TAP = "ACTION_CALL_ROI_TAP";
+    public static final String ACTION_MAP_ADDR_TAP = "ACTION_MAP_ADDR_TAP";
+    public static final String ACTION_CALL_TECH_SUPPORT_TAP = "ACTION_CALL_TECH_SUPPORT_TAP";
+    public static final String ACTION_CONTACT_US_SEND_MESSAGE_TAP = "ACTION_CONTACT_US_SEND_MESSAGE_TAP";
+
+    //about
+    public static final String PAGE_PRIVACY_POLICY_VIEW = "PAGE_PRIVACY_POLICY_VIEW";
+    public static final String PAGE_ABOUT_MYCTCA_VIEW = "PAGE_ABOUT_MYCTCA_VIEW";
+    public static final String PAGE_ABOUT_MYCTCA_CERT_VIEW = "PAGE_ABOUT_MYCTCA_CERT_VIEW";
+
+    public static final String ACTION_ABOUT_MYCTCA_TERMS_OF_USE_TAP = "ACTION_ABOUT_MYCTCA_TERMS_OF_USE_TAP";
+    public static final String ACTION_ABOUT_MYCTCA_PRIVACY_POLICY_TAP = "ACTION_ABOUT_MYCTCA_PRIVACY_POLICY_TAP";
+    public static final String ACTION_ABOUT_MYCTCA_CERTIFICATION_TAP = "ACTION_ABOUT_MYCTCA_CERTIFICATION_TAP";
+
+    //SESSION RENEWAL
+    public static final String ALERT_SESSION_RENEWAL_YES = "ALERT_SESSION_RENEWAL_YES";
+    public static final String ALERT_SESSION_RENEWAL_NO = "ALERT_SESSION_RENEWAL_NO";
+
+
+    //DIAGNOSTIC REPORTING
+    public static final String ALERT_ACCEPT_ANALYTICS_REPORTING_YES = "ALERT_ACCEPT_ANALYTICS_REPORTING_YES";
+    public static final String ALERT_ACCEPT_ANALYTICS_REPORTING_NO = "ALERT_ACCEPT_ANALYTICS_REPORTING_NO";
+
+    //others
+    public static final String PAGE_USER_PROFILE_VIEW = "PAGE_USER_PROFILE_VIEW";
+
+    public static final String ALERT_LOCK_ACCOUNT = "ALERT_LOCK_ACCOUNT";
+}

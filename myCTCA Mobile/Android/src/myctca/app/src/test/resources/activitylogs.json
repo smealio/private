@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "timestamp": "2021-02-02T05:21:57.847 UTC",
+      "userName": "philly.scm@testctca.com",
+      "formattedMessage": "Accessed Medical Profile",
+      "details": null,
+      "formattedTimestamp": "2021-02-02 05:21:57.847 UTC"
+    },
+    {
+      "timestamp": "2021-02-02T05:21:56.273 UTC",
+      "userName": "philly.scm@testctca.com",
+      "formattedMessage": "Accessed Medical Profile",
+      "details": null,
+      "formattedTimestamp": "2021-02-02 05:21:56.273 UTC"
+    },
+    {
+      "timestamp": "2021-02-02T05:21:55.58 UTC",
+      "userName": "philly.scm@testctca.com",
+      "formattedMessage": "Accessed Medical Profile",
+      "details": null,
+      "formattedTimestamp": "2021-02-02 05:21:55.580 UTC"
+    },
+    {
+      "timestamp": "2021-02-02T05:21:55.58 UTC",
+      "userName": "philly.scm@testctca.com",
+      "formattedMessage": "Access Patient Reported Documents",
+      "details": null,
+      "formattedTimestamp": "2021-02-02 05:21:55.580 UTC"
+    }
+  ]
+}

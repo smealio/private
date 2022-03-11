@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/dp_8"
+    app:cardCornerRadius="@dimen/dp_10"
+    android:layout_below="@id/subTitlePreferredDate"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/apptDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_150"/>
+
+        <TextView
+            android:id="@+id/apptName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:textColor="@color/gray_150"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/apptPhysician"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_130"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/apptTimeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_130"
+            android:layout_marginTop="@dimen/dp_2"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

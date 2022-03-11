@@ -1,0 +1,74 @@
+[
+  {
+    "documentId": "301500001",
+    "documentAuthoredDate": "2020-07-30",
+    "documentAuthor": "Greenwood, Erin",
+    "documentAuthorOccupationCode": "RN",
+    "documentName": "Virtual Second Opinion Consultation Note",
+    "documentText": null
+  },
+  {
+    "documentId": "298700001",
+    "documentAuthoredDate": "2020-07-23",
+    "documentAuthor": "Test, RN 1 1",
+    "documentAuthorOccupationCode": "RN",
+    "documentName": "Progress Note Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "267400001",
+    "documentAuthoredDate": "2020-06-22",
+    "documentAuthor": "Kisacky, Doreen",
+    "documentAuthorOccupationCode": "Analyst",
+    "documentName": "Clinical Consult V2",
+    "documentText": null
+  },
+  {
+    "documentId": "261600001",
+    "documentAuthoredDate": "2020-06-15",
+    "documentAuthor": "Test, MDone MRMC",
+    "documentAuthorOccupationCode": "MD",
+    "documentName": "Progress Note Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "256100001",
+    "documentAuthoredDate": "2020-06-09",
+    "documentAuthor": "Kava, Rohitkumar",
+    "documentAuthorOccupationCode": "Analyst",
+    "documentName": "History and Physical Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "152100001",
+    "documentAuthoredDate": "2020-02-26",
+    "documentAuthor": "Test, RN 1 1",
+    "documentAuthorOccupationCode": "RN",
+    "documentName": "Consultation Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "150400001",
+    "documentAuthoredDate": "2020-02-26",
+    "documentAuthor": "Test, RN 1 1",
+    "documentAuthorOccupationCode": "RN",
+    "documentName": "History and Physical Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "136900001",
+    "documentAuthoredDate": "2020-02-19",
+    "documentAuthor": "Stack, Camille",
+    "documentAuthorOccupationCode": "MD",
+    "documentName": "History and Physical Version 3",
+    "documentText": null
+  },
+  {
+    "documentId": "130000001",
+    "documentAuthoredDate": "2020-02-07",
+    "documentAuthor": "Garbe-Moukheiber, Margaret K",
+    "documentAuthorOccupationCode": "MD",
+    "documentName": "Care Management Treatment Plan Summary",
+    "documentText": null
+  }
+]

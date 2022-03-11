@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cvAddedTimeDate1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/appointmentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_bright"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/appointmentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_4"
+                android:textColor="@color/purple_bright" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivEditDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit_icon"
+            android:padding="@dimen/dp_4" />
+
+        <ImageView
+            android:id="@+id/ivDeleteDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/delete_icon"
+            android:padding="@dimen/dp_4" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

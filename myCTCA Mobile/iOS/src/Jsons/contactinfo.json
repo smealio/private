@@ -1,0 +1,22 @@
+{
+  "contactId": "136700200",
+  "firstName": "ATLANTANEW",
+  "lastName": "TEST",
+  "middleName": null,
+  "dateOfBirth": "1977-02-18T00:00:00",
+  "primaryFacility": "SERMC",
+  "address1": "123 Anywhere ST",
+  "address2": " ",
+  "city": "Schenectady",
+  "state": "New York",
+  "postalCode": "12345",
+  "country": "United States",
+  "addressChangeType": null,
+  "addressCreatedBy": "c4619646_thomasphi",
+  "emailAddress": "rosalia.loera@ctca-hope.com",
+  "emailAddressChangeType": null,
+  "emailAddressCreatedBy": "myctca",
+  "phoneNumbers": [],
+  "changeType": null,
+  "epiId": "912712"
+}

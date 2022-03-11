@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialogCustom</item>
+        <item name="android:timePickerDialogTheme">@style/TimePickerDialogCustom</item>
+        <item name="actionBarStyle">@style/Widget.AppTheme.ActionBar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppTheme.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppTheme.PopupMenu</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:buttonStyle">@style/CTCAButton</item>
+    </style>
+
+    <!-- Action Bar -->
+    <style name="Widget.AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <!-- action bar background - without android prefix -->
+        <item name="background">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <!-- action bar elevation - without android prefix -->
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.ActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="background">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <!-- title text color -->
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <!-- subtitle text color -->
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <!-- action menu item text color -->
+        <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+        <!-- action menu item icon color -->
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.PopupMenu" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="background">@color/white</item>
+        <item name="android:background">@color/white</item>
+        <!-- popup menu background - NEVER "android:background" !!! in themes -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- popup menu item text color -->
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Splash Screen theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!-- myCTCA Buttons -->
+    <style name="CTCAButton" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- DatePickerDialog -->
+    <!--   <style name="DatePickerDialogCustom" parent="android:Theme.Material.Light.Dialog">
+           <item name="android:headerBackground">@color/colorPrimary</item>
+           <item name="colorAccent">@color/colorPrimary</item>
+       </style>-->
+    <!-- TimePickerDialog -->
+    <!--<style name="TimePickerDialogCustom" parent="android:Theme.Material.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+-->
+        <style name="CalenderViewCustom">
+            <item name="colorAccent">@color/purple_bright</item>
+            <item name="colorPrimary">@color/white</item>
+            <item name="android:dateTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        </style>
+        <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+            <item name="android:textColor">@color/purple_bright</item>
+            <item name="android:textSize">@dimen/sp_14</item>
+        </style>
+        <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+            <item name="android:textColor">@color/gray_130</item>
+            <item name="android:textSize">@dimen/sp_16</item>
+            <item name="android:searchIcon">@color/red</item>
+        </style>
+
+
+    <style name="BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigationView.Inactive</item>
+    </style>
+
+    <!-- blank styles for better code readability-->
+    <style name="TextAppearance"/>
+    <style name="TextAppearance.BottomNavigationView"/>
+
+    <!-- inactive tab icon style -->
+    <style name="TextAppearance.BottomNavigationView.Inactive">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- active tab icon style -->
+    <style name="TextAppearance.BottomNavigationView.Active">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/appts_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            tools:context="com.myctca.fragment.appointmment.AppointmentUpcomingFragment"
+            android:background="@color/white_gray">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/apptRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:clipToPadding="false">
+
+                <com.myctca.common.CTCARecyclerView
+                    android:id="@+id/apptRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="@dimen/dp_16" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <!-- Empty Table View -->
+            <LinearLayout
+                android:id="@+id/appt_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white_gray">
+
+                <ImageView
+                    android:id="@+id/appt_empty_view_image_view"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:contentDescription="@string/appt_empty_symbol_descriptor"
+                    android:src="@drawable/calendar_filled"
+                    app:tint="@color/viewLightGrey" />
+
+                <TextView
+                    android:id="@+id/appt_empty_view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center"
+                    android:text="@string/appointment_empty_list_title"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/gray_150" />
+
+                <TextView
+                    android:id="@+id/appt_empty_view_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:text="@string/appointment_empty_list_message"
+                    android:textSize="@dimen/sp_16" />
+
+                <Button
+                    android:id="@+id/appt_request_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginTop="@dimen/dp_39"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:background="@drawable/ctca_round_button_green"
+                    android:text="@string/appointment_request_appt"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+[
+  {
+    "enteredDate": "2019-11-06T12:50:00",
+    "details": [
+      {
+        "observationItem": "Weight kg",
+        "value": "80",
+        "displaySequence": 455
+      },
+      {
+        "observationItem": "BSA",
+        "value": "2",
+        "displaySequence": 461
+      }
+    ]
+  }
+]

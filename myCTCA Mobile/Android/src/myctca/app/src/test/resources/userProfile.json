@@ -1,0 +1,61 @@
+{
+  "epiId": "911303",
+  "ctcaId": "7207",
+  "firstName": "Rose",
+  "lastName": "Test",
+  "emailAddress": "rose.test@testctca.com",
+  "primaryFacility": "ERMC",
+  "roles": [
+    "Portal Proxy User"
+  ],
+  "isSuperUser": false,
+  "userPermissions": [
+    "Manage Preferences",
+    "View Bill Pay",
+    "View External Links",
+    "View Forms Library",
+    "View Health History",
+    "View Medical Documents",
+    "View My Account",
+    "View User Logs",
+    "Download CCDA Documents",
+    "View Care Plan",
+    "View Clinical Documents",
+    "View Allergies",
+    "View Lab Results",
+    "View CCDA Documents",
+    "View Health Issues",
+    "View Imaging Documents",
+    "View Secure Messages",
+    "View Immunizations",
+    "View Appointments",
+    "View Radiation Documents",
+    "Transmit CCDA Documents",
+    "View Integrative Documents",
+    "View Prescriptions",
+    "View Vital Signs"
+  ],
+  "proxies": [
+    {
+      "toCtcaUniqueId": "7207",
+      "relationshipType": "Self",
+      "firstName": "Rose",
+      "lastName": "Test",
+      "isImpersonating": false
+    },
+    {
+      "toCtcaUniqueId": "7136",
+      "relationshipType": "Caregiver",
+      "firstName": "Tanja",
+      "lastName": "Test",
+      "isImpersonating": false
+    },
+    {
+      "toCtcaUniqueId": "7135",
+      "relationshipType": "Caregiver",
+      "firstName": "Brad",
+      "lastName": "Test",
+      "isImpersonating": true
+    }
+  ]
+}

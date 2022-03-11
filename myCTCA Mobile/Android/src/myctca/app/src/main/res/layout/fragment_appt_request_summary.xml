@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragment.appointmment.ApptRequestSummaryFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:padding="@dimen/dp_16"
+            android:textColor="@color/gray_150"
+            android:text="@string/appt_request_summary_title" />
+
+        <include
+            android:id="@+id/appointment_request_detail_view"
+            layout="@layout/appointment_request_detail_view"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <include
+            android:id="@+id/cvApptReason"
+            layout="@layout/cardview_title_message_edit" />
+
+        <include
+            android:id="@+id/cvPreferredDateTime"
+            layout="@layout/cardview_title_message_edit" />
+
+        <include
+            android:id="@+id/cvContactPreference"
+            layout="@layout/cardview_title_message_edit" />
+
+        <include
+            android:id="@+id/cvAdditionalComments"
+            layout="@layout/cardview_title_message_edit" />
+    </LinearLayout>
+</LinearLayout>

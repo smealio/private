@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MoreFormsLibraryFragment">
+
+    <TextView
+        android:id="@+id/release_of_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="14dp"
+        android:text="@string/release_of_information"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/roi_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:background="@color/listSeparator"/>
+    <TextView
+        android:id="@+id/adv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="14dp"
+        android:text="@string/adv_notice"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/annc_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:background="@color/listSeparator" />
+</LinearLayout>

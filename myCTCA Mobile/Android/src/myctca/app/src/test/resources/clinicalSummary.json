@@ -1,0 +1,29 @@
+[
+  {
+    "creationTime": "2021-07-06T05:00:55.777Z",
+    "title": "Auto Generated CCD 30 Hours Post Discharge CCD",
+    "authors": "SACCDAClinicWRMC, SVC Accnt, ",
+    "docType": "CCDA",
+    "facilityName": "SERMC",
+    "community": null,
+    "uniqueId": "258"
+  },
+  {
+    "creationTime": "2021-06-05T19:16:42.107Z",
+    "title": "Auto Generated CCD 30 Hours Post Discharge CCD",
+    "authors": "SACCDAClinicWRMC, SVC Accnt, ",
+    "docType": "CCDA",
+    "facilityName": "SERMC",
+    "community": null,
+    "uniqueId": "132"
+  },
+  {
+    "creationTime": "2021-05-14T08:51:33.453Z",
+    "title": "Auto Generated 7 Days Post Discharge CCD",
+    "authors": "SACCDAClinicWRMC, SVC Accnt, ",
+    "docType": "CCDA",
+    "facilityName": "SERMC",
+    "community": null,
+    "uniqueId": "16"
+  }
+]

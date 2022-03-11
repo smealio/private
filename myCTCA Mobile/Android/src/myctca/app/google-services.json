@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "660311893782",
+    "project_id": "myctcacom",
+    "storage_bucket": "myctcacom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660311893782:android:c499df63e2fbc188801237",
+        "android_client_info": {
+          "package_name": "com.myctca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAU4lvNx3dOf_RMZnEDK0ZVn9qCey8n8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660311893782-ssdrpvnle9md583k9aou8rss4oq112cc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myctca.myctca.qa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660311893782:android:c2e9dad258051a09801237",
+        "android_client_info": {
+          "package_name": "com.myctca.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAU4lvNx3dOf_RMZnEDK0ZVn9qCey8n8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660311893782-ssdrpvnle9md583k9aou8rss4oq112cc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myctca.myctca.qa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660311893782:android:cb8c8dea33f5344c801237",
+        "android_client_info": {
+          "package_name": "com.myctca.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAU4lvNx3dOf_RMZnEDK0ZVn9qCey8n8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660311893782-ssdrpvnle9md583k9aou8rss4oq112cc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myctca.myctca.qa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660311893782:android:066cfc1096c4a130801237",
+        "android_client_info": {
+          "package_name": "com.myctca.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAU4lvNx3dOf_RMZnEDK0ZVn9qCey8n8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660311893782-p9usbjls0ddp8u87aqaqf5mfhh9eit9d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660311893782-ssdrpvnle9md583k9aou8rss4oq112cc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myctca.myctca.qa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

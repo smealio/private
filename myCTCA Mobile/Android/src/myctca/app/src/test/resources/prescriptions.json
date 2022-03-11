@@ -1,0 +1,13 @@
+[
+  {
+    "prescriptionId": "30",
+    "drugName": "Synthroid 125 mcg (0.125 mg) oral tablet",
+    "instructions": "1 tab(s) orally once a day",
+    "startDate": "",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Active",
+    "comments": "",
+    "allowRenewal": false
+  }
+]

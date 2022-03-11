@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.applandeo.materialcalendarview.CalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendarView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:headerColor="@color/white"
+    app:headerLabelColor="@color/black"
+    app:daysLabelsColor="@color/black"
+    app:previousButtonSrc="@drawable/left_arrow"
+    app:forwardButtonSrc="@drawable/right_arrow"
+    app:selectionColor="@color/purple_bright"
+    app:todayLabelColor="@color/gray_150"
+    app:type="range_picker"
+    app:disabledDaysLabelsColor="@color/viewLightGrey"
+    app:highlightedDaysLabelsColor="@color/purple_bright" />

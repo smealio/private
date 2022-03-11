@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".fragment.FrequentlyCalledNumbersFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_16"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/facility_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:textColor="@color/gray_150"
+                android:gravity="center"
+                android:text="CTCA ATLANTA" />
+
+            <LinearLayout
+                android:id="@+id/ll_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:id="@+id/facility_location"
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/facility_location_zip"
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/navy_blue"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGeneralInquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/general_enquiries_title" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_130"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/general_enquiries_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_icon" />
+
+                <TextView
+                    android:id="@+id/general_enquiries_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="(866)-801-7097"
+                    android:layout_marginStart="@dimen/dp_8" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@color/gray_130" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTechnicalSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/technical_support_title" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_130"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_16"
+                android:text="@string/technical_support_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_icon" />
+
+                <TextView
+                    android:id="@+id/technical_support_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:text="770-400-6000"
+                    android:layout_marginStart="@dimen/dp_8" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@color/gray_130" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/patient_facility_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llCareManagement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/care_management_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/care_managerment_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/care_management_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llScheduling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/scheduling_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/scheduling_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/scheduling_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_secondary_scheduling_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/secondary_scheduling_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTravelAndAccomodations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/travel_and_accomodations_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/travel_and_accomodations_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/travel_accomodations_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMedicalRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/medical_records_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/medical_records_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/medical_records_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFinancialCounseling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/financial_counseling_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/financial_counseling_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/financial_counseling_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@color/gray_130" />
+
+            <LinearLayout
+                android:id="@+id/llBilling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/billing_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/billing_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/billing_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPharmacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/pharmacy_title" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/gray_130"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/pharmacy_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/pharmacy_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="770-400-6000"
+                        android:layout_marginStart="@dimen/dp_8" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@color/gray_130" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/occ_patient_all_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/atlanta_hospital_title" />
+
+                <LinearLayout
+                    android:id="@+id/atlanta_facility_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/atlanta_facility_location"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/navy_blue"
+                        android:text="@string/atlanta_hospital_location"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/atlanta_facility_location_zip"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/atlanta_hospital_zip"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/atlanta_facility_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/atlanta_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_130" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/chicago_hospital_title" />
+
+                <LinearLayout
+                    android:id="@+id/chicago_facility_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/chicago_facility_location"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/navy_blue"
+                        android:text="@string/chicago_hospital_location"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/chicago_facility_location_zip"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chicago_hospital_zip"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/chicago_facility_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/chicago_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_130" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="@string/phoenix_hospital_title" />
+
+                <LinearLayout
+                    android:id="@+id/phoenix_facility_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/phoenix_facility_location"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/navy_blue"
+                        android:text="@string/phoenix_hospital_location"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/phoenix_facility_location_zip"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phoenix_hospital_zip"
+                        android:textColor="@color/navy_blue"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/phoenix_facility_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/phoenix_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chicago_outpatient_care_center_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:background="@color/viewLightGrey"
+                    android:text="@string/chicago_outpatient_care_center_title" />
+
+                <TextView
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="@string/downtown_chicago_hospital_title" />
+
+                <LinearLayout
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/downtown_chicago_hospital_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/downtown_chicago_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+
+                <TextView
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/downtown_gurnee_hospital_title"
+                    tools:ignore="RtlSymmetry" />
+
+                <LinearLayout
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/downtown_gurnee_hospital_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/downtown_gurnee_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/phoenix_outpatient_care_center_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:background="@color/viewLightGrey"
+                    android:text="@string/phoenix_outpatient_care_center_title" />
+
+                <TextView
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text="@string/north_phoenix_hospital_title" />
+
+                <LinearLayout
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/north_phoenix_hospital_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/north_phoenix_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+
+                <TextView
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="@string/scottdale_hospital_title"
+                    tools:ignore="RtlSymmetry" />
+
+                <LinearLayout
+                    android:paddingStart="@dimen/dp_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon" />
+
+                    <TextView
+                        android:id="@+id/scottdale_hospital_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_20"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="@string/scottdale_hospital_contact"
+                        android:layout_marginStart="@dimen/dp_8" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

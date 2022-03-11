@@ -1,0 +1,103 @@
+[
+  {
+    "performedDate": "2019-11-06",
+    "collectedBy": "CTCA",
+    "summary": [
+      {
+        "orderId": "PR19-1",
+        "name": "Slide Review",
+        "detail": [
+          {
+            "id": "154000070_0",
+            "performedDateTime": "2019-11-06T13:25:00",
+            "itemName": "Pathology Result Link",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": null,
+            "normalRange": null,
+            "notes": null,
+            "displaySequence": 6
+          },
+          {
+            "id": "150900070_1",
+            "performedDateTime": "2019-11-06T13:25:00",
+            "itemName": "Slide Review",
+            "abnormalityCodeCalculated": "",
+            "abnormalityCodeDescription": "",
+            "result": null,
+            "normalRange": null,
+            "notes": "Accession #: PR19-1\r\nSlide Consult EMRC\r\n\r\nCancer Treatment Centers of America\r\nat Eastern Regional Medical Center\r\nDepartment of Pathology\r\n1331 E. Wyoming Avenue\r\nPhiladelphia, PA   19124\r\nTel: 215-537-7492   Fax: 215-537-5435\r\nMedical Director:  Fernando U. Garcia, M.D.\r\n\r\nREVIEW CASE REPORT\r\n \r\n\r\nPatient Name:  SCM, PHILLY Z\r\nMed. Rec. #:  58100148\r\nDOB:  2/14/1988 (Age: 31)\r\nGender:  F\r\nPhysician(s):  Fernando U. Garcia MD\r\nSHAYMA KAZMI, MD\r\n\r\nBilling #:  581001155\r\n\r\nTaken:  11/6/2019\r\nReceived:  11/6/2019\r\nReported:  11/6/2019\r\n\r\nSpecimen(s) Received:\r\nA: Slide Consult EMRC\r\n\r\n\r\n\r\n\r\njh/11/6/2019\r\n***Electronically Signed Out***\r\nJane Hamilton\r\n\r\n\r\n\r\nClinical History\r\n\r\nTesting\r\n\r\nSlide/Block Description\r\nTESTING\r\n\r\nMicroscopic Description\r\n\r\nTesting micro\r\n",
+            "displaySequence": 10000
+          }
+        ]
+      },
+      {
+        "orderId": "323L16",
+        "name": "Vitamin D 25-Hydroxy Level",
+        "detail": [
+          {
+            "id": "150600070_1",
+            "performedDateTime": "2019-11-06T13:00:00",
+            "itemName": "Vitamin D 25-OH Total",
+            "abnormalityCodeCalculated": "H",
+            "abnormalityCodeDescription": "Abnormal High",
+            "result": "102",
+            "normalRange": "30 - 100  ng/mL",
+            "notes": "THIS TEST WAS PERFORMED USING THE\r\nORTHO VITROS IMMUNODIAGNOSTIC METHOD.\r\nNOTE THE CHANGE IN REFERENCE RANGE.",
+            "displaySequence": 5
+          }
+        ]
+      },
+      {
+        "orderId": "323L15",
+        "name": "Nutritional Screen",
+        "detail": [
+          {
+            "id": "150300070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Prealbumin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "18.5",
+            "normalRange": "18.0 - 35.7  mg/dL",
+            "notes": null,
+            "displaySequence": 1
+          },
+          {
+            "id": "150400070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Iron Level",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "48",
+            "normalRange": "30 - 160  ug/dL",
+            "notes": null,
+            "displaySequence": 2
+          },
+          {
+            "id": "150200070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Transferrin",
+            "abnormalityCodeCalculated": "L",
+            "abnormalityCodeDescription": "Abnormal Low",
+            "result": "201",
+            "normalRange": "202 - 364  mg/dL",
+            "notes": null,
+            "displaySequence": 5
+          },
+          {
+            "id": "150500070_0",
+            "performedDateTime": "2019-11-06T12:54:00",
+            "itemName": "Ferritin",
+            "abnormalityCodeCalculated": "N",
+            "abnormalityCodeDescription": "Normal",
+            "result": "8",
+            "normalRange": "6.24 - 137.0  ng/mL",
+            "notes": null,
+            "displaySequence": 6
+          }
+        ]
+      }
+    ]
+  }
+]

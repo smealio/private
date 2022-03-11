@@ -1,0 +1,878 @@
+[
+    {
+        
+        "appointmentId": "0080022493-1000",
+        
+        "description": "CT Scan",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T16:00:00",
+        
+        "endDateTime": "2022-03-08T16:30:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    {
+        
+        "appointmentId": "0080022354-1000",
+        
+        "description": "MRI",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T15:00:00",
+        
+        "endDateTime": "2022-03-08T16:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember not to wear clothing with metal. You will need to remove all jewelry, cell phones, and credit cards prior to your scan. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0080022493-1000",
+        
+        "description": "CT Scan",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T16:00:00",
+        
+        "endDateTime": "2022-03-08T16:30:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079627667-1000",
+        
+        "description": "Ultrasound",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T08:00:00",
+        
+        "endDateTime": "2022-03-08T19:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember nothing to eat or drink 6 hrs prior to your appointment. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Joyce ooto all day",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079566683-1000",
+        
+        "description": "PICC Line Placement",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T15:00:00",
+        
+        "endDateTime": "2022-03-08T16:30:00",
+        
+        "resources": "Interventional Radiologist  MD",
+        
+        "resourceList": [
+            
+            {
+                
+                "title": " ",
+                
+                "resourceName": "Interventional Radiologist  MD"
+                
+            }
+            
+        ],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "NO IR Doctor",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079628235-1000",
+        
+        "description": "Ultrasound",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T15:30:00",
+        
+        "endDateTime": "2022-03-08T17:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember nothing to eat or drink 6 hrs prior to your appointment. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "joyce ooto",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079567195-1000",
+        
+        "description": "PICC Line Placement",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T07:00:00",
+        
+        "endDateTime": "2022-03-08T08:30:00",
+        
+        "resources": "Interventional Radiologist  MD",
+        
+        "resourceList": [
+            
+            {
+                
+                "title": " ",
+                
+                "resourceName": "Interventional Radiologist  MD"
+                
+            }
+            
+        ],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "IR doctor not available unitll 930",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    {
+        
+        "appointmentId": "0080022493-1000",
+        
+        "description": "CT Scan",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-02-08T16:00:00",
+        
+        "endDateTime": "2022-02-08T16:30:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    {
+        
+        "appointmentId": "0080022354-1000",
+        
+        "description": "MRI",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-04-08T15:00:00",
+        
+        "endDateTime": "2022-04-08T16:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember not to wear clothing with metal. You will need to remove all jewelry, cell phones, and credit cards prior to your scan. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0080022493-1000",
+        
+        "description": "CT Scan",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-04-08T16:00:00",
+        
+        "endDateTime": "2022-04-08T16:30:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Teresa OOTO @ Noon",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079627667-1000",
+        
+        "description": "Ultrasound",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-02-01T08:00:00",
+        
+        "endDateTime": "2022-02-01T19:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember nothing to eat or drink 6 hrs prior to your appointment. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "Joyce ooto all day",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079566683-1000",
+        
+        "description": "PICC Line Placement",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-02-02T15:00:00",
+        
+        "endDateTime": "2022-03-08T16:30:00",
+        
+        "resources": "Interventional Radiologist  MD",
+        
+        "resourceList": [
+            
+            {
+                
+                "title": " ",
+                
+                "resourceName": "Interventional Radiologist  MD"
+                
+            }
+            
+        ],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "NO IR Doctor",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079628235-1000",
+        
+        "description": "Ultrasound",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T15:30:00",
+        
+        "endDateTime": "2022-03-08T17:00:00",
+        
+        "resources": "",
+        
+        "resourceList": [],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "Please remember nothing to eat or drink 6 hrs prior to your appointment. \r\n",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "joyce ooto",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    },
+    
+    {
+        
+        "appointmentId": "0079567195-1000",
+        
+        "description": "PICC Line Placement",
+        
+        "location": "Imaging (First Floor)",
+        
+        "startDateTime": "2022-03-08T07:00:00",
+        
+        "endDateTime": "2022-03-08T08:30:00",
+        
+        "resources": "Interventional Radiologist  MD",
+        
+        "resourceList": [
+            
+            {
+                
+                "title": " ",
+                
+                "resourceName": "Interventional Radiologist  MD"
+                
+            }
+            
+        ],
+        
+        "status": "Active",
+        
+        "facilityName": "WRMC",
+        
+        "facilityAddress1": "14200 W. Celebrate Life Way",
+        
+        "facilityAddress2": null,
+        
+        "facilityCity": "Goodyear",
+        
+        "facilityState": "AZ",
+        
+        "facilityPostalCode": "85338",
+        
+        "facilityMainPhone": "(623) 207-3000",
+        
+        "facilitySchedulingPhone": "(623) 207-3306",
+        
+        "facilityAccommodationsPhone": "(623) 207-3000",
+        
+        "facilityTransportationPhone": "(623) 207-3555",
+        
+        "facilityTimeZone": "MST",
+        
+        "patientInstructions": "",
+        
+        "schedulerNotes": "",
+        
+        "additionalInfo": null,
+        
+        "overrideDesc": "IR doctor not available unitll 930",
+        
+        "isTeleHealth": false,
+        
+        "teleHealthUrl": "",
+        
+        "meetingId": "",
+        
+        "telehealthInfoUrl": "",
+        
+        "telehealthMeetingJoinUrl": ""
+        
+    }
+]

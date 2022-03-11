@@ -1,0 +1,157 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion '30.0.2'
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.myctca"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 31
+        versionName "3.1.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        release {
+            storeFile file('key/MyCTCAKeyStore')
+            storePassword "icmc123"
+            keyAlias 'myctca'
+            keyPassword "icmc123"
+        }
+        staging {
+            storeFile file('key/prodkey.jks')
+            storePassword "Help4Web"
+            keyAlias 'key0'
+            keyPassword "Help4Web"
+        }
+        qa {
+            storeFile file('key/prodkey.jks')
+            storePassword "Help4Web"
+            keyAlias 'key0'
+            keyPassword "Help4Web"
+        }
+    }
+    buildTypes {
+        release {
+            buildConfigField "String", 'server_ctca_host', '"https://accounts.myctca.com"'
+            buildConfigField "String", 'myctca_server', '"https://service.myctca.com/api/v1"'
+            buildConfigField "String", 'app_center_secret', '"32bbbb71-f7f5-4aca-b814-4818f60397cf"'
+            buildConfigField "boolean", 'enable_diagnostic_reporting', 'true'
+            buildConfigField "String", 'client_secret', '"bXlDVENBUHJvZGxBbmRyb2lkQ2xpZW50"'
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "app_name", "myCTCA"
+        }
+        staging {
+            buildConfigField "String", 'server_ctca_host', '"https://testaccounts.myctca.com"'
+            buildConfigField "String", 'myctca_server', '"https://v3testservice.myctca.com/api/v1"'
+            buildConfigField "String", 'app_center_secret', '"471c77f0-3acb-41bc-bd7c-00ed5777e217"'
+            buildConfigField "boolean", 'enable_diagnostic_reporting', 'true'
+            buildConfigField "String", 'client_secret', '"S!JUuHPHa39h"'
+            signingConfig signingConfigs.staging
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".staging"
+            resValue "string", "app_name", "myCTCA_staging"
+        }
+        debug {
+            debuggable true
+            buildConfigField "String", 'server_ctca_host', '"https://dev.accounts.myctca.com"'
+            buildConfigField "String", 'myctca_server', '"https://v3devservice.myctca.com/api/v1"'
+            buildConfigField "String", 'app_center_secret', '"d183494f-5809-43d2-b622-1c1eed0f643f"'
+            buildConfigField "boolean", 'enable_diagnostic_reporting', 'true'
+            buildConfigField "String", 'client_secret', '"55DZ9^OoiCQ@"'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "myCTCA_dev"
+        }
+        qa {
+            buildConfigField "String", 'server_ctca_host', '"https://testaccounts.myctca.com"'
+            buildConfigField "String", 'myctca_server', '"https://v3testservice.myctca.com/api/v1"'
+            buildConfigField "String", 'app_center_secret', '"d183494f-5809-43d2-b622-1c1eed0f643f"'
+            buildConfigField "boolean", 'enable_diagnostic_reporting', 'true'
+            buildConfigField "String", 'client_secret', '"S!JUuHPHa39h"'
+            signingConfig signingConfigs.qa
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationIdSuffix ".qa"
+            resValue "string", "app_name", "myCTCA_qa"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-analytics:19.0.2'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.3'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'com.github.luizgrp:SectionedRecyclerViewAdapter:v3.2.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "com.google.truth:truth:1.1"
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test:core:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test:rules:1.3.0'
+    // Optional -- Hamcrest library
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
+    // Optional -- UI testing with Espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Optional -- UI testing with UI Automator
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+    testImplementation 'org.json:json:20200518'
+
+    testImplementation 'org.powermock:powermock-core:1.6.2'
+    testImplementation 'org.powermock:powermock-module-junit4:1.6.2'
+    testImplementation 'org.powermock:powermock-api-mockito:1.6.2'
+
+
+    def appCenterSdkVersion = '3.3.1'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
+    //video calling communications
+    implementation 'com.azure.android:azure-communication-calling:1.2.1-beta.1'
+
+    implementation 'com.applandeo:material-calendar-view:1.9.0-rc03'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

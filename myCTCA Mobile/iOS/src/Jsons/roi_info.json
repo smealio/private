@@ -1,0 +1,103 @@
+{
+  "facilityList": [
+    "CTCA Chicago, Phone: 847-872-6321",
+    "CTCA Tulsa, Phone: 918-286-5354",
+    "CTCA Philadelphia, Phone: 215-537-7999",
+    "CTCA Phoenix, Phone: 623-207-3080",
+    "CTCA Atlanta, Phone: 770-400-6100"
+  ],
+  "facilities": [
+    {
+      "key": "MRMC",
+      "value": "CTCA Chicago, Phone: 847-872-6321"
+    },
+    {
+      "key": "SRMC",
+      "value": "CTCA Tulsa, Phone: 918-286-5354"
+    },
+    {
+      "key": "ERMC",
+      "value": "CTCA Philadelphia, Phone: 215-537-7999"
+    },
+    {
+      "key": "WRMC",
+      "value": "CTCA Phoenix, Phone: 623-207-3080"
+    },
+    {
+      "key": "SERMC",
+      "value": "CTCA Atlanta, Phone: 770-400-6100"
+    }
+  ],
+  "deliveryMethods": [
+    "Mail",
+    "Fax",
+    "Email",
+    "Pick-up date"
+  ],
+  "authorizationActions": [
+    "Release information to:",
+    "Obtain information from:"
+  ],
+  "purposes": [
+    "Continuity of Care",
+    "Disability",
+    "Personal",
+    "Legal",
+    "Insurance",
+    "Employer"
+  ],
+  "disclosureInformationList": [
+    "Chemotherapy flowsheet",
+    "Chemotherapy records",
+    "Consultation",
+    "Discharge summary",
+    "History and physical",
+    "Laboratory reports",
+    "Medication summary",
+    "Naturopathic summary",
+    "Oncology records",
+    "Operative reports",
+    "Pathology reports",
+    "Radiology images",
+    "Radiology reports",
+    "Radiation therapy records and notes",
+    "Rehabilitation notes",
+    "Other"
+  ],
+  "highlyConfidentialInformationList": [
+    "Abuse of an adult with disability",
+    "Child abuse and neglect",
+    "Genetic testing",
+    "HIV/AIDS testing or treatment (including if an HIV test was ordered, performed or reported regardless of results)",
+    "Infertility / IVF / Artificial Insemination",
+    "Mental illness or developmental disability",
+    "Sexual assault",
+    "Substance abuse or diagnosis"
+  ],
+  "facilityName": "",
+  "selectedFacility": null,
+  "firstName": null,
+  "lastName": null,
+  "dateOfBirth": null,
+  "selectedDeliveryMethod": null,
+  "pickupDate": null,
+  "selectedAuthorizationAction": null,
+  "facilityOrIndividual": null,
+  "address": null,
+  "city": null,
+  "state": null,
+  "zip": null,
+  "phoneNumber": null,
+  "fax": null,
+  "emailAddress": null,
+  "selectedPurposes": null,
+  "beginDate": null,
+  "endDate": null,
+  "restrictions": null,
+  "selectAllDisclosures": false,
+  "selectedDisclosureInformation": null,
+  "disclosureInformationOther": null,
+  "selectedHighlyConfidentialDiscolosureInformation": null,
+  "signature": null,
+  "patientRelation": null
+}

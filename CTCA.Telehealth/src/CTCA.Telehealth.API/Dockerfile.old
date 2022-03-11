@@ -1,0 +1,29 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+RUN apt-get update
+RUN apt-get -y install gss-ntlmssp
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+WORKDIR /src
+COPY ["CTCA.Telehealth.API/CTCA.Telehealth.API.csproj", "CTCA.Telehealth.API/"]
+COPY ["CTCA.Telehealth.Repository/CTCA.Telehealth.Repository.csproj", "CTCA.Telehealth.Repository/"]
+COPY ["CTCA.Telehealth.Application/CTCA.Telehealth.Application.csproj", "CTCA.Telehealth.Application/"]
+COPY ["CTCA.Telehealth.Shared/CTCA.Telehealth.Shared.csproj", "CTCA.Telehealth.Shared/"]
+COPY ["CTCA.Telehealth.Microsoft/CTCA.Telehealth.Microsoft.csproj", "CTCA.Telehealth.Microsoft/"]
+RUN dotnet restore "CTCA.Telehealth.API/CTCA.Telehealth.API.csproj"
+COPY . .
+WORKDIR "/src/CTCA.Telehealth.API"
+RUN dotnet build "CTCA.Telehealth.API.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "CTCA.Telehealth.API.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "CTCA.Telehealth.API.dll"]

@@ -1,0 +1,45 @@
+
+/* Class = "UITextField"; accessibilityHint = "Enter your registered CTCA ID (email address)"; ObjectID = "59h-ac-dfk"; */
+"59h-ac-dfk.accessibilityHint" = "Enter your registered CTCA ID (email address)";
+
+/* Class = "UITextField"; accessibilityLabel = "CTCA ID"; ObjectID = "59h-ac-dfk"; */
+"59h-ac-dfk.accessibilityLabel" = "CTCA ID";
+
+/* Class = "UITextField"; placeholder = "CTCA ID"; ObjectID = "59h-ac-dfk"; */
+"59h-ac-dfk.placeholder" = "CTCA ID";
+
+/* Class = "UITextField"; accessibilityHint = "Enter your password here"; ObjectID = "6lF-jQ-Iwv"; */
+"6lF-jQ-Iwv.accessibilityHint" = "Enter your password here";
+
+/* Class = "UITextField"; accessibilityLabel = "Password"; ObjectID = "6lF-jQ-Iwv"; */
+"6lF-jQ-Iwv.accessibilityLabel" = "Password";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "6lF-jQ-Iwv"; */
+"6lF-jQ-Iwv.placeholder" = "Password";
+
+/* Class = "UIButton"; accessibilityHint = "Tap to register and create a C T C A I D"; ObjectID = "93i-ma-hHD"; */
+"93i-ma-hHD.accessibilityHint" = "Tap to register and create a C T C A I D";
+
+/* Class = "UIButton"; accessibilityLabel = "Register for C T C A ID "; ObjectID = "93i-ma-hHD"; */
+"93i-ma-hHD.accessibilityLabel" = "Register for C T C A ID ";
+
+/* Class = "UIButton"; accessibilityHint = "Tap this to sign in"; ObjectID = "CcC-Co-LCY"; */
+"CcC-Co-LCY.accessibilityHint" = "Tap this to sign in";
+
+/* Class = "UIButton"; accessibilityLabel = "Sign In button"; ObjectID = "CcC-Co-LCY"; */
+"CcC-Co-LCY.accessibilityLabel" = "Sign In button";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "CcC-Co-LCY"; */
+"CcC-Co-LCY.normalTitle" = "Sign In";
+
+/* Class = "UIButton"; accessibilityHint = "tap to authenticate using Touch ID"; ObjectID = "U7F-j2-7vV"; */
+"U7F-j2-7vV.accessibilityHint" = "tap to authenticate using Touch ID";
+
+/* Class = "UIButton"; accessibilityLabel = "Touch I D Button"; ObjectID = "U7F-j2-7vV"; */
+"U7F-j2-7vV.accessibilityLabel" = "Touch I D Button";
+
+/* Class = "UIButton"; accessibilityHint = "Tap to access help and support topics"; ObjectID = "xlN-jM-uBO"; */
+"xlN-jM-uBO.accessibilityHint" = "Tap to access help and support topics";
+
+/* Class = "UIButton"; accessibilityLabel = "Help and Support button"; ObjectID = "xlN-jM-uBO"; */
+"xlN-jM-uBO.accessibilityLabel" = "Help and Support button";

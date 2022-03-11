@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newMailScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/new_mail_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/redWarningBackground">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:alpha="1"
+                android:contentDescription="@string/more_contact_us_disclaimer_icon_desc"
+                app:tint="@color/redWarningContent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_warning" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:paddingBottom="12dp"
+                android:text="@string/more_contact_us_disclaimer"
+                android:textAlignment="viewStart"
+                android:textColor="@color/redWarningContent"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/listSeparator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="4dp"
+                app:cardMaxElevation="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="@dimen/card_margin_horizontal"
+                android:layout_marginRight="@dimen/card_margin_horizontal"
+                card_view:cardCornerRadius="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_contact_us"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/more_contact_us_treatment_facility_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/more_contact_us_treatment_facility"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/more_contact_us_treatment_facility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_treatment_facility_header"
+                        android:layout_marginTop="16dp"
+                        android:text="Midwestern Regional Medical Border"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_main_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_treatment_facility"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_main_phone_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_main_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_main_phone_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_call_main"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_main_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_main_phone_img"
+                            android:layout_below="@+id/more_contact_us_call_main_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="215-537-7400"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_sched_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_main_phone_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_sched_phone_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_sched_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_sched_phone_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_call_scheduling"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_sched_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_sched_phone_img"
+                            android:layout_below="@+id/more_contact_us_call_sched_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="215-537-7400"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_accom_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_sched_phone_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_accom_phone_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_accom_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_accom_phone_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_call_accommodations"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_accom_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_accom_phone_img"
+                            android:layout_below="@+id/more_contact_us_call_accom_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="215-537-7400"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_trans_phone_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_accom_phone_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_trans_phone_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_trans_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_trans_phone_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_call_transportation"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_trans_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_trans_phone_img"
+                            android:layout_below="@+id/more_contact_us_call_trans_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="215-537-7400"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_roi_help_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_trans_phone_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_roi_help_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_roi_help_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_roi_help_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_call_roihelp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_roi_help_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_roi_help_img"
+                            android:layout_below="@+id/more_contact_us_roi_help_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="215-537-7400"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_map_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_roi_help_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_map_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_action_place" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_map_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_map_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_map_address"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_map_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_map_img"
+                            android:layout_below="@+id/more_contact_us_map_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="2520 Elisha Avenue"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_map_city_state_zip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_map_img"
+                            android:layout_below="@+id/more_contact_us_map_address"
+                            android:layout_marginLeft="24dp"
+                            android:text="Zion, Illinois 60060"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_care_giver_facility_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/more_contact_us_treatment_facility"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_16"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/caregiver_facilityInfoAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardMaxElevation="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="@dimen/card_margin_horizontal"
+                android:layout_marginRight="@dimen/card_margin_horizontal"
+                card_view:cardCornerRadius="0dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/more_contact_us_tech_support_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/more_contact_us_tech_support_header_text"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_call_tech_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_tech_support_header"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_call_tech_phone_img"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/phone"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_tech_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/more_contact_us_call_tech_phone_img"
+                            android:layout_marginLeft="24dp"
+                            android:text="@string/more_contact_us_tech_support_call"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_call_tech_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/more_contact_us_call_tech_phone_img"
+                            android:layout_below="@+id/more_contact_us_call_tech_title"
+                            android:layout_marginLeft="24dp"
+                            android:text="800-234-0482"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/more_contact_us_send_message_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_contact_us_call_tech_layout"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/more_contact_us_send_message_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/mail"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/more_contact_us_send_message_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/more_contact_us_send_message_img"
+                            android:text="@string/more_contact_us_send_message_title"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

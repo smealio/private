@@ -1,0 +1,62 @@
+/* 
+  Localizable.strings
+  myctca
+
+  Created by Tomack, Barry on 11/8/17.
+  Copyright © 2017 CTCA. All rights reserved.
+*/
+
+// Login View
+LoginProblemTitle = "Login Problem";
+LoginCallForHelpTitle = "Call for Help";
+LoginErrorUserAccessDeniedP1 = "Username and/or Password incorrect. Please try again. If problem persists, please call CTCA Technical Support at ";
+LoginErrorUserAssitMsg = " for assistance.";
+LoginErrorUserAccessDeniedAppendP1 = "If problem persists, please call CTCA Technical Support at ";
+LoginErrorUserLockedP1 = "The account for this CTCA ID is locked. Try again in 30 minutes or call CTCA Help at ";
+LoginErrorUserLockedP2 = " for direct assistance.";
+LoginRequiredFields = "Please enter your CTCA ID and password.";
+LoginRegistrationMessage = "By creating a CTCA ID, you agree to the Terms and Conditions and the CTCA Privacy Policy.";
+LoginRegistrationCancel = "Cancel";
+LoginRegistrationAgreeAndContinue = "Agree and Continue";
+LoginRegistrationTermsAndConditions = "Terms and Conditions";
+LoginRegistrationPrivacyPolicy = "Privacy Policy";
+LoginTouchIdReason = "Sign In with Touch ID";
+LoginTouchIdErrorTitle = "TouchID Error";
+LoginTouchIDErrorAuthenticationFailed = "There was a problem verifying your identity on this device.";
+LoginTouchIDErrorUserCancelled = "Touch ID sign in cancelled by user.";
+LoginTouchIdErrorUserFallback = "TouchID sign in rejected by user.";
+LoginTouchIDErrorSystemCancelled = "Touch ID sign in cancelled by iOS.";
+LoginTouchIdErrorUnkown = "Unknown error encountered with Touch ID.";
+LoginTouchIdErrorPasscodeNotSet = "Passcode is not set on this device.";
+LoginTouchIDErrorTouchIDUnavailable = "Touch ID is not avaialble on this device.";
+LoginTouchIDErrorNotEnrolled = "There are no fingerprints enrolled for Touch ID on this device.";
+LoginTouchIDErrorLockout = "Too many failed Touch ID attempts. Passcode required to unlock Touch ID.";
+LoginTouchIDErrorDefault = "There was an unknown problem using TouchID.";
+LoginFaceIdReason = "Sign in with Face ID";
+LoginFaceIdErrorTitle = "Face ID Error";
+LoginFaceIdErrorAuthenticationFailed = "There was a problem verifying your identity on this device.";
+LoginFaceIdErrorUserCancelled = "Face ID sign in cancelled by user.";
+LoginFaceIdErrorUserFallback = "Face ID sign in rejected by user.";
+LoginFaceIdErrorSystemCancelled = "Face ID sign in cancelled by iOS.";
+LoginFaceIdErrorUnkown = "Unknown error encountered with Face ID.";
+LoginFaceIdErrorPasscodeNotSet = "Passcode is not set on this device.";
+LoginFaceIdErrorTouchIDUnavailable = "Face ID is not avaialble on this device.";
+LoginFaceIdErrorNotEnrolled = "There are no fingerprints enrolled for Face ID on this device.";
+LoginFaceIdErrorLockout = "Too many failed Face ID attempts. Passcode required to unlock Face ID.";
+LoginFaceIdErrorDefault = "There was an unknown problem using Face ID.";
+
+// TouchID
+AboutTouchID_txt = "You can choose to sign in to CTCAConnect™ simply by using your fingerprint. Be sure that only your fingerprint is stored on this device. Once Touch ID™ is enabled, anyone with a stored fingerprint on this device could have access to your data.\n\nYou can turn this feature on or off at anytime here in the CTCAConnect™ Settings.\n\nTo learn more about Touch ID™ and security, please visit Apple's web site.\n\nAbout Touch ID™";
+AboutTouchIDLinkText = "About Touch ID™";
+
+// Face ID
+AboutFaceID_txt = "You can choose to sign in to CTCAConnect™ simply by using Face ID™. Be sure that only your face is stored on this device. Once Face ID™ is enabled, anyone with a stored face on this device could have access to your data.\n\nYou can turn this feature on or off at anytime here in the CTCAConnect™ Settings.\n\nTo learn more about FaceID™ and security, please visit Apple's web site.\n\nAbout Face ID™";
+AboutFaceIDLinkText = "About Face ID™";
+
+// Networking
+NetworkingDataProblemTitle = "Data Problem";
+NetworkingDataProblem = "There was a problem retrieving data from the CTCA services.";
+NetworkingErrorGeneralMessage = "There was an error reaching the CTCA service. Check your network connectivity. If the problem persists, please try again later";
+
+// Errors
+Error = "Error";

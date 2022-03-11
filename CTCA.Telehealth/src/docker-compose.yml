@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ctca.telehealth.api:
+    image: ${DOCKER_REGISTRY-}ctcatelehealth
+    build:
+      context: .
+      dockerfile: CTCA.Telehealth.API/Dockerfile

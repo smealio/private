@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CareGiverHomeFooterView" customModule="myctca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ks-5z-EEd">
+                    <rect key="frame" x="25" y="59" width="250" height="17.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Patient" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cty-PX-u32">
+                    <rect key="frame" x="25" y="78" width="224" height="33"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBc-Oq-TbJ">
+                    <rect key="frame" x="261" y="82" width="14" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="gaF-CH-fHp"/>
+                        <constraint firstAttribute="width" constant="14" id="pcO-M2-J44"/>
+                    </constraints>
+                    <state key="normal" image="disclosure"/>
+                    <connections>
+                        <action selector="showPatientsTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="qH8-Fb-QmQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAREGIVER ACCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-3h-1y7">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                    <color key="backgroundColor" red="0.01176470588" green="0.33725490200000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9H9-Yr-trv"/>
+                        <constraint firstAttribute="height" constant="44" id="fFe-wF-kKi"/>
+                        <constraint firstAttribute="height" constant="44" id="pTQ-vT-Sqa"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="vib-kK-bbo"/>
+                        <constraint firstAttribute="height" constant="44" id="zXR-mj-ono"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9H9-Yr-trv"/>
+                            <exclude reference="fFe-wF-kKi"/>
+                            <exclude reference="pTQ-vT-Sqa"/>
+                            <exclude reference="zXR-mj-ono"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="9H9-Yr-trv"/>
+                            <include reference="fFe-wF-kKi"/>
+                            <exclude reference="pTQ-vT-Sqa"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="pTQ-vT-Sqa"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="9H9-Yr-trv"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="zXR-mj-ono"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynN-Oo-bsW">
+                    <rect key="frame" x="90" y="191" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3Vy-YC-ROE"/>
+                        <constraint firstAttribute="width" constant="120" id="FCU-Na-ign"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" red="0.01176470588" green="0.33725490200000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Sign out"/>
+                    <connections>
+                        <action selector="signouTappedTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="u4K-hi-C3D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oax-Qe-L89">
+                    <rect key="frame" x="90" y="128" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.01176470588" green="0.33725490200000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Who-Tk-Y9f"/>
+                        <constraint firstAttribute="width" constant="120" id="xTt-Nm-hn6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <color key="tintColor" red="0.01176470588" green="0.33725490200000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="View Records">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="viewRecordsTapped:" destination="-2" eventType="touchUpInside" id="Aqb-UA-DrE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="WBc-Oq-TbJ" firstAttribute="leading" secondItem="cty-PX-u32" secondAttribute="trailing" constant="12" id="5se-Ue-bTe"/>
+                <constraint firstItem="ynN-Oo-bsW" firstAttribute="top" secondItem="Oax-Qe-L89" secondAttribute="bottom" constant="33" id="6Gu-MD-I9P"/>
+                <constraint firstItem="Oax-Qe-L89" firstAttribute="top" secondItem="cty-PX-u32" secondAttribute="bottom" constant="17" id="9rR-7G-HND"/>
+                <constraint firstItem="cty-PX-u32" firstAttribute="top" secondItem="0ks-5z-EEd" secondAttribute="bottom" constant="1.5" id="DCQ-LN-Jid"/>
+                <constraint firstItem="ynN-Oo-bsW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NNc-p2-7u9"/>
+                <constraint firstItem="0ks-5z-EEd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="Qn0-zc-2Rb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WBc-Oq-TbJ" secondAttribute="trailing" constant="25" id="T5N-0r-gkU"/>
+                <constraint firstItem="cty-PX-u32" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="TUw-ob-Rp7"/>
+                <constraint firstItem="WBc-Oq-TbJ" firstAttribute="centerY" secondItem="cty-PX-u32" secondAttribute="centerY" id="Wkd-6b-XyJ"/>
+                <constraint firstItem="WBc-Oq-TbJ" firstAttribute="leading" secondItem="cty-PX-u32" secondAttribute="trailing" constant="12" id="Xi6-XL-xna"/>
+                <constraint firstItem="Oax-Qe-L89" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bML-IA-eVY"/>
+                <constraint firstItem="ke2-3h-1y7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dkB-Rs-umK"/>
+                <constraint firstItem="ke2-3h-1y7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fPs-ZD-TmD"/>
+                <constraint firstAttribute="trailing" secondItem="ke2-3h-1y7" secondAttribute="trailing" id="kmd-AZ-GTe"/>
+                <constraint firstAttribute="trailing" secondItem="0ks-5z-EEd" secondAttribute="trailing" constant="25" id="rgj-Xq-9uF"/>
+                <constraint firstItem="0ks-5z-EEd" firstAttribute="top" secondItem="ke2-3h-1y7" secondAttribute="bottom" constant="15" id="vkj-m7-j3s"/>
+                <constraint firstItem="WBc-Oq-TbJ" firstAttribute="top" secondItem="0ks-5z-EEd" secondAttribute="bottom" constant="5.5" id="xTR-Ad-f0n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noPateintsLabel" destination="0ks-5z-EEd" id="m47-bp-8Pw"/>
+                <outlet property="patientNameField" destination="cty-PX-u32" id="GXS-mR-iIs"/>
+                <outlet property="showPatientButton" destination="WBc-Oq-TbJ" id="uer-8Q-Get"/>
+                <outlet property="signOutButton" destination="ynN-Oo-bsW" id="rXk-aV-72k"/>
+                <outlet property="viewRecordsButton" destination="Oax-Qe-L89" id="bsl-uK-cLU"/>
+            </connections>
+            <point key="canvasLocation" x="-216" y="-176.31184407796104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="disclosure" width="32.5" height="50"/>
+    </resources>
+</document>

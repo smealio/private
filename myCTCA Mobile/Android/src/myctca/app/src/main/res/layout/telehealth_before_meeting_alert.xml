@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_light"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginTop="64dp"
+        android:text="Your appointment does not start until:" />
+
+
+    <TextView
+        android:id="@+id/appt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_22"
+        android:layout_margin="@dimen/dp_4"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:layout_margin="@dimen/dp_4"
+        android:textColor="@color/text_light"
+        android:text="Please join during that time." />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ctca_round_button_green"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/call_tech_ok"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/dp_28"/>
+
+</LinearLayout>

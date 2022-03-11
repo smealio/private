@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NavActivity">
+    <item
+        android:id="@+id/toolbar_appts_download"
+        android:icon="@drawable/download_icon"
+        android:title="@string/download_btn_text"
+        app:iconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/toolbar_appts_new"
+        android:icon="@drawable/add_square_icon"
+        android:title="@string/menu_new_appt_request"
+        app:iconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom|withText" />
+</menu>

@@ -1,0 +1,15 @@
+//
+//  myctca_staging.xcconfig
+//  myctca
+//
+//  Created by Tomack, Barry on 4/18/18.
+//  Copyright © 2018 CTCA. All rights reserved.
+//
+#include "../../Pods/Target Support Files/Pods-myctca/Pods-myctca.debug (staging).xcconfig"
+
+ctca_host_server        = alphaaccounts.myctca.com
+portal_data_server      = v3alphaservice.myctca.com/api/v1
+server_protocol         = https
+clientSecret            = yxm@2JdmVYEA
+
+appSecret       = 471c77f0-3acb-41bc-bd7c-00ed5777e217

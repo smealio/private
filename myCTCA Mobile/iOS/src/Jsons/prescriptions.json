@@ -1,0 +1,101 @@
+[
+  {
+    "prescriptionId": "669",
+    "drugName": "Jardiance 10 mg oral tablet",
+    "instructions": "1 tab(s) orally once a day x 90 days",
+    "startDate": "2020-10-09",
+    "expireDate": "2021-01-06",
+    "prescriptionType": "CTCA-Prescribed",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "1072",
+    "drugName": "Keppra 1000 mg oral tablet",
+    "instructions": "1 tab(s) orally once a day x 30 days",
+    "startDate": "2021-01-19",
+    "expireDate": "2021-02-17",
+    "prescriptionType": "CTCA-Prescribed",
+    "statusType": "Active",
+    "comments": "",
+    "allowRenewal": true
+  },
+  {
+    "prescriptionId": "886",
+    "drugName": "labetalol 100 mg oral tablet",
+    "instructions": "1 tab(s) orally once a day x 30 days",
+    "startDate": "2020-10-30",
+    "expireDate": "2020-11-28",
+    "prescriptionType": "CTCA-Prescribed",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "1064",
+    "drugName": "omeprazole 10 mg oral delayed release capsule",
+    "instructions": "1 cap(s) orally once a day x 30 days",
+    "startDate": "2021-01-18",
+    "expireDate": "2021-02-16",
+    "prescriptionType": "CTCA-Prescribed",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "909",
+    "drugName": "acetaminophen 48 mg/mL oral liquid",
+    "instructions": "",
+    "startDate": "",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "405",
+    "drugName": "acetaminophen 80 mg oral tablet, chewable",
+    "instructions": "1 tab(s) orally every 4 hours",
+    "startDate": "",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "855",
+    "drugName": "CARBOplatin 10 mg/mL intravenous solution",
+    "instructions": "60.5 milliliter(s) intravenous once",
+    "startDate": "2020-10-28",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "912",
+    "drugName": "Lipitor 10 mg oral tablet",
+    "instructions": "1 tab(s) orally once a day",
+    "startDate": "",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  },
+  {
+    "prescriptionId": "908",
+    "drugName": "Lipitor 20 mg oral tablet",
+    "instructions": "1 tab(s) orally once a day",
+    "startDate": "",
+    "expireDate": "",
+    "prescriptionType": "Self-Reported",
+    "statusType": "Discontinued",
+    "comments": "",
+    "allowRenewal": false
+  }
+]

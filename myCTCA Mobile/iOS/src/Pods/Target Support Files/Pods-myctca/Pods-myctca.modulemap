@@ -1,0 +1,6 @@
+framework module Pods_myctca {
+  umbrella header "Pods-myctca-umbrella.h"
+
+  export *
+  module * { export * }
+}

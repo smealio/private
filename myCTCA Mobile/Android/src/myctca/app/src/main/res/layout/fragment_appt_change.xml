@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/changeApptScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/change_appt_from_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/change_appt_from"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/change_appt_from_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_from_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/change_appt_subject_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/change_appt_subject"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/change_appt_subject_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_subject_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/change_appt_desc_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/change_appt_desc"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/change_appt_desc_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="none"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_desc_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+
+        <LinearLayout
+            android:id="@+id/change_appt_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/change_appt_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/change_appt_date"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/change_appt_date_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:textSize="18sp"
+                    android:hint="@string/input_text_placeholder"
+                    android:textColor="@color/editTextInput"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/change_appt_date_disclosure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="6dp"
+                android:src="@drawable/ic_keyboard_arrow_right"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/change_appt_request_disclosure_image_description"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_date_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/change_appt_date_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/change_appt_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/change_appt_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/change_appt_time"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/change_appt_time_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:textSize="18sp"
+                    android:hint="@string/input_text_placeholder"
+                    android:textColor="@color/editTextInput"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/change_appt_time_disclosure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="6dp"
+                android:src="@drawable/ic_keyboard_arrow_right"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/change_appt_request_disclosure_image_description"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_time_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/change_appt_time_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/invalid_date_time_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="6dp"
+            android:paddingStart="0dp"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:text="@string/new_appt_bad_date_message"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/change_appt_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:text="@string/change_appt_phone"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/change_appt_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="phone"
+                android:digits="0123456789 -()+"
+                android:textColor="@color/editTextInput"
+                android:textSize="18sp"
+                android:maxLength="@integer/edit_max_length"
+                android:hint="@string/input_text_placeholder"
+                android:labelFor="@+id/change_appt_phone_label"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/change_appt_phone_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/change_appt_phone_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/change_appt_reason_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="6dp"
+            android:paddingStart="0dp"
+            android:text="@string/change_appt_hint"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/change_appt_reason_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="top"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+            android:minHeight="100dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:hint="@string/input_text_placeholder"
+            android:labelFor="@+id/change_appt_reason_label"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

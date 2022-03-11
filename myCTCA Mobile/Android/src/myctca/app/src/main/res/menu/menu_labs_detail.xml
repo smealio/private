@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Item removed pending review of need and how to properly implement
+    <item
+        android:id="@+id/labs_download_results"
+        android:icon="@drawable/ic_action_download"
+        android:title="@string/labs_detail_download_results"
+        app:showAsAction="always"/>-->
+</menu>

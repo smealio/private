@@ -1,0 +1,22 @@
+[
+  {
+    "substance": null,
+    "reactionSeverity": null,
+    "status": "Inactive"
+  },
+  {
+    "substance": "penicillin",
+    "reactionSeverity": "Anaphylaxis (Moderate)",
+    "status": "Active"
+  },
+  {
+    "substance": null,
+    "reactionSeverity": null,
+    "status": "Inactive"
+  },
+  {
+    "substance": "penicillin",
+    "reactionSeverity": "Anaphylaxis (Moderate)",
+    "status": "Active"
+  }
+]

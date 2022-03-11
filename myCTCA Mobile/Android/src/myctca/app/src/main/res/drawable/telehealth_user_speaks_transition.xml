@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The drawables used here can be solid colors, gradients, shapes, images, etc. -->
+    <item android:drawable="@drawable/call_user_white_round_bg" android:width="120dp" android:height="120dp" android:gravity="center"/>
+    <item android:drawable="@drawable/call_user_white_bg_large" android:width="130dp" android:height="130dp" android:gravity="center"/>
+</transition>

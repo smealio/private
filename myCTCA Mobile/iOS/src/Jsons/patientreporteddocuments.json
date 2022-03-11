@@ -1,0 +1,32 @@
+[
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Fatigue",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-21",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Nausea",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  },
+  {
+    "performedDate": "2021-03-22",
+    "displayPerformedDate": "03/22/2021",
+    "itemName": "Disturbed Sleep",
+    "observationValue": "1",
+    "rangeValue": "0 - 10",
+    "abnormalityCode": "",
+    "formatedTextEncoded": "INCREASED",
+    "abnormalityCodeDescription": ""
+  }
+]

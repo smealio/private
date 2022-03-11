@@ -1,0 +1,27 @@
+[
+  {
+    "substance": "Penicillin",
+    "reactionSeverity": "Anaphylaxis",
+    "status": "Active"
+  },
+  {
+    "substance": "Berries",
+    "reactionSeverity": "Anaphylaxis",
+    "status": "Active"
+  },
+  {
+    "substance": "Latex",
+    "reactionSeverity": "Anaphylaxis",
+    "status": "Active"
+  },
+  {
+    "substance": "3M Skin and Nasal Antiseptic",
+    "reactionSeverity": "Coughing (Severe)",
+    "status": "Active"
+  },
+  {
+    "substance": "Cashews",
+    "reactionSeverity": "Congestion; Coughing",
+    "status": "Active"
+  }
+]

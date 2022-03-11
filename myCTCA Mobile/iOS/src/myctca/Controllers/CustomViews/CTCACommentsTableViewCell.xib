@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CTCACommentsTableViewCell" rowHeight="97" id="KGk-i7-Jjw" customClass="CTCACommentsTableViewCell" customModule="myctca" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4e-4Z-AwU" customClass="CTCACardView" customModule="myctca" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="392" height="84"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-JS-uz2">
+                                <rect key="frame" x="16" y="16" width="36" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" name="ctca-selection-purple"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-Fn-M2Q">
+                                <rect key="frame" x="16" y="49" width="358" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="ctca-dark-gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuI-bn-R2j">
+                                <rect key="frame" x="62" y="0.0" width="312" height="39"/>
+                                <state key="normal" image="edit_pen"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="86c-7h-JZj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="JuI-bn-R2j" firstAttribute="leading" secondItem="HUY-JS-uz2" secondAttribute="trailing" constant="10" id="5iw-OV-JJA"/>
+                            <constraint firstItem="HUY-JS-uz2" firstAttribute="top" secondItem="o4e-4Z-AwU" secondAttribute="top" constant="16" id="Eos-C8-919"/>
+                            <constraint firstAttribute="trailing" secondItem="lPf-Fn-M2Q" secondAttribute="trailing" constant="18" id="M8N-Qn-wdM"/>
+                            <constraint firstAttribute="trailing" secondItem="JuI-bn-R2j" secondAttribute="trailing" constant="18" id="RDM-ps-zxL"/>
+                            <constraint firstItem="JuI-bn-R2j" firstAttribute="top" secondItem="o4e-4Z-AwU" secondAttribute="top" id="bw5-or-iSZ"/>
+                            <constraint firstItem="lPf-Fn-M2Q" firstAttribute="leading" secondItem="o4e-4Z-AwU" secondAttribute="leading" constant="16" id="g6Y-uI-DBB"/>
+                            <constraint firstItem="lPf-Fn-M2Q" firstAttribute="top" secondItem="HUY-JS-uz2" secondAttribute="bottom" constant="10" id="kwf-Xy-zvF"/>
+                            <constraint firstAttribute="bottom" secondItem="lPf-Fn-M2Q" secondAttribute="bottom" constant="16" id="rFE-7S-Ad3"/>
+                            <constraint firstItem="JuI-bn-R2j" firstAttribute="bottom" secondItem="HUY-JS-uz2" secondAttribute="bottom" id="uHn-Xl-Ac1"/>
+                            <constraint firstItem="HUY-JS-uz2" firstAttribute="leading" secondItem="o4e-4Z-AwU" secondAttribute="leading" constant="16" id="uLZ-dz-PhJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o4e-4Z-AwU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="ax0-Ss-h9P"/>
+                    <constraint firstItem="o4e-4Z-AwU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cmZ-lb-oNZ"/>
+                    <constraint firstAttribute="bottom" secondItem="o4e-4Z-AwU" secondAttribute="bottom" constant="5" id="iE4-OC-jju"/>
+                    <constraint firstAttribute="trailing" secondItem="o4e-4Z-AwU" secondAttribute="trailing" constant="20" symbolic="YES" id="wbg-gc-5EM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardView" destination="o4e-4Z-AwU" id="TZu-6N-lN6"/>
+                <outlet property="subTitleLabel" destination="lPf-Fn-M2Q" id="914-Q1-wh1"/>
+                <outlet property="titleLabel" destination="HUY-JS-uz2" id="lqs-oM-O8f"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="46.205357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit_pen" width="16" height="16"/>
+        <namedColor name="ctca-dark-gray">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-selection-purple">
+            <color red="0.44313725490196076" green="0.090196078431372548" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

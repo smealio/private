@@ -1,0 +1,156 @@
+[
+  {
+    "name": "SERMC",
+    "displayName": "Cancer Treatment Centers of America, Atlanta",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, Atlanta",
+      "line1": "600 Celebrate Life Parkway",
+      "line2": null,
+      "city": "Newnan",
+      "state": "GA",
+      "postalCode": "30265",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(770) 400-6000",
+    "schedulingPhone": "(855) 848-5761",
+    "accommodationsPhone": "(770) 400-6000",
+    "transportationPhone": "(855) 848-5764",
+    "himroiPhone": "(770) 400-6100"
+  },
+  {
+    "name": "MRMC",
+    "displayName": "Cancer Treatment Centers of America, Chicago",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, Chicago",
+      "line1": "2520 Elisha Avenue",
+      "line2": null,
+      "city": "Zion",
+      "state": "IL",
+      "postalCode": "60099",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(847) 872-4561",
+    "schedulingPhone": "(800) 458-1975",
+    "accommodationsPhone": "(866) 751-2822",
+    "transportationPhone": "(866) 751-2822",
+    "himroiPhone": "(847) 872-6321"
+  },
+  {
+    "name": "OCC",
+    "displayName": "Cancer Treatment Centers of America, OCC",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, OCC",
+      "line1": "Various Locations",
+      "line2": null,
+      "city": "N. Phoenix, Scottsdale, Gilbert",
+      "state": "AZ",
+      "postalCode": "853--",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(623) 207-3000",
+    "schedulingPhone": "(623) 207-3306",
+    "accommodationsPhone": "(623) 207-3000",
+    "transportationPhone": "(623) 207-3555",
+    "himroiPhone": "(623) 207-3080"
+  },
+  {
+    "name": "ERMC",
+    "displayName": "Cancer Treatment Centers of America, Philadelphia",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, Philadelphia",
+      "line1": "1331 East Wyoming Avenue",
+      "line2": null,
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19124",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(215) 537-7400",
+    "schedulingPhone": "(215) 537-7111",
+    "accommodationsPhone": "(215) 537-7400",
+    "transportationPhone": "(215) 537-7948",
+    "himroiPhone": "(215) 537-7999"
+  },
+  {
+    "name": "WRMC",
+    "displayName": "Cancer Treatment Centers of America, Phoenix",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, Phoenix",
+      "line1": "14200 W. Celebrate Life Way",
+      "line2": null,
+      "city": "Goodyear",
+      "state": "AZ",
+      "postalCode": "85338",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(623) 207-3000",
+    "schedulingPhone": "(623) 207-3306",
+    "accommodationsPhone": "(623) 207-3000",
+    "transportationPhone": "(623) 207-3555",
+    "himroiPhone": "(623) 207-3080"
+  },
+  {
+    "name": "SRMC",
+    "displayName": "Cancer Treatment Centers of America, Tulsa",
+    "address": {
+      "systemId": null,
+      "name": "Cancer Treatment Centers of America, Tulsa",
+      "line1": "10109 E. 79th Street (81st Street & Highway 169)",
+      "line2": null,
+      "city": "Tulsa",
+      "state": "OK",
+      "postalCode": "74133",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(800) 788-8485",
+    "schedulingPhone": "(888) 920-7017",
+    "accommodationsPhone": "(800) 788-8485",
+    "transportationPhone": "(800) 788-8485",
+    "himroiPhone": "(918) 286-5354"
+  },
+  {
+    "name": "ONCORDIS",
+    "displayName": "Oncordis Clinic at CTCA",
+    "address": {
+      "systemId": null,
+      "name": "Oncordis Clinic at CTCA",
+      "line1": "10153 E. 79th Street (Suite 101)",
+      "line2": null,
+      "city": "Tulsa",
+      "state": "Oklahoma",
+      "postalCode": "74133",
+      "country": null,
+      "primary": true,
+      "createdBy": null,
+      "changeType": null
+    },
+    "mainPhone": "(800) 788-8485",
+    "schedulingPhone": "(888) 920-7017",
+    "accommodationsPhone": "(800) 788-8485",
+    "transportationPhone": "(800) 788-8485",
+    "himroiPhone": null
+  }
+]

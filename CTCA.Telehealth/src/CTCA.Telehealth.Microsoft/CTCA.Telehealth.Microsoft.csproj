@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Models\EWS\EWSDeleteItem.cs" />
+    <Compile Remove="Models\EWS\EWSDeleteItem.cs" />
+    <Compile Remove="Models\EWS\EWSCreateItem.cs" />
+    <Compile Remove="Models\EWS\EWSCreateItemResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clients\EWS\" />
+    <Folder Include="Common\" />
+    <Folder Include="Models\Calendar\" />
+    <Folder Include="Models\EWS\" />
+    <Folder Include="Models\EWS\Create\" />
+    <Folder Include="Models\EWS\Delete\" />
+    <Folder Include="Models\EWS\Create\Response\" />
+    <Folder Include="Clients\ACS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.17.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.17.0" />
+    <PackageReference Include="Microsoft.Exchange.WebServices.NETStandard" Version="2.0.0-beta1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="Azure.Communication.Administration" Version="1.0.0-beta.3" />
+    <PackageReference Include="Azure.Communication.Common" Version="1.0.0" />
+    <PackageReference Include="Azure.Communication.Identity" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CTCA.Telehealth.Application\CTCA.Telehealth.Application.csproj" />
+    <ProjectReference Include="..\CTCA.Telehealth.Domain\CTCA.Telehealth.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#037B66</color>
+    <color name="colorPrimaryDark">#3c3c3c</color>
+    <color name="colorAccent">#565a5c</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="textPrimary">#333333</color>
+    <color name="editTextInput">#333333</color>
+    <color name="editTextHint">#999999</color>
+    <color name="viewLightGrey">#ebebeb</color>
+    <color name="neutralGrey">#ebebed</color>
+    <color name="fadedGreen">#9ebdab</color>
+    <color name="listSeparator">#e8e8e8</color>
+
+    <color name="redWarningBackground">#F5D7DA</color>
+    <color name="redWarningContent">#721c24</color>
+
+    <color name="ripple_color">#f2f2f2</color>
+    <color name="navigation_drawers_bg_color">#001119</color>
+    <color name="navigation_txt_color">#666666</color>
+    <color name="navigation_sep_color">#f2f2f2</color>
+    <color name="highlight_text_color">#3C7AB7</color>
+
+    <color name="dark_gray">#4D4D4D</color>
+    <color name="text_light">#434343</color>
+    <color name="gray_150">#39393B</color>
+    <color name="gray_130">#5C5C60</color>
+    <color name="navy_blue">#0050C8</color>
+    <color name="blue">#3176DD</color>
+
+    <color name="red_bright">#F03F3F</color>
+    <color name="purple_bright">#711766</color>
+    <color name="light_gray">#E9E9E9</color>
+
+    <color name="white_gray">#F8F8F8</color>
+    <color name="light_blue">#EBF4F3</color>
+    <color name="dark_grey">#1E1E20</color>
+
+</resources>

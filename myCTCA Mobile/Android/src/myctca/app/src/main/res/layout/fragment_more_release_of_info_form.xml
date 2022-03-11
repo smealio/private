@@ -1,0 +1,1521 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/more_roi_frame_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:background="@color/white"
+                android:clickable="true">
+
+    <ScrollView
+        android:id="@+id/more_roi_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <include android:id="@+id/roi_patient_info_title" layout="@layout/roi_top_banner"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/medical_center_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_med_center_label"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+                <Spinner
+                    android:id="@+id/medical_center_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:textSize="18sp"
+                    android:textColor="@color/editTextInput"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/medical_center_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/medical_center_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/patient_firstname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_firstname"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/patient_firstname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/editTextInput"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_firstname_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/patient_firstname_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/patient_lastname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_lastname"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:id="@+id/patient_lastname_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/editTextInput"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_lastname_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/patient_lastname_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/dob_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dob_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_dob"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/dob_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:textColor="@color/editTextInput"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dob_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/dob_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/roi_request_title" layout="@layout/roi_top_banner"/>
+
+            <LinearLayout
+                android:id="@+id/delivery_method_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/delivery_method_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_delivery_method"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/delivery_method_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/pickup_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_pickup_date"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/pickup_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/delivery_method_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/delivery_method_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/auth_release_obtain_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/auth_release_obtain_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:paddingEnd="16dp"
+                        android:paddingStart="0dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/editTextInput"
+                        android:text="@string/more_roi_auth_release_obtain"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_auth_action_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_release_obtain_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_release_obtain_highlight"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_facility_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_facility"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_facility_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_facility_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_facility_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_address"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="textCapWords"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_address_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_address_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_city_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_city"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_city_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:textColor="@color/editTextInput"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_city_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_city_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_state_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_state"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_state_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/editTextInput"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_state_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_state_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_zip_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_zip"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_zip_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/editTextInput"
+                    android:inputType="number"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:hint="@string/input_text_placeholder"
+                    android:textSize="18sp"
+                    android:maxLength="5"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_zip_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_zip_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_phone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_phone_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/editTextInput"
+                    android:inputType="phone"
+                    android:digits="0123456789 -()+"
+                    android:maxLength="@integer/edit_max_length"
+                    android:hint="@string/input_text_placeholder"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_phone_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_phone_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_fax_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_fax"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_fax_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/editTextInput"
+                    android:inputType="number"
+                    android:maxLength="@integer/edit_max_length"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_fax_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_fax_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_auth_email"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/auth_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/editTextInput"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auth_email_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/auth_email_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/purpose_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/purpose_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_auth_purpose"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/purpose_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="none"
+                        android:textSize="18sp"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="6dp"
+                    android:src="@drawable/ic_keyboard_arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/purpose_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/purpose_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/roi_date_of_service_title" layout="@layout/roi_top_banner"/>
+
+            <LinearLayout
+                android:id="@+id/dates_of_service_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="@dimen/dp_8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_of_service_section_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="0dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/editTextInput"
+                    android:text="@string/more_roi_date_of_service_label"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_dates_of_service_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dates_of_service_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_dates_of_service_from"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/beginning_specific_date_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dates_of_service_from_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/listSeparator"/>
+                <View
+                    android:id="@+id/dates_of_service_from_highlight"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="-12dp"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_dates_of_service_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dates_of_service_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="0dp"
+                        android:text="@string/more_roi_dates_of_service_to"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/ending_specific_date_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:hint="@string/input_text_placeholder"
+                        android:textColor="@color/editTextInput"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dates_of_service_to_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/listSeparator"/>
+                <View
+                    android:id="@+id/dates_of_service_to_highlight"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="-12dp"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <include android:id="@+id/roi_info_diclosed_title" layout="@layout/roi_top_banner"/>
+
+
+            <LinearLayout
+                android:id="@+id/info_disclosed_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/info_disclosed_general_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_disclosed_general_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="6dp"
+                            android:paddingStart="0dp"
+                            android:text="@string/more_roi_info_to_disclose_general"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/info_disclosed_general_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="0dp"
+                            android:hint="@string/input_text_placeholder"
+                            android:textColor="@color/editTextInput"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="6dp"
+                        android:src="@drawable/ic_keyboard_arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/info_disclosed_general_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/listSeparator"/>
+                <View
+                    android:id="@+id/info_disclosed_general_highlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="-12dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/info_disclosed_confidential_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_disclosed_confidential_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="6dp"
+                            android:paddingStart="0dp"
+                            android:text="@string/more_roi_info_to_disclose_confidential"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/info_disclosed_confidential_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:paddingEnd="16dp"
+                            android:paddingStart="0dp"
+                            android:textColor="@color/editTextInput"
+                            android:hint="@string/input_text_placeholder"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="6dp"
+                        android:src="@drawable/ic_keyboard_arrow_right"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/info_disclosed_confidential_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/info_disclosed_confidential_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/info_disclosed_section_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/editTextInput"
+                android:text="@string/more_roi_info_disclose_section_label"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dates_of_service_restrictions_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_dates_of_service_indicate_restrictions"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    style="@style/Widget.AppCompat.EditText"
+                    android:id="@+id/dates_of_service_restrictions_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:imeOptions="flagNoExtractUi"
+                    android:gravity="top"
+                    android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                    android:minHeight="100dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="@color/editTextInput"
+                    android:textColorHint="@color/colorPrimary"
+                    android:hint=""
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dates_of_service_restrictions_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+            <View
+                android:id="@+id/dates_of_service_restrictions_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingBottom="@dimen/dp_16"
+                android:textSize="16sp"
+                android:textColor="@color/editTextInput"
+                android:text="@string/more_roi_disclosed_info_footer"/>
+
+
+            <include android:id="@+id/roi_authorization_title" layout="@layout/roi_top_banner"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_roi_valid_auth"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_0"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_1"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_2"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_3"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_4"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_5"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="4dp"
+                        android:text="@string/more_roi_valid_auth_bullet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/more_roi_valid_auth_bullet_6"/>
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:id="@+id/signing_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/patient_responsible_party_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/auth_patient_party_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_party"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+
+                <EditText
+                    android:id="@+id/auth_patient_party_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:hint="@string/input_text_placeholder"
+                    android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_responsible_partyseparator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+            <LinearLayout
+                android:id="@+id/patient_relation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/more_annc_patient_relation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/more_roi_patient_relation"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+
+                <EditText
+                    android:id="@+id/auth_patient_relationship_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="none"
+                    android:imeOptions="flagNoExtractUi"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/editTextInput"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/patient_relation_partyseparator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/listSeparator"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

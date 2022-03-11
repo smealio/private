@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lab_set_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lab_set_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Hepatitius C  RNA Genotype"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/lab_set_normal_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Normal Range: 1.50 - 6.60 K/UL"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:id="@+id/lab_set_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lab_set_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36 (HIGH)"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_weight="2"/>
+
+        <ImageView
+            android:id="@+id/lab_set_result_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/red"
+            app:srcCompat="@drawable/ic_arrow_upward_black_24dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/lab_set_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="(NOTE)"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"/>
+
+    <View
+        android:id="@+id/lab_set_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/listSeparator"/>
+
+</LinearLayout>

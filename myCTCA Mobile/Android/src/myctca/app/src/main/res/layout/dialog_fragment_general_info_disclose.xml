@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <include android:id="@+id/roi_info_label" layout="@layout/release_of_info_spinner_header"/>
+    <include android:id="@+id/roi_general_info_title" layout="@layout/roi_top_banner"/>
+
+    <ScrollView
+        android:id="@+id/general_info_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tl_general_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="UselessParent">
+
+                        <CheckBox
+                            android:id="@+id/select_all_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/CTCACheckBox"/>
+
+                        <TextView
+                            android:id="@+id/select_all_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/select_all_checkbox"
+                            android:text="@string/more_roi_info_to_disclose_select_all"
+                            android:textAlignment="viewStart"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="16sp"/>
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/other_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:gravity="top"
+                    android:text="@string/more_roi_info_to_disclose_other"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/other_edittext"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/more_roi_info_to_disclose_other_hint"
+                    android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                    android:minHeight="70dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="6dp"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorAccent"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

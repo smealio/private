@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NavActivity">
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:title=""
+        android:icon="@drawable/ic_action_more_vert"
+        android:orderInCategory="11111"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/item_share_pdf"
+                android:title="@string/more_roi_share_pdf"
+                app:showAsAction="ifRoom|withText"/>
+            <item android:id="@+id/item_print_pdf"
+                android:title="@string/more_roi_pdf_print_pdf"
+                app:showAsAction="ifRoom|withText"/>
+        </menu>
+    </item>
+</menu>

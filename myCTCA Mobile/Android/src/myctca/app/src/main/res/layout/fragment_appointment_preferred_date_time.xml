@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.appointmment.AppointmentRequestCommonFragment">
+
+    <LinearLayout
+        android:id="@+id/llAppointmentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="@string/appt_details_title" />
+
+        <include
+            android:id="@+id/appointment_request_detail_view"
+            layout="@layout/appointment_request_detail_view"
+            android:layout_margin="@dimen/dp_16"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPreferredDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/llAppointmentDetails">
+
+        <TextView
+            android:id="@+id/apptPreferredTimeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:text="@string/appointment_preferred_datetime_title" />
+
+        <TextView
+            android:id="@+id/subTitlePreferredDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="You can select up to 3 options."
+            android:textColor="@color/gray_130" />
+
+        <LinearLayout
+            android:id="@+id/selectedCalendarDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dp_30" />
+
+        <TextView
+            android:id="@+id/addDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dotted_stroke_purple"
+            android:text=" + Add Dates/Times"
+            android:textColor="@color/purple_bright"
+            android:gravity="center"
+            android:padding="@dimen/dp_16"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/llCancelReason"
+        layout="@layout/fragment_appointment_reason_request"
+        android:visibility="gone"
+        android:layout_below="@id/llPreferredDateTime"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</RelativeLayout>

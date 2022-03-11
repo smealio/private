@@ -1,0 +1,15 @@
+//
+//  myctca_prod.xcconfig
+//  myctca
+//
+//  Created by Tomack, Barry on 4/18/18.
+//  Copyright © 2018 CTCA. All rights reserved.
+//
+#include "../../Pods/Target Support Files/Pods-myctca/Pods-myctca.release (prod).xcconfig"
+
+ctca_host_server        = accounts.myctca.com
+portal_data_server      = service.myctca.com/api/v1/
+server_protocol         = https
+clientSecret            = bXlDVENBUHJvZGxpT1NDbGllbnQ=
+
+appSecret       = eaece06c-183e-46ab-971a-319ae074300e

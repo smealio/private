@@ -1,0 +1,63 @@
+{
+  "epiId": "911068",
+  "ctcaId": "7365",
+  "firstName": "Philly",
+  "lastName": "Scn",
+  "emailAddress": "philly.scm@testctca.com",
+  "primaryFacility": "ERMC",
+  "roles": [
+    "Portal Patient"
+  ],
+  "isSuperUser": false,
+  "userPermissions": [
+    "Add Alternate Contact",
+    "Cancel Appointment",
+    "Download CCDA Documents",
+    "Edit Alternate Contact",
+    "Edit Contact",
+    "Manage Notifications",
+    "Manage Preferences",
+    "Request Appointment",
+    "Request Prescription Refill",
+    "Reschedule Appointment",
+    "Send Secure Messages",
+    "Submit ANNC Form",
+    "Submit ROI Form",
+    "Transmit CCDA Documents",
+    "View Allergies",
+    "View Appointments",
+    "View Bill Pay",
+    "View Care Plan",
+    "View CCDA Documents",
+    "View Clinical Documents",
+    "View External Links",
+    "View Forms Library",
+    "View Health History",
+    "View Health Issues",
+    "View Imaging Documents",
+    "View Immunizations",
+    "View Integrative Documents",
+    "View Interactive",
+    "View Lab Results",
+    "View Medical Contacts",
+    "View Medical Documents",
+    "View My Account",
+    "View Patient Reported Documents",
+    "View Prescriptions",
+    "View Quick Links",
+    "View Radiation Documents",
+    "View Secure Messages",
+    "View System Alert Messages",
+    "View User Logs",
+    "View Vital Signs"
+  ],
+  "proxies": [
+    {
+      "toCtcaUniqueId": "7365",
+      "relationshipType": "Self",
+      "firstName": "Philly",
+      "lastName": "Scn",
+      "isImpersonating": true
+    }
+  ]
+}

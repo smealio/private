@@ -1,0 +1,154 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        tools:context="com.myctca.fragment.MoreAboutMyCTCAFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="@dimen/card_margin_horizontal"
+            android:layout_marginRight="@dimen/card_margin_horizontal"
+            card_view:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_ctca_portal_version"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorAccent"
+                    android:paddingBottom="14dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="14dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_about_myctca_title"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="14sp"/>
+
+                <TextView
+                    android:id="@+id/more_about_myctca_copyright_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/more_about_myctca_copyright"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/more_about_myctca_version_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/more_about_myctca_version"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="@dimen/card_margin_horizontal"
+            android:layout_marginRight="@dimen/card_margin_horizontal"
+            card_view:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more_about_myctca_legal"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorAccent"
+                    android:paddingBottom="14dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="14dp"/>
+
+                <Button
+                    android:id="@+id/more_about_myctca_terms_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/more_about_myctca_terms"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/more_about_myctca_privacy_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/more_about_myctca_privacy"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/more_about_myctca_certifications_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:gravity="start|center_vertical"
+                    android:paddingBottom="14dp"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="14dp"
+                    android:text="@string/more_about_myctca_certifications"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

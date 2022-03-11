@@ -1,0 +1,31 @@
+platform :ios, '13.0'
+use_frameworks!
+
+target 'myctca' do
+  # Pods for myctca
+   pod 'AppCenter'
+
+   pod 'Alamofire'
+
+   pod 'AzureCommunicationCalling', '~> 2.0.1-beta.1'
+   #pod 'AzureCommunication', '~> 1.0.0-beta.11'
+   #pod 'AzureCore', '~> 1.0.0-beta.11'
+   pod 'AzureCommunicationCommon', '1.0.2'
+
+   pod 'JTAppleCalendar', '~> 7.1'
+
+   pod 'Firebase/Core'
+   pod 'Firebase/Crashlytics'
+   pod 'Firebase/Analytics'
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+            config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+            config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+        end
+    end
+end
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_clinical_summaries_download"
+        android:icon="@drawable/download_icon"
+        android:title="@string/download_btn_text"
+        app:iconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/toolbar_clinical_summaries_filter"
+        android:icon="@drawable/filter_icon"
+        android:title="@string/menu_filter_title"
+        app:iconTint="@color/colorPrimary"
+        app:showAsAction="ifRoom|withText" />
+</menu>

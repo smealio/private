@@ -1,0 +1,17 @@
+[
+  {
+    "userId": 6678,
+    "userPreferenceType": "AcceptedDiagnosticReporting",
+    "userPreferenceValue": "True"
+  },
+  {
+    "userId": 6678,
+    "userPreferenceType": "AcceptedTermsOfUse",
+    "userPreferenceValue": "True"
+  },
+  {
+    "userId": 6678,
+    "userPreferenceType": "AppointmentsDays",
+    "userPreferenceValue": "14"
+  }
+]

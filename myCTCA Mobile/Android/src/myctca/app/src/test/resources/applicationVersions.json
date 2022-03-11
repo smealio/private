@@ -1,0 +1,26 @@
+[
+  {
+    "id": "263bf96b-910a-44fe-8e3e-15574182c341",
+    "platform": "Android",
+    "versionNumber": "2.0.2",
+    "mandatory": true
+  },
+  {
+    "id": "025cb986-1855-4b97-a986-409ea06cdbc1",
+    "platform": "Android",
+    "versionNumber": "2.0.4",
+    "mandatory": false
+  },
+  {
+    "id": "657fdfa6-59d2-4c25-bae3-a64083cc1c25",
+    "platform": "iOS",
+    "versionNumber": "1.0.3",
+    "mandatory": true
+  },
+  {
+    "id": "0fa9a300-6298-4635-84b1-2a67668f63c4",
+    "platform": "Web",
+    "versionNumber": "3.1",
+    "mandatory": false
+  }
+]

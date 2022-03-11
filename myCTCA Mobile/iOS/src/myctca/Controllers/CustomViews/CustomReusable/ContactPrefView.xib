@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactPrefView" customModule="myctca" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="TSY-02-862" id="00Q-HC-g77"/>
+                <outlet property="closeEditButton" destination="6h7-Uq-Kja" id="0iI-vC-w4R"/>
+                <outlet property="contactInputView" destination="SqV-aC-oMh" id="tMU-Z8-9mV"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JWd-Fh-lJL"/>
+                <outlet property="editView" destination="Rok-8d-ktE" id="cPU-3C-PFZ"/>
+                <outlet property="mainViewHeight" destination="9Od-qm-NRL" id="5fS-24-MuG"/>
+                <outlet property="radioButtonImage" destination="I8c-Xm-bUy" id="6pB-gK-e6Q"/>
+                <outlet property="subTitleLabel" destination="Dde-sw-EJR" id="fnw-VS-cz9"/>
+                <outlet property="titleLabel" destination="Aql-a1-cdw" id="XoU-Mb-k6j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ContactPrefView" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-02-862" customClass="CTCACardView" customModule="myctca" customModuleProvider="target">
+                    <rect key="frame" x="16" y="9" width="382" height="170"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aql-a1-cdw">
+                            <rect key="frame" x="64" y="12" width="266" height="22"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dde-sw-EJR">
+                            <rect key="frame" x="64" y="42" width="34.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rok-8d-ktE">
+                            <rect key="frame" x="64" y="47" width="318" height="123"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0An-2M-DXL" customClass="CTCAGreenButton" customModule="myctca" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="73" width="297" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="Taq-qN-0eP"/>
+                                    </constraints>
+                                    <state key="normal" title="Save">
+                                        <color key="titleColor" name="ctca-white"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="WNL-IN-N4u"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqV-aC-oMh" customClass="CTCAContactInputView" customModule="myctca" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="297" height="73"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="0An-2M-DXL" firstAttribute="top" secondItem="SqV-aC-oMh" secondAttribute="bottom" id="2Oc-QI-gaF"/>
+                                <constraint firstAttribute="bottom" secondItem="0An-2M-DXL" secondAttribute="bottom" constant="2" id="Ao6-8d-r7T"/>
+                                <constraint firstItem="SqV-aC-oMh" firstAttribute="leading" secondItem="Rok-8d-ktE" secondAttribute="leading" id="DRN-X8-dVq"/>
+                                <constraint firstItem="0An-2M-DXL" firstAttribute="leading" secondItem="Rok-8d-ktE" secondAttribute="leading" id="UJM-jf-yoN"/>
+                                <constraint firstItem="0An-2M-DXL" firstAttribute="top" secondItem="SqV-aC-oMh" secondAttribute="bottom" id="UOQ-9j-I8x"/>
+                                <constraint firstAttribute="trailing" secondItem="SqV-aC-oMh" secondAttribute="trailing" constant="21" id="ZMP-gp-Xoy"/>
+                                <constraint firstItem="SqV-aC-oMh" firstAttribute="top" secondItem="Rok-8d-ktE" secondAttribute="top" id="jgZ-7n-ggV"/>
+                                <constraint firstAttribute="trailing" secondItem="0An-2M-DXL" secondAttribute="trailing" constant="21" id="xyY-Mz-IDB"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CTCARadioImage" translatesAutoresizingMaskIntoConstraints="NO" id="I8c-Xm-bUy" customClass="CTCARadioImage" customModule="myctca" customModuleProvider="target">
+                            <rect key="frame" x="20" y="25" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="7u3-JP-Nok"/>
+                                <constraint firstAttribute="height" constant="20" id="fB2-kr-ct1"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h7-Uq-Kja" customClass="SwitchButton" customModule="myctca" customModuleProvider="target">
+                            <rect key="frame" x="344" y="7" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="8Xz-Fb-Peg"/>
+                                <constraint firstAttribute="width" constant="30" id="sm4-QS-Lzj"/>
+                            </constraints>
+                            <color key="tintColor" name="ctca-dark-gray"/>
+                            <state key="normal" title="Button" image="edit_pen"/>
+                            <connections>
+                                <action selector="closeEditButtonTapped:" destination="-1" eventType="touchUpInside" id="zqZ-fU-DCT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="6h7-Uq-Kja" firstAttribute="top" secondItem="TSY-02-862" secondAttribute="top" constant="7" id="15n-a5-ddy"/>
+                        <constraint firstAttribute="height" constant="170" id="9Od-qm-NRL"/>
+                        <constraint firstItem="Aql-a1-cdw" firstAttribute="top" secondItem="TSY-02-862" secondAttribute="top" constant="12" id="K3g-PD-hkE"/>
+                        <constraint firstItem="Aql-a1-cdw" firstAttribute="leading" secondItem="I8c-Xm-bUy" secondAttribute="trailing" constant="24" id="KpA-sl-TBO"/>
+                        <constraint firstItem="6h7-Uq-Kja" firstAttribute="leading" secondItem="Aql-a1-cdw" secondAttribute="trailing" constant="14" id="O8m-L0-fNi"/>
+                        <constraint firstItem="Dde-sw-EJR" firstAttribute="leading" secondItem="I8c-Xm-bUy" secondAttribute="trailing" constant="24" id="QKi-No-bwd"/>
+                        <constraint firstItem="Rok-8d-ktE" firstAttribute="leading" secondItem="Dde-sw-EJR" secondAttribute="leading" id="T1f-yp-vil"/>
+                        <constraint firstAttribute="bottom" secondItem="Rok-8d-ktE" secondAttribute="bottom" id="U3a-v6-2tE"/>
+                        <constraint firstItem="Rok-8d-ktE" firstAttribute="top" secondItem="TSY-02-862" secondAttribute="top" constant="47" id="W3R-e8-w7G"/>
+                        <constraint firstItem="I8c-Xm-bUy" firstAttribute="leading" secondItem="TSY-02-862" secondAttribute="leading" constant="20" symbolic="YES" id="aYB-8A-0Gy"/>
+                        <constraint firstItem="I8c-Xm-bUy" firstAttribute="top" secondItem="TSY-02-862" secondAttribute="top" constant="25" id="fhV-Rl-4Ta"/>
+                        <constraint firstAttribute="trailing" secondItem="6h7-Uq-Kja" secondAttribute="trailing" constant="8" id="sDE-fo-rTK"/>
+                        <constraint firstAttribute="trailing" secondItem="Rok-8d-ktE" secondAttribute="trailing" id="wxo-aO-2SG"/>
+                        <constraint firstItem="Dde-sw-EJR" firstAttribute="top" secondItem="Aql-a1-cdw" secondAttribute="bottom" constant="8" symbolic="YES" id="yDF-21-Bnh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TSY-02-862" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="1Ov-So-49r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TSY-02-862" secondAttribute="trailing" constant="16" id="ONH-Wg-Hr9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TSY-02-862" secondAttribute="bottom" constant="8" id="qIe-yo-NxI"/>
+                <constraint firstItem="TSY-02-862" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="wEp-Nb-Olu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="73.913043478260875" y="87.388392857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CTCARadioImage" width="128" height="128"/>
+        <image name="edit_pen" width="16" height="16"/>
+        <namedColor name="ctca-dark-gray">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ctca-white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

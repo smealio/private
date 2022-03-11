@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myctca.fragment.MoreMedDocDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/editTextInput"
+            android:textSize="16sp"
+            android:maxLines="1000"
+            android:scrollbars="vertical"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/labs_bottom_button_layout"
+            layout="@layout/bottom_button_layout" />
+    </LinearLayout>
+</FrameLayout>

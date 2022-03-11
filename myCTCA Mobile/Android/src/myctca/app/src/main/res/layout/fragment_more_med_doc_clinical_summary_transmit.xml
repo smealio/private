@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/transmit_clinical_summary_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="@color/editTextInput" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/sp_16"
+                android:text="@string/transmit_clinical_summary_security_label"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_transmit_pass_prot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextInput"
+                    android:checked="false"
+                    android:textSize="@dimen/sp_16"
+                    android:theme="@style/CTCACheckBox"
+                    android:text="@string/transmit_clinical_summary_add_password_protection" />
+
+                <CheckBox
+                    android:id="@+id/cb_send_secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextInput"
+                    android:checked="false"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:textSize="@dimen/sp_16"
+                    android:theme="@style/CTCACheckBox"
+                    android:text="@string/transmit_clinical_summary_send_secure" />
+
+                <CheckBox
+                    android:id="@+id/send_non_secure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/editTextInput"
+                    android:checked="false"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:textSize="@dimen/sp_16"
+                    android:theme="@style/CTCACheckBox"
+                    android:text="@string/transmit_clinical_summary_send_non_secure" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transmit_password_protection_clinical_summary_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/clinical_summary_encryption_body"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="@color/editTextInput"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_transmit_file_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/sp_16"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/transmit_file_password_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/transmit_clinical_summary_file_password_label"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/transmit_file_password_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionNext|flagNoExtractUi"
+                        android:inputType="textPassword"
+                        android:textColor="@color/editTextInput"
+                        android:textSize="18sp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/toggle_transmit_clinical_summary_password_button"
+                        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:elevation="8dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorPrimary"
+                        android:layout_marginStart="4dp"
+                        android:contentDescription="@string/login_password_toggle_description"
+                        app:srcCompat="@drawable/eye_slash" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/email_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/listSeparator" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_transmit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/sp_16"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/transmit_email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/transmit_clinical_summary_email_label"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/transmit_email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext|flagNoExtractUi"
+                    android:inputType="text"
+                    android:textColor="@color/editTextInput"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/security_separator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/listSeparator" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transmit_security_option_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/sp_16"
+                android:text="@string/transmit_clinical_summary_security_option_error"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/botton_layout_transmit_clinical_summary"
+            layout="@layout/bottom_button_layout" />
+    </LinearLayout>
+
+</ScrollView>

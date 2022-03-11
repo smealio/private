@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginBottom="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:orientation="horizontal"
+    android:id="@+id/ll_facility_info">
+
+    <ImageView
+        android:id="@+id/more_contact_us_main_phone_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/phone"
+        app:tint="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dp_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/facility_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_16"
+            android:text="ddd" />
+
+        <TextView
+            android:id="@+id/facility_info_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textSize="@dimen/sp_14"
+            android:text="ssdds" />
+
+    </LinearLayout>
+</LinearLayout>

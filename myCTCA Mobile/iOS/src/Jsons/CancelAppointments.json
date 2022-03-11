@@ -1,0 +1,8 @@
+{
+  "from": "Tanja Test",
+  "subject": "Appointment cancellation request",
+  "comments": "Test",
+  "phoneNumber": "1234567890",
+  "appointmentDate": null,
+  "appointmentId": "10516"
+}

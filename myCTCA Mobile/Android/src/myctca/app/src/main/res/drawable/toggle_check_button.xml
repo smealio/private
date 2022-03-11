@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/check_circle_icon_purple" />
+    <item android:state_pressed="true" android:drawable="@drawable/check_circle_icon_purple" />
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+            <size android:width="@dimen/dp_24" android:height="@dimen/dp_24" />
+            <stroke android:color="@color/gray_130" android:width="0.1dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.myctca.fragment.appointmment.AboutFingerprintAuthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/about_finger_auth_symbol_description"
+            android:paddingTop="2dp"
+            android:src="@drawable/ic_fingerprint_black_48dp"/>
+
+        <TextView
+            android:id="@+id/about_finger_auth_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/about_finger_auth_text"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:textColorLink="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <Switch
+            android:id="@+id/about_finger_auth_enable_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:text="@string/about_finger_auth_enable_text"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:theme="@style/CTCASwitch"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

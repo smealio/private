@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sendMessageScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fromNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"
+                android:text="@string/send_message_from_name"
+                android:textColor="@color/colorAccent"/>
+
+            <EditText
+                android:id="@+id/fromNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="@string/input_text_placeholder"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/from_name_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/from_name_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fromEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="6dp"
+                android:paddingStart="0dp"
+                android:textSize="14sp"
+                android:text="@string/send_message_from_email"
+                android:textColor="@color/colorAccent"/>
+
+            <EditText
+                android:id="@+id/fromEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagNoExtractUi"
+                android:hint="@string/input_text_placeholder"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/from_email_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/from_email_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_to"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/toET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"
+                android:inputType="none"
+                android:text="@string/send_message_to_value"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/to_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/to_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subjectLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_subject"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/subjectET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="textCapWords"
+                android:hint="@string/input_text_placeholder"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/subject_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/subject_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_phone"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionNext|flagNoExtractUi"
+                android:inputType="phone"
+                android:digits="0123456789 -()+"
+                android:maxLength="@integer/edit_max_length"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/phone_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/phone_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/concernLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_area_of_concern"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+            <Spinner
+                android:id="@+id/areaOfConcernSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/send_message_concern_array"
+                android:prompt="@string/send_message_concern_prompt"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/area_of_concern_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/area_of_concern_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/facilityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_treatment_facility"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+            <Spinner
+                android:id="@+id/treatmentFacilitySpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:textSize="18sp"
+                android:textColor="@color/editTextInput"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/treatment_facility_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/listSeparator"/>
+        <View
+            android:id="@+id/treatment_facility_highlight"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-12dp"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_message_message"
+                android:paddingStart="0dp"
+                android:paddingEnd="6dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/messageET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:imeOptions="flagNoExtractUi"
+                android:gravity="top"
+                android:hint="@string/input_text_placeholder"
+                android:inputType="textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine"
+                android:minHeight="100dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

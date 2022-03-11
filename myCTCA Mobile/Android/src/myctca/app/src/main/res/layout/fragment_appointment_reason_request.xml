@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16"
+    tools:context=".fragment.appointmment.AppointmentRequestCommonFragment">
+
+    <TextView
+        android:id="@+id/apptTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+
+    <EditText
+        android:id="@+id/apptValue"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="@dimen/dp_16"
+        android:saveEnabled="false"
+        android:textColor="@color/gray_130"
+        android:layout_below="@id/apptTitle"
+        android:hint="@string/appointment_reason_value"
+        android:background="@drawable/select_caregiver_access_patient_border" />
+</RelativeLayout>

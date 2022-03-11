@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TelehealthCommunicationActivity">
+
+    <FrameLayout
+        android:id="@+id/telehealth_call_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/ll_no_internet_connection"
+        layout="@layout/offline_red_connectivity_banner"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/ll_internet_connected"
+        layout="@layout/online_green_connectivity_banner"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewLightGrey"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+    <TextView
+        android:id="@+id/toolbar_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingBottom="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:text="myCTCA"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:ellipsize="end"/>
+
+</androidx.appcompat.widget.Toolbar>

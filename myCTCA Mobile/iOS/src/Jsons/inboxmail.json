@@ -1,0 +1,91 @@
+[
+  {
+    "mailMessageId": "253",
+    "from": "Test, Tanja",
+    "to": null,
+    "selectedTo": [
+      "Gordon, Vicky",
+      "Greenwood, Erin"
+    ],
+    "subject": "FROM PATIENT: RE: FROM PATIENT: RE: FROM PATIENT: test",
+    "comments": "Testing\n\n-----Original Message-----\n\nDate: 23-Dec-2020 12:20\n\nFrom: Test, Tanja\n\nTo: Gordon, Vicky, Greenwood, Erin\n\nSubject: FROM PATIENT: RE: FROM PATIENT: test\n\nTesting\n\n-----Original Message-----\n\nDate: 24-Nov-2020 12:19\n\nFrom: Greenwood, Erin\n\nTo: Gordon, Vicky\n\nSubject: RE: FROM PATIENT: test\n\n Return meassage\n \n-----Original Message-----\n \nDate:      17-Nov-2020 14:09\n \nFrom:     Test, Tanja,  ( 59900030 ERMC,  79000025 WRMC,  99000000 SERMC,  19000001 MRMC,  49000267 CHI Clininc); \n \nTo:         (proxy) Irelan, Sally(proxy) Vineyard, NicoleTest, AmbulatoryRN(proxy) Gordon, Vicky(proxy) Hannaman, Amy(proxy) Mcneil-Morgan, Shalene(proxy) Greenwood, Erin(proxy) Arroyo, Jenifer(proxy) Ackaret, James(proxy) Lisenby, Matt(proxy) Lewis, Delisa(proxy) Test, CM1(proxy) Davis, Tammy.\n \nMessage Type:     General Message\n \nSubject:  FROM PATIENT: test\n \nPriority: High Delivery Date: 11/17/2020 02:09:47 PM Expiry Date: <never>\n \nTest",
+    "sent": "2020-12-23T13:21:41.18-06:00",
+    "parentMessageId": null,
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  },
+  {
+    "mailMessageId": "178",
+    "from": "Test, Tanja",
+    "to": null,
+    "selectedTo": [],
+    "subject": "FROM PATIENT: RE: FROM PATIENT: RE: FROM PATIENT: Entering yet again",
+    "comments": "Time test\n\n-----Original Message-----\n\nDate: 11-Nov-2020 11:35\n\nFrom: Test, Tanja\n\nTo: Greenwood, Erin\n\nSubject: FROM PATIENT: RE: FROM PATIENT: Entering yet again\n\ntest\n\n-----Original Message-----\n\nDate: 02-Nov-2020 08:34\n\nFrom: Greenwood, Erin\n\nTo: Test, CM1, Test, Tanja, Arroyo, Jenifer, Davis, Tammy, Lisenby, Matt, Ackaret, James, Gordon, Vicky, Hannaman, Amy, Lewis, Delisa, Mcneil-Morgan, Shalene, Irelan, Sally, Vineyard, Nicole\n\nSubject: RE: FROM PATIENT: Entering yet again\n\n Replying to all on this one.  MD get it?\n \n-----Original Message-----\n \nDate:      02-Nov-2020 14:31\n \nFrom:     Test, Tanja,  ( 59900030 ERMC,  79000025 WRMC,  99000000 SERMC,  19000001 MRMC,  49000267 CHI Clininc); \n \nTo:         (proxy) Lisenby, Matt(proxy) Ackaret, James(proxy) Arroyo, Jenifer(proxy) Davis, Tammy(proxy) Gordon, Vicky(proxy) Greenwood, Erin(proxy) Hannaman, Amy(proxy) Irelan, Sally(proxy) Lewis, Delisa(proxy) Mcneil-Morgan, Shalene(proxy) Test, CM1(proxy) Vineyard, Nicole.\n \nMessage Type:     General Message\n \nSubject:  FROM PATIENT: Entering yet again\n \nPriority: High Delivery Date: 11/2/2020 02:31:20 PM Expiry Date: <never>\n \nHello there.",
+    "sent": "2020-11-11T18:39:31.347-06:00",
+    "parentMessageId": null,
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  },
+  {
+    "mailMessageId": "158",
+    "from": "Test, MRMC MD",
+    "to": null,
+    "selectedTo": [
+      "Test, Tanja"
+    ],
+    "subject": " ( Test, Tanja 49000267 )",
+    "comments": "Hello patient.  How are you?",
+    "sent": "2020-11-02T15:37:54.51-06:00",
+    "parentMessageId": null,
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  },
+  {
+    "mailMessageId": "116",
+    "from": "Greenwood, Erin",
+    "to": null,
+    "selectedTo": [
+      "Test, Tanja"
+    ],
+    "subject": "RE: FROM PATIENT: Teting again",
+    "comments": " Replying to this message\r\n \r\n-----Original Message-----\r\n \r\nDate:      27-Oct-2020 06:07\r\n \r\nFrom:     Test, Tanja,  ( 59900030 ERMC,  79000025 WRMC,  99000000 SERMC,  19000001 MRMC,  49000267 CHI Clininc); \r\n \r\nTo:         (proxy) Irelan, Sally(proxy) Vineyard, NicoleTest, MRMC MD(proxy) Gordon, Vicky(proxy) Hannaman, Amy(proxy) Mcneil-Morgan, Shalene(proxy) Greenwood, Erin(proxy) Arroyo, Jenifer(proxy) Ackaret, James(proxy) Lewis, Delisa(proxy) Test, CM1(proxy) Davis, Tammy.\r\n \r\nMessage Type:     General Message\r\n \r\nSubject:  FROM PATIENT: Teting again\r\n \r\nPriority: High Delivery Date: 10/27/2020 06:07:45 AM Expiry Date: <never>\r\n \r\nTesting again",
+    "sent": "2020-10-27T08:09:50.493-05:00",
+    "parentMessageId": "115",
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  },
+  {
+    "mailMessageId": "66",
+    "from": "Test, WRMC RN",
+    "to": null,
+    "selectedTo": [
+      "Test, Tanja"
+    ],
+    "subject": "RE: FROM PATIENT: Patient is sending a message",
+    "comments": "Will this reply show as completed in the physician inbox \r\n \r\n-----Original Message-----\r\n \r\nDate:      29-Sep-2020 13:17\r\n \r\nFrom:     Test, Tanja,  ( 79000025 WRMC,  99000000 SERMC,  19000001 MRMC,  49000267 MRMC OCC); \r\n \r\nTo:         (proxy) Greenwood, ErinTest, WRMC MD(proxy) Test, WRMC RN(proxy) Test, CM1.\r\n \r\nMessage Type:     General Message\r\n \r\nSubject:  FROM PATIENT: Patient is sending a message\r\n \r\nPriority: High Delivery Date: 9/29/2020 01:17:10 PM Expiry Date: <never>\r\n \r\nThis user has proxies. How is it displayed to the users and the proxies. \r\nThis one the proxy will reply",
+    "sent": "2020-10-05T15:33:12.88-05:00",
+    "parentMessageId": "60",
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  },
+  {
+    "mailMessageId": "61",
+    "from": "Greenwood, Erin",
+    "to": null,
+    "selectedTo": [
+      "Test, Tanja"
+    ],
+    "subject": "RE: FROM PATIENT: Patient is sending a message",
+    "comments": "I am replying to the patient without replying to all.  Nor have i indicated that i will delete from all. \r\n \r\n-----Original Message-----\r\n \r\nDate:      29-Sep-2020 13:17\r\n \r\nFrom:     Test, Tanja,  ( 79000025 WRMC,  99000000 SERMC,  19000001 MRMC,  49000267 MRMC OCC); \r\n \r\nTo:         (proxy) Greenwood, ErinTest, WRMC MD(proxy) Test, WRMC RN(proxy) Test, CM1.\r\n \r\nMessage Type:     General Message\r\n \r\nSubject:  FROM PATIENT: Patient is sending a message\r\n \r\nPriority: High Delivery Date: 9/29/2020 01:17:10 PM Expiry Date: <never>\r\n \r\nThis user has proxies. How is it displayed to the users and the proxies. \r\nThis one the proxy will reply",
+    "sent": "2020-09-29T15:20:04.73-05:00",
+    "parentMessageId": "60",
+    "isRead": true,
+    "messageType": 1,
+    "folderName": "Inbox"
+  }
+]

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.appointmment.AppointmentRequestCommonFragment">
+
+    <TextView
+        android:id="@+id/apptReasonTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:text="@string/appointment_contact_preference_title" />
+
+    <TextView
+        android:id="@+id/subTitleContactPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Select your communication preference"
+        android:textColor="@color/gray_130"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_below="@id/apptReasonTitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCallMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_below="@id/subTitleContactPreference">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <CheckBox
+                android:id="@+id/cbCallMe"
+                android:saveEnabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/toggle_check_button" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dp_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCallMeTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Call Me"
+                        android:textSize="@dimen/sp_18"
+                        android:textColor="@color/gray_150"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/tbCallMe"
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/toggle_edit_button"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCallMeNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/gray_150" />
+
+                <LinearLayout
+                    android:id="@+id/llEditContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp_16">
+
+                    <EditText
+                        android:id="@+id/etCallMeNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:saveEnabled="false"
+                        android:digits="0123456789 -()+"
+                        android:background="@drawable/select_caregiver_access_patient_border" />
+
+                    <TextView
+                        android:id="@+id/tvCallMePhoneError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_14"
+                        android:padding="@dimen/dp_2"/>
+
+                    <Button
+                        android:id="@+id/btnSaveContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:textAllCaps="false"
+                        android:background="@drawable/ctca_round_button_green" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEmailMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_below="@id/cvCallMe"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <CheckBox
+                android:id="@+id/cbEmailMe"
+                android:saveEnabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/toggle_check_button" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dp_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvEmailMeTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email Me"
+                        android:textSize="@dimen/sp_18"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray_150" />
+
+                    <ToggleButton
+                        android:id="@+id/tbEmailMe"
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@drawable/toggle_edit_button"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn=""/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvEmailMeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/gray_150" />
+
+                <LinearLayout
+                    android:id="@+id/llEditEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp_16">
+
+                    <EditText
+                        android:id="@+id/etEmailMeId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:saveEnabled="false"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/select_caregiver_access_patient_border" />
+
+                    <TextView
+                        android:id="@+id/tvEmailMeIdError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_14"
+                        android:padding="@dimen/dp_2"
+                        android:text="InvalidEmail"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/btnSaveEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:textAllCaps="false"
+                        android:background="@drawable/ctca_round_button_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
